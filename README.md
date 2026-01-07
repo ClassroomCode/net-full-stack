@@ -3,12 +3,9 @@ January 12 - 16, 2026
 
 ## Daily Schedule
 - 0800  Start
-- 0850 – 0900  Break
-- 0950 – 1000  Break
-- 1100 – 1200  Lunch 
-- 1250 – 1300  Break
-- 1350 – 1400  Break
-- 1450 – 1500  Break
+- 0930 – 0945  Break
+- 1130 – 1230  Lunch 
+- 1400 – 1415  Break
 - 1600  Finish
 
 ## Getting Started
