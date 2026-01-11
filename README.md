@@ -15,3 +15,7 @@ January 12 - 16, 2026
 ```
 git clone https://github.com/ClassroomCode/net-full-stack.git
 ```
+
+## Courseware
+
+After cloning the repository, open a topic folder (e.g., ASP.NET) and then open the `index.html` file with a web browser.
