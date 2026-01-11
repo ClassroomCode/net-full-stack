@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="client-side" data-version="202606">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">Client Side Technologies</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="html.html">HTML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="css.html">CSS</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="javascript.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="typescript.html">TypeScript</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Client Side Technologies</span>
+    <span class="version">202606</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">Client Side Technologies</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">202606</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Client Side Technologies</a></li>
+    <li><a href="javascript.html">JavaScript</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/client-side/content/modules/ROOT/pages/javascript.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">JavaScript</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every modern web browser includes a JavaScript engine that can interpret and execute JavaScript. Code executing in the browser can manipulate the Document Object Model (DOM), which represents the structure of a web page, allowing developers to create dynamic and interactive user interfaces.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Web browsers also now include the ability to execute WebAssembly, a binary instruction format that allows for high-performance execution of code written in languages like C, C++, and Rust. This enables developers to run computationally intensive tasks in the browser, complementing JavaScript&#8217;s capabilities.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_adding_to_a_web_page"><a class="anchor" href="#_adding_to_a_web_page"></a>Adding to a Web Page</h3>
+<div class="paragraph">
+<p>To add JavaScript to a web page, you can use the <code>&lt;script&gt;</code> tag. This tag can be placed in the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> section of your HTML document. The <code>src</code> attribute is used to link to an external JavaScript file, while inline scripts can be written directly within the <code>&lt;script&gt;</code> tags.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;script&gt;
+  console.log('Hello, World!');
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_order_of_execution"><a class="anchor" href="#_order_of_execution"></a>Order of Execution</h3>
+<div class="paragraph">
+<p>By default, JavaScript is executed in the order it appears in the HTML document. If a script is placed in the <code>&lt;head&gt;</code>, it will run before the DOM is fully loaded, which can lead to issues if the script tries to access elements that are not yet available. To ensure that scripts run after the DOM is ready, it was common for scripts to be placed at the end of the <code>&lt;body&gt;</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_defer_and_async"><a class="anchor" href="#_defer_and_async"></a>Defer and Async</h3>
+<div class="paragraph">
+<p>To control the loading and execution of scripts, you can use the <code>defer</code> and <code>async</code> attributes in the <code>&lt;script&gt;</code> tag.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;script src="script.js" defer&gt;&lt;/script&gt;
+&lt;script src="script.js" async&gt;&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>defer</code> attribute ensures that the script is executed after the HTML document has been fully parsed, while the <code>async</code> attribute allows the script to be executed as soon as it is downloaded, without blocking the parsing of the document.</p>
+</div>
+<div class="paragraph">
+<p>Using <code>defer</code> is generally recommended for scripts that manipulate the DOM, as it ensures that the DOM is fully loaded before the script runs. The <code>async</code> attribute is useful for scripts that do not depend on the DOM or other scripts, such as analytics or advertising scripts.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>With the availability of the <code>defer</code> attribute, it is now common practice to place all scripts in the <code>&lt;head&gt;</code> section of the document, allowing for better organization and separation of concerns.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_variables"><a class="anchor" href="#_variables"></a>Variables</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In JavaSctipt, variables are used to store data values. They can be declared using <code>const</code>, <code>let</code>, or <code>var</code>. The choice of declaration affects the scope and mutability of the variable.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Using <code>var</code> is generally discouraged in modern JavaScript due to its function scope and potential for hoisting issues. Instead, <code>let</code> and <code>const</code> are preferred for block-scoped variables, which help avoid unintended side effects.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_constants"><a class="anchor" href="#_constants"></a>Constants</h3>
+<div class="paragraph">
+<p>Using the keyword <code>const</code> is recommended for variables that will not be reassigned.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You must initialize a <code>const</code> variable at the time of declaration</p>
+</li>
+<li>
+<p>A constant cannot be reassigned later</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const pi = 3.14159;
+pi = 3.14; // This will produce an error because PI is a constant</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mutable_variables"><a class="anchor" href="#_mutable_variables"></a>Mutable Variables</h3>
+<div class="paragraph">
+<p>For variables that may need to be reassigned, you can use <code>let</code>. A variable declared with <code>let</code> does not need to be given an initial value.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let count;
+count = 1;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is recommended to use <code>const</code> by default and only use <code>let</code> when mutability is required. This helps in writing more predictable and maintainable code.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_naming_conventions"><a class="anchor" href="#_naming_conventions"></a>Naming Conventions</h3>
+<div class="paragraph">
+<p>When naming variables, it is important to follow consistent naming conventions to improve code readability and maintainability. Common conventions include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Using camelCase for variable names (e.g., <code>userName</code>, <code>totalCount</code>)</p>
+</li>
+<li>
+<p>Using descriptive names that indicate the purpose of the variable (e.g., <code>isLoggedIn</code>, <code>maxRetries</code>)</p>
+</li>
+<li>
+<p>Avoiding single-letter variable names, except for loop counters (e.g., <code>i</code>, <code>j</code>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_variable_types"><a class="anchor" href="#_variable_types"></a>Variable Types</h3>
+<div class="paragraph">
+<p>In JavaScript, variables can hold different types of data.</p>
+</div>
+<div class="sect3">
+<h4 id="_numbers"><a class="anchor" href="#_numbers"></a>Numbers</h4>
+<div class="paragraph">
+<p>Numbers in JavaScript can be integers or floating-point values. They are represented as double-precision 64-bit binary format IEEE 754 values.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_strings"><a class="anchor" href="#_strings"></a>Strings</h4>
+<div class="paragraph">
+<p>Strings are sequences of characters (UTF-16) used to represent text. They can be defined using single quotes, double quotes, or backticks (template literals).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let message = "Hello, World!";
+let greeting = 'Hello, World!';
+let template = `Hello, ${userName}!`;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_booleans"><a class="anchor" href="#_booleans"></a>Booleans</h4>
+<div class="paragraph">
+<p>Booleans represent a logical entity and can have two values: <code>true</code> or <code>false</code>. They are often used in conditional statements to control the flow of the program.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let isActive = true;
+let isComplete = false;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_objects"><a class="anchor" href="#_objects"></a>Objects</h4>
+<div class="paragraph">
+<p>Objects are collections of key-value pairs, where each key is a string (or Symbol) and the value can be of any type. Objects are defined using curly braces.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let user = {
+  name: "Alice",
+  age: 30,
+  isActive: true,
+  address: {
+    street: "123 Main St",
+    city: "Anytown"
+  }
+};</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dynamic_typing"><a class="anchor" href="#_dynamic_typing"></a>Dynamic Typing</h3>
+<div class="paragraph">
+<p>JavaScript is a dynamically typed language, meaning that variables can hold values of any type and can change types at runtime. This flexibility allows for rapid development but can also lead to unexpected behavior if not managed carefully.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let value = 42;
+value = "Now I'm a string";
+value = true;
+value = [1, 2, 3];
+value = { key: "value" };</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Dynamic typing can lead to runtime errors if a variable is used in a way that is incompatible with its current type. It is important to validate and check types when necessary to avoid such issues.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">if (typeof value === "number") {
+  value = value * 2;
+}</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_equality"><a class="anchor" href="#_equality"></a>Equality</h3>
+<div class="paragraph">
+<p>In JavaScript, there are two types of equality comparison: strict equality (<code>===</code>) and loose equality (<code>==</code>). Strict equality checks both the value and the type, while loose equality performs type coercion if the types do not match.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let a = 5;
+let b = "5";
+console.log(a === b); // false (strict equality, different types)
+console.log(a == b); // true (loose equality, type coercion)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_null_and_undefined"><a class="anchor" href="#_null_and_undefined"></a>null and undefined</h3>
+<div class="paragraph">
+<p>In JavaScript, <code>null</code> and <code>undefined</code> are two distinct types that represent the absence of a value.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>null</code> is an intentional absence of value. It must be explicitly set via code.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let emptyValue = null;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><code>undefined</code> indicates that a variable has been declared but has not yet been assigned a value.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let uninitializedValue;</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For equality, <code>null</code> and <code>undefined</code> are loosely equal (<code>==</code>) but not strictly equal (<code>===</code>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conditionals"><a class="anchor" href="#_conditionals"></a>Conditionals</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Conditionals in programming allow you to execute different code paths based on certain conditions. They are essential for controlling the flow of your program and making decisions.</p>
+</div>
+<div class="sect2">
+<h3 id="_if_statements"><a class="anchor" href="#_if_statements"></a>If Statements</h3>
+<div class="paragraph">
+<p>If statements evaluate a condition and execute a block of code if the condition is true. They can also include an optional <code>else</code> block to execute code when the condition is false.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">if (condition) {
+  // Code to execute if condition is true
+} else {
+  // Code to execute if condition is false
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_switch_statements"><a class="anchor" href="#_switch_statements"></a>Switch Statements</h3>
+<div class="paragraph">
+<p>Switch statements allow you to evaluate an expression and execute different blocks of code based on the value of that expression. They are useful for handling multiple conditions in a more organized way than using multiple <code>if</code> statements.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">switch (expression) {
+  case value1:
+    // Code to execute if expression equals value1
+    break;
+  case value2:
+    // Code to execute if expression equals value2
+    break;
+  default:
+    // Code to execute if no cases match
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Although the <code>break</code> statement is optional, it is generally recommended to use it to prevent fall-through behavior, where multiple cases could execute unintentionally.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ternary_operator"><a class="anchor" href="#_ternary_operator"></a>Ternary Operator</h3>
+<div class="paragraph">
+<p>The ternary operator is a shorthand way to write an <code>if-else</code> statement. It takes three operands: a condition, a value if the condition is true, and a value if the condition is false.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const result = condition ? valueIfTrue : valueIfFalse;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_loops"><a class="anchor" href="#_loops"></a>Loops</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Loops are fundamental programming constructs that allow you to execute a block of code repeatedly based on a condition. They are essential for tasks that require iteration, such as processing arrays, generating sequences, or performing repetitive calculations.</p>
+</div>
+<div class="sect2">
+<h3 id="_for_loop"><a class="anchor" href="#_for_loop"></a>For Loop</h3>
+<div class="paragraph">
+<p>A <code>for</code> loop is used to iterate over a sequence (like an array or a string) or to repeat a block of code a specific number of times. It consists of three parts: initialization, condition, and increment/decrement.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">for (let i = 0; i &lt; 10; i++) {
+  console.log(i); // Prints numbers from 0 to 9
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_while_loop"><a class="anchor" href="#_while_loop"></a>While Loop</h3>
+<div class="paragraph">
+<p>A <code>while</code> loop continues to execute a block of code as long as a specified condition is true. It is useful when the number of iterations is not known beforehand.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">let i = 0;
+while (i &lt; 10) {
+  console.log(i); // Prints numbers from 0 to 9
+  i++;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_do_while_loop"><a class="anchor" href="#_do_while_loop"></a>Do-While Loop</h3>
+<div class="paragraph">
+<p>A <code>do-while</code> loop is similar to a <code>while</code> loop, but it guarantees that the block of code will be executed at least once before checking the condition. This is useful when you want to ensure that the code runs before evaluating the condition.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">let i = 0;
+do {
+  console.log(i); // Prints numbers from 0 to 9
+  i++;
+} while (i &lt; 10);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_forof_loop"><a class="anchor" href="#_forof_loop"></a>For&#8230;&#8203;of Loop</h3>
+<div class="paragraph">
+<p>The <code>for&#8230;&#8203;of</code> loop is used to iterate over iterable objects like arrays, strings, and other collections. It provides a simpler syntax for iterating through elements without needing to manage an index.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const array = [1, 2, 3, 4, 5];
+for (const element of array) {
+  console.log(element);
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_forin_loop"><a class="anchor" href="#_forin_loop"></a>For&#8230;&#8203;in Loop</h3>
+<div class="paragraph">
+<p>The <code>for&#8230;&#8203;in</code> loop is used to iterate over the properties of an object. It allows you to access each key in the object, making it useful for working with objects and their properties.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const obj = { a: 1, b: 2, c: 3 };
+for (const key in obj) {
+  console.log(`${key}: ${obj[key]}`); // Prints each key-value pair
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exiting_loops"><a class="anchor" href="#_exiting_loops"></a>Exiting Loops</h3>
+<div class="paragraph">
+<p>You can exit a loop prematurely using the <code>break</code> statement. This is useful when you want to stop the loop based on a specific condition.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">for (let i = 0; i &lt; 10; i++) {
+  if (i === 5) {
+    break; // Exits the loop when i is 5
+  }
+  console.log(i); // Prints numbers from 0 to 4
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can skip the current iteration of a loop using the <code>continue</code> statement. This allows you to skip processing for certain conditions while continuing with the next iteration.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">for (let i = 0; i &lt; 10; i++) {
+  if (i % 2 === 0) {
+    continue; // Skips even numbers
+  }
+  console.log(i); // Prints odd numbers from 1 to 9
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functions"><a class="anchor" href="#_functions"></a>Functions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Functions are reusable blocks of code that perform a specific task. They allow you to encapsulate logic, making your code more organized and easier to maintain. Functions can take inputs (parameters) and return outputs (values).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">function doubleIt(number) {
+  return number * 2;
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const result = doubleIt(5);</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_default_parameters"><a class="anchor" href="#_default_parameters"></a>Default Parameters</h3>
+<div class="paragraph">
+<p>Functions can have default parameters, which are used if no argument is provided for that parameter when the function is called. This allows for more flexible function definitions.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">function greet(name = 'Guest') {
+  return `Hello, ${name}!`;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_anonymous_functions"><a class="anchor" href="#_anonymous_functions"></a>Anonymous Functions</h3>
+<div class="paragraph">
+<p>Anonymous functions are functions that do not have a name. They are often used as arguments to other functions or assigned to variables. They can be defined using the <code>function</code> keyword or as arrow functions.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const add = function(a, b) {
+  return a + b;
+};</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const multiply = (a, b) =&gt; a * b;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_higher_order_functions"><a class="anchor" href="#_higher_order_functions"></a>Higher-Order Functions</h3>
+<div class="paragraph">
+<p>Higher-order functions are functions that can take other functions as arguments or return functions as their result. They are commonly used in functional programming to create more abstract and reusable code.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">function applyOperation(arr, operation) {
+  return arr.map(operation);
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dom_scripting"><a class="anchor" href="#_dom_scripting"></a>DOM Scripting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>DOM scripting refers to the process of manipulating the Document Object Model (DOM) using JavaScript. The DOM is a tree-like structure that represents the HTML or XML document, allowing you to access and modify its elements dynamically. This is essential for creating interactive web applications.</p>
+</div>
+<div class="sect2">
+<h3 id="_web_browser_objects"><a class="anchor" href="#_web_browser_objects"></a>Web Browser Objects</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Navigator</strong>: Provides information about the browser, such as its name, version, and platform.</p>
+</li>
+<li>
+<p><strong>Window</strong>: The browser window where the web page is displayed. It contains the viewport, which is the visible area of the web page.</p>
+</li>
+<li>
+<p><strong>Document</strong>: The DOM representation of the web page, which includes all the elements, attributes, and text content.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_selecting_elements"><a class="anchor" href="#_selecting_elements"></a>Selecting Elements</h3>
+<div class="paragraph">
+<p>To manipulate elements in the DOM, you first need to select them. There are several methods available for selecting elements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>getElementById(id)</code>: Selects an element by its unique ID.</p>
+</li>
+<li>
+<p><code>getElementsByClassName(className)</code>: Selects all elements with a specific class name.</p>
+</li>
+<li>
+<p><code>getElementsByTagName(tagName)</code>: Selects all elements with a specific tag name.</p>
+</li>
+<li>
+<p><code>querySelector(selector)</code>: Selects the first element that matches a CSS selector.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const firstLink = document.querySelector("a");</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><code>querySelectorAll(selector)</code>: Selects all elements that match a CSS selector. Returns a NodeList, which is similar to an array but not exactly the same. You can iterate over it using a loop or convert it to an array if needed.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const allLinks = document.querySelectorAll("a");
+for (const link of allLinks) {
+  console.log(link.href);
+}</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_creating_and_modifying_elements"><a class="anchor" href="#_creating_and_modifying_elements"></a>Creating and Modifying Elements</h3>
+<div class="paragraph">
+<p>You can create new elements and modify existing ones in the DOM:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>createElement(tagName)</code>: Creates a new element with the specified tag name.</p>
+</li>
+<li>
+<p><code>appendChild(child)</code>: Adds a child element to a parent element.</p>
+</li>
+<li>
+<p><code>removeChild(child)</code>: Removes a child element from a parent element.</p>
+</li>
+<li>
+<p><code>setAttribute(name, value)</code>: Sets an attribute on an element.</p>
+</li>
+<li>
+<p><code>getAttribute(name)</code>: Retrieves the value of an attribute from an element.</p>
+</li>
+<li>
+<p><code>innerHTML</code>: Gets or sets the HTML content of an element.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const newDiv = document.createElement("div");
+newDiv.innerHTML = "&lt;p&gt;Hello, World!&lt;/p&gt;";
+document.body.appendChild(newDiv);</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A common way to dynamically modify the style of an element is by using the <code>setAttribute</code> method to change the class of an element.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const element = document.getElementById("myElement");
+element.setAttribute("class", "new-class");</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_events"><a class="anchor" href="#_events"></a>Events</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Events are actions or occurrences that happen in the system you are programming, which can be triggered by user interactions, system processes, or other sources. In web development, events are often associated with user actions like clicks, key presses, or mouse movements.</p>
+</div>
+<div class="sect2">
+<h3 id="_event_listeners"><a class="anchor" href="#_event_listeners"></a>Event Listeners</h3>
+<div class="paragraph">
+<p>Event listeners are functions that wait for specific events to occur and execute a block of code in response. They are essential for making web applications interactive. You can attach event listeners to HTML elements to respond to user actions.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">document.getElementById('myButton').addEventListener('click', function() {
+  alert('Button was clicked!');
+});</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_event_object"><a class="anchor" href="#_event_object"></a>Event Object</h3>
+<div class="paragraph">
+<p>When an event occurs, an event object is created that contains information about the event, such as the type of event, the target element, and any additional data. You can access this object in your event handler to get more context about the event.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">document.getElementById('myInput').addEventListener('input', function(event) {
+  console.log('Input value:', event.target.value);
+});</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_network_requests"><a class="anchor" href="#_network_requests"></a>Network Requests</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Network requests are essential for web applications to communicate with servers, fetch data, and send information. They allow your application to retrieve resources like HTML, CSS, JavaScript files, images, and data from APIs.</p>
+</div>
+<div class="sect2">
+<h3 id="_fetch_api"><a class="anchor" href="#_fetch_api"></a>Fetch API</h3>
+<div class="paragraph">
+<p>The Fetch API provides a modern way to make network requests in JavaScript. It is built on Promises, making it easier to handle asynchronous operations compared to the older XMLHttpRequest.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">fetch("https://api.example.com/data")
+  .then(response =&gt; {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json(); // Parse JSON data
+  })
+  .then(data =&gt; {
+    console.log(data); // Handle the fetched data
+  })
+  .catch(error =&gt; {
+    console.error("There was a problem with the fetch operation:", error);
+  });</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

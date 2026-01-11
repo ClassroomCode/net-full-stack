@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="client-side" data-version="202606">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">Client Side Technologies</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="html.html">HTML</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="css.html">CSS</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="javascript.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="typescript.html">TypeScript</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Client Side Technologies</span>
+    <span class="version">202606</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">Client Side Technologies</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">202606</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Client Side Technologies</a></li>
+    <li><a href="css.html">CSS</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/client-side/content/modules/ROOT/pages/css.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">CSS</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CSS is a style sheet language used for describing the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, paper, or in other media.</p>
+</div>
+<div class="sect2">
+<h3 id="_default_styles"><a class="anchor" href="#_default_styles"></a>Default Styles</h3>
+<div class="paragraph">
+<p>Each web browser includes a set of default styles that it applies to HTML elements. These styles can vary between browsers, which is why you may notice differences in how your web pages look across different browsers.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are many CSS reset stylesheets available that can help standardize the appearance of HTML elements across different browsers. These stylesheets remove the default browser styles, allowing you to start with a clean slate.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_css_syntax"><a class="anchor" href="#_css_syntax"></a>CSS Syntax</h3>
+<div class="paragraph">
+<p>CSS is made up of selectors and declarations. A selector points to the HTML element you want to style, and a declaration consists of a property and a value.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">h1 {
+  color: red;
+  font-size: 2.5em;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_browser_rendering"><a class="anchor" href="#_browser_rendering"></a>Browser Rendering</h3>
+<div class="paragraph">
+<p>When a web browser loads a web page, it first converts the HTML document into a DOM (Document Object Model) tree. Any CSS rules are then applied to the DOM to create a <strong>render tree</strong> which is then painted to the browser window.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adding_css_to_an_html_document"><a class="anchor" href="#_adding_css_to_an_html_document"></a>Adding CSS to an HTML Document</h3>
+<div class="paragraph">
+<p>There are three different ways to apply CSS to an HTML document — external stylesheets, internal stylesheets, and inline styles.</p>
+</div>
+<div class="sect3">
+<h4 id="_external_stylesheets"><a class="anchor" href="#_external_stylesheets"></a>External Stylesheets</h4>
+<div class="paragraph">
+<p>An external stylesheet is a separate CSS file that you link to from your HTML document. This is the most common method of applying styles, as it allows you to keep your CSS separate from your HTML, making it easier to maintain.</p>
+</div>
+<div class="paragraph">
+<p>To add an external stylesheet, use the <code>&lt;link&gt;</code> element in the <code>&lt;head&gt;</code> section of your HTML document:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_internal_stylesheets"><a class="anchor" href="#_internal_stylesheets"></a>Internal Stylesheets</h4>
+<div class="paragraph">
+<p>An internal stylesheet is defined within the <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> section of your HTML document. This method is useful for applying styles to a single page without needing a separate CSS file.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;head&gt;
+  &lt;style&gt;
+    body {
+      background-color: lightblue;
+    }
+    h1 {
+      color: navy;
+      font-size: 2.5em;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_inline_styles"><a class="anchor" href="#_inline_styles"></a>Inline Styles</h4>
+<div class="paragraph">
+<p>Inline styles are applied directly to an HTML element using the <code>style</code> attribute. This method is generally not recommended for large projects, as it can make your HTML cluttered and harder to maintain.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;h1 style="color: red; font-size: 2.5em;"&gt;Hello, World!&lt;/h1&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If CSP (Content Security Policy) is enabled, inline styles may be blocked. In such cases, it is better to use external or internal stylesheets to ensure your styles are applied correctly.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_selectors"><a class="anchor" href="#_selectors"></a>Selectors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CSS selectors are patterns used to select the elements you want to style. They can be simple or complex, depending on the elements you want to target.</p>
+</div>
+<div class="sect2">
+<h3 id="_type_selectors"><a class="anchor" href="#_type_selectors"></a>Type Selectors</h3>
+<div class="paragraph">
+<p>Type selectors are the most basic type of selector. They select elements based on their type (or tag name). For example, to select all <code>&lt;p&gt;</code> elements, you would use the <code>p</code> selector.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">p {
+  color: blue;
+  font-size: 16px;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also select multiple types of elements by separating them with commas. For example, to select all <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> elements, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">h1, h2 {
+  color: green;
+  font-weight: bold;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_id_selector"><a class="anchor" href="#_id_selector"></a>ID Selector</h3>
+<div class="paragraph">
+<p>The ID selector selects a single element with a specific ID attribute. To select an element with the ID <code>unique</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">#unique {
+  background-color: yellow;
+  padding: 10px;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can apply the ID to one element only:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div id="unique"&gt;This is a unique element with the ID "unique".&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_class_selector"><a class="anchor" href="#_class_selector"></a>Class Selector</h3>
+<div class="paragraph">
+<p>The class selector selects elements with a specific class attribute. To select all elements with the class <code>example</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.example {
+  font-size: 1.2em;
+  color: purple;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can apply the same class to multiple elements:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p class="example"&gt;This is a paragraph with the example class.&lt;/p&gt;
+&lt;h1 class="example"&gt;This is a heading with the example class.&lt;/h1&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also require multiple classes by separating them with a dot. For example, to select elements with both <code>class1</code> and <code>class2</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.class1.class2 {
+  border: 1px solid black;
+  padding: 5px;
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p class="class1 class2"&gt;This paragraph has both class1 and class2.&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_universal_selector"><a class="anchor" href="#_universal_selector"></a>Universal Selector</h3>
+<div class="paragraph">
+<p>The universal selector selects all elements in the document. It is represented by an asterisk (<code>*</code>). For example, to apply a margin to all elements, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">* {
+  margin: 0;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If chained with a descendant combinator, it can apply styles to all elements within a specific parent. For example, to select all elements inside a <code>&lt;div&gt;</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">div * {
+  color: gray;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_attribute_selector"><a class="anchor" href="#_attribute_selector"></a>Attribute Selector</h3>
+<div class="paragraph">
+<p>The attribute selector selects elements based on the presence or value of an attribute. For example, to select all <code>&lt;a&gt;</code> elements with a <code>href</code> attribute, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">a[href] {
+  text-decoration: none;
+  color: orange;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also select elements with a specific attribute value:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">a[href="https://example.com"] {
+  color: red;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attribute_selectors"><a class="anchor" href="#_attribute_selectors"></a>Attribute Selectors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An attribute selector allows you to select elements based on the presence or value of an attribute. This is particularly useful for styling elements that have specific attributes, such as links or form inputs.</p>
+</div>
+<div class="sect2">
+<h3 id="_basic_attribute_selector"><a class="anchor" href="#_basic_attribute_selector"></a>Basic Attribute Selector</h3>
+<div class="paragraph">
+<p>The basic attribute selector selects elements that have a specific attribute, regardless of its value. For example, to select all <code>&lt;input&gt;</code> elements with a <code>type</code> attribute, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">input[type] {
+  border: 1px solid #ccc;
+  padding: 5px;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_attribute_value_selector"><a class="anchor" href="#_attribute_value_selector"></a>Attribute Value Selector</h3>
+<div class="paragraph">
+<p>You can also select elements based on the value of an attribute. For example, to select all <code>&lt;input&gt;</code> elements with a <code>type</code> attribute equal to <code>text</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">input[type="text"] {
+  background-color: #f0f0f0;
+  color: #333;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_substring_matching_selectors"><a class="anchor" href="#_substring_matching_selectors"></a>Substring Matching Selectors</h3>
+<div class="paragraph">
+<p>You can select elements based on a substring of an attribute value. There are several types of substring selectors:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>^=</code>: Selects elements whose attribute value starts with a specified value.</p>
+</li>
+<li>
+<p><code>$=</code>: Selects elements whose attribute value ends with a specified value.</p>
+</li>
+<li>
+<p><code>*=</code>: Selects elements whose attribute value contains a specified substring.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For example, to select all <code>&lt;a&gt;</code> elements whose <code>href</code> attribute starts with <code>https</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">a[href^="https"] {
+  color: green;
+  text-decoration: underline;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pseudo_classes"><a class="anchor" href="#_pseudo_classes"></a>Pseudo-Classes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A pseudo-class is a keyword added to selectors that specifies a special state of the selected elements. Pseudo-classes are used to style elements based on their state, position, or other characteristics that cannot be targeted with simple selectors.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;article&gt;
+  &lt;p&gt;
+    Some text.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Some other text.
+  &lt;/p&gt;
+&lt;/article&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">article p:first-child {
+  font-size: 120%;
+  font-weight: bold;
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are a large number of pseudo-classes available in CSS. For a complete list, you can consult the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">MDN documentation</a> or the <a href="https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes">HTML specification</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_user_action_pseudo_classes"><a class="anchor" href="#_user_action_pseudo_classes"></a>User-Action Pseudo-Classes</h3>
+<div class="paragraph">
+<p>Some pseudo-classes are based on user actions, such as hovering over an element or focusing on an input field. These pseudo-classes allow you to change the style of an element when a user interacts with it.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;input type="text" placeholder="Focus on me"&gt;
+&lt;button&gt;Hover over me&lt;/button&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+button:hover {
+  background-color: lightblue;
+  color: darkblue;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pseudo_elements"><a class="anchor" href="#_pseudo_elements"></a>Pseudo-Elements</h3>
+<div class="paragraph">
+<p>Pseudo-elements are similar to pseudo-classes but are used to style specific parts of an element rather than the entire element. They allow you to apply styles to elements that do not have a specific class or ID.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;
+  This is a paragraph.
+&lt;/p&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">p::first-letter {
+  font-size: 2em;
+  color: red;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_inserting_content"><a class="anchor" href="#_inserting_content"></a>Inserting Content</h3>
+<div class="paragraph">
+<p>You can use the <code>::before</code> and <code>::after</code> pseudo-elements to insert content before or after an element&#8217;s content. This is useful for adding decorative elements or additional information without modifying the HTML structure.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;
+  This is a paragraph.
+&lt;/p&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">p::before {
+  content: "Note: ";
+  font-weight: bold;
+  color: green;
+}
+p::after {
+  content: " (End of paragraph)";
+  font-style: italic;
+  color: gray;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_combinators"><a class="anchor" href="#_combinators"></a>Combinators</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Combinators in CSS are used to define relationships between selectors. They allow you to select elements based on their relationship to other elements in the document tree. There are four main types of combinators: descendant, child, adjacent sibling, and general sibling.</p>
+</div>
+<div class="sect2">
+<h3 id="_descendant_combinator"><a class="anchor" href="#_descendant_combinator"></a>Descendant Combinator</h3>
+<div class="paragraph">
+<p>The descendant combinator is represented by a space between two selectors. It selects all elements that are descendants of a specified element, regardless of their depth in the hierarchy. For example, to select all <code>&lt;p&gt;</code> elements inside a <code>&lt;div&gt;</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">div p {
+  color: blue;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_child_combinator"><a class="anchor" href="#_child_combinator"></a>Child Combinator</h3>
+<div class="paragraph">
+<p>The child combinator is represented by a greater-than sign (<code>&gt;</code>). It selects only the direct children of a specified element. For example, to select all <code>&lt;li&gt;</code> elements that are direct children of a <code>&lt;ul&gt;</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">ul &gt; li {
+  list-style-type: square;
+  color: green;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_next_sibling_combinator"><a class="anchor" href="#_next_sibling_combinator"></a>Next-Sibling Combinator</h3>
+<div class="paragraph">
+<p>The next-sibling combinator is represented by a plus sign (<code>+</code>). It selects an element that is immediately preceded by a specified element. For example, to select the first <code>&lt;p&gt;</code> element that follows an <code>&lt;h2&gt;</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">h2 + p {
+  margin-top: 10px;
+  color: purple;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_combining_combinators_with_selectors"><a class="anchor" href="#_combining_combinators_with_selectors"></a>Combining Combinators with Selectors</h3>
+<div class="paragraph">
+<p>You can combine combinators with other selectors to create more specific rules. For example, to select all <code>&lt;span&gt;</code> elements that are direct children of a <code>&lt;div&gt;</code> and have a class of <code>highlight</code>, you would use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">div &gt; span.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_box_model"><a class="anchor" href="#_box_model"></a>Box Model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every element in HTML has a box model that defines its dimensions and spacing. Understanding the box model is crucial for effective layout and design in CSS.</p>
+</div>
+<div class="sect2">
+<h3 id="_block_elements"><a class="anchor" href="#_block_elements"></a>Block Elements</h3>
+<div class="paragraph">
+<p>Block elements are the building blocks of the box model. They create a rectangular box that occupies the <strong>full width</strong> available, with a new line before and after the element. Some common block elements include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h*&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Semantic HTML elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;nav&gt;</code> act the same as <code>&lt;div&gt;</code> in terms of the box model, but they provide better structure and meaning to the document.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For block elements, <code>width</code> and <code>height</code> properties are respected.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_inline_elements"><a class="anchor" href="#_inline_elements"></a>Inline Elements</h3>
+<div class="paragraph">
+<p>Inline elements do not create a new line and only take up as much width as necessary. They flow within the text and do not respect the <code>width</code> and <code>height</code> properties. Common inline elements include <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, and <code>&lt;img&gt;</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_parts_of_a_box"><a class="anchor" href="#_parts_of_a_box"></a>Parts of a Box</h3>
+<div class="paragraph">
+<p>The box model consists of several layers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Content</strong>: The actual content of the box, such as text or images.</p>
+</li>
+<li>
+<p><strong>Padding</strong>: The space between the content and the border.</p>
+</li>
+<li>
+<p><strong>Border</strong>: The line surrounding the padding and content. It can have different styles, widths, and colors.</p>
+</li>
+<li>
+<p><strong>Margin</strong>: The space outside the border that separates the box from other elements.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_standard_box_model"><a class="anchor" href="#_standard_box_model"></a>Standard Box Model</h4>
+<div class="paragraph">
+<p>By default (the standard box model), the width and height properties control the size of the content box. To calculate the total size of an element, you need to consider padding, border, and margin.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.box {
+  width: 200px; /* Content width */
+  padding: 10px; /* Padding on all sides */
+  border: 5px solid black; /* Border on all sides */
+  margin: 20px; /* Margin on all sides */
+}
+/* Total width = content width + padding + border + margin */</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_alternative_box_model"><a class="anchor" href="#_alternative_box_model"></a>Alternative Box Model</h4>
+<div class="paragraph">
+<p>The alternative box model, defined by the <code>box-sizing</code> property, changes how the width and height of an element are calculated. When set to <code>border-box</code>, the width and height include padding and border and the size of the content box is adjusted accordingly.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.box {
+  box-sizing: border-box;
+  width: 200px; /* Total width including padding and border */
+  padding: 10px; /* Padding on all sides */
+  border: 5px solid black; /* Border on all sides */
+  margin: 20px; /* Margin on all sides */
+}
+/* Total width = 200px (includes padding and border) + margin */</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Some developers choose to use the alternative box model globally because it simplifies layout calculations, especially when dealing with padding and borders.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>More information about this specific technique can be found <a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/">here</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_margins"><a class="anchor" href="#_margins"></a>Margins</h3>
+<div class="paragraph">
+<p>The margin is the outermost layer of the box model. It creates space between the element and its surrounding elements.</p>
+</div>
+<div class="paragraph">
+<p>You can set margins for all sides using the <code>margin</code> property, or specify individual margins using <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.box {
+  margin: 20px; /* Margin on all sides */
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.box {
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Margin collapsing occurs in vertical margins of block elements. For example, if two paragraphs have a margin of 20px, the space between them will be 20px, not 40px. More information about margin collapsing can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">here</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_padding"><a class="anchor" href="#_padding"></a>Padding</h3>
+<div class="paragraph">
+<p>Padding is the space between the content and the border of the box. It can be set for all sides using the <code>padding</code> property or individually using <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_borders"><a class="anchor" href="#_borders"></a>Borders</h3>
+<div class="paragraph">
+<p>Borders are the lines that surround the padding and content of the box. You can set the border&#8217;s width, style, and color using the <code>border</code> property or specify individual borders using <code>border-top</code>, <code>border-right</code>, <code>border-bottom</code>, and <code>border-left</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.box {
+  border: 2px solid black; /* Border on all sides */
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_inline_block"><a class="anchor" href="#_inline_block"></a>Inline-Block</h3>
+<div class="paragraph">
+<p>Inline-block elements are a hybrid between block and inline elements. They allow you to set width and height like block elements while still flowing within the text like inline elements. To create an inline-block element, use the <code>display: inline-block;</code> property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.box {
+  display: inline-block; /* Allows width and height */
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conflicts"><a class="anchor" href="#_conflicts"></a>Conflicts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Conflicts in CSS occur when multiple styles apply to the same element, leading to ambiguity about which style should take precedence. Understanding how CSS resolves these conflicts is essential for effective styling.</p>
+</div>
+<div class="sect2">
+<h3 id="_specificity"><a class="anchor" href="#_specificity"></a>Specificity</h3>
+<div class="paragraph">
+<p>Specificity is a key concept in CSS that determines which styles are applied when multiple rules match the same element. It is calculated based on the types of selectors used in the rule.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.main-heading {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;h1 class="main-heading"&gt;This is a heading&lt;/h1&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the <code>.main-heading</code> class has a higher specificity than the <code>h1</code> element selector, so the text will be red.</p>
+</div>
+<div class="paragraph">
+<p>If both selectors have the same specificity, the last one defined in the CSS will take precedence.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">h1 {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_inheritance"><a class="anchor" href="#_inheritance"></a>Inheritance</h3>
+<div class="paragraph">
+<p>Some CSS properties are inherited from parent elements to child elements. This means that if a property is set on a parent element, its child elements will automatically receive that property unless it is overridden.</p>
+</div>
+<div class="paragraph">
+<p>For example, properties like <code>color</code>, <code>font-family</code>, and <code>line-height</code> are inherited, while properties like <code>margin</code>, <code>padding</code>, and <code>border</code> are not.</p>
+</div>
+<div class="paragraph">
+<p>Inheritance can be controlled by using the <code>inherit</code>, <code>initial</code>, <code>unset</code>, and <code>revert</code> keywords.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>inherit</strong>: Forces the property to inherit the value from its parent.</p>
+</li>
+<li>
+<p><strong>initial</strong>: Sets the property to its default value.</p>
+</li>
+<li>
+<p><strong>unset</strong>: Resets the property to its natural value, which is either inherited or initial.</p>
+</li>
+<li>
+<p><strong>revert</strong>: Resets the property to the value it would have had if the stylesheet had not changed it.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.parent {
+  color: green;
+}
+
+.child {
+  color: unset;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_important_flag"><a class="anchor" href="#_important_flag"></a>Important Flag</h3>
+<div class="paragraph">
+<p>The <code>!important</code> flag can be used to override any other styles applied to an element, regardless of specificity or inheritance. It should be used sparingly, as it can make debugging and maintaining CSS more difficult.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.main-heading {
+  color: red !important;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sizing"><a class="anchor" href="#_sizing"></a>Sizing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sizing in CSS is crucial for defining the dimensions of elements on a web page. It involves understanding how to use different units and properties to achieve the desired layout and responsiveness.</p>
+</div>
+<div class="sect2">
+<h3 id="_intrinsic_size"><a class="anchor" href="#_intrinsic_size"></a>Intrinsic Size</h3>
+<div class="paragraph">
+<p>Every HTML element has an intrinsic size, which is determined by its content and the styles applied to it. Understanding how to control and manipulate this size is essential for creating effective layouts in CSS.</p>
+</div>
+<div class="paragraph">
+<p>For example, an <code>&lt;img&gt;</code> element has a natural size based on the image file while a <code>&lt;div&gt;</code> element has no intrinsic size and will expand to fit its content.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_extrinsic_size"><a class="anchor" href="#_extrinsic_size"></a>Extrinsic Size</h3>
+<div class="paragraph">
+<p>Extrinsic size refers to the size of an element as defined by CSS properties such as <code>width</code> and <code>height</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.element {
+  width: 200px;
+  height: 100px;
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A set height can cause content to overflow if there is more content than the element has space to fit inside it.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_percentages"><a class="anchor" href="#_percentages"></a>Percentages</h3>
+<div class="paragraph">
+<p>Percentages in CSS are used to define sizes relative to the parent element&#8217;s size. This allows for flexible and responsive designs that adapt to different screen sizes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.element {
+  width: 50%; /* 50% of the parent element's width */
+  height: 50%; /* 50% of the parent element's height */
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_overflow"><a class="anchor" href="#_overflow"></a>Overflow</h3>
+<div class="paragraph">
+<p>When the content of an element exceeds its defined size, it can lead to overflow. CSS provides several properties to control how overflow is handled:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>overflow</strong>: Specifies how to handle overflow content. Possible values include <code>visible</code>, <code>hidden</code>, <code>scroll</code>, and <code>auto</code>.</p>
+</li>
+<li>
+<p><strong>overflow-x</strong>: Controls horizontal overflow.</p>
+</li>
+<li>
+<p><strong>overflow-y</strong>: Controls vertical overflow.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.element {
+  width: 200px;
+  height: 100px;
+  overflow: auto; /* Adds scrollbars if content overflows */
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_min_and_max_sizes"><a class="anchor" href="#_min_and_max_sizes"></a>Min and Max Sizes</h3>
+<div class="paragraph">
+<p>CSS allows you to set minimum and maximum sizes for elements using the <code>min-width</code>, <code>max-width</code>, <code>min-height</code>, and <code>max-height</code> properties. This is useful for ensuring that elements do not shrink below a certain size or grow beyond a certain size.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.element {
+  min-width: 100px;
+  max-width: 500px;
+  min-height: 50px;
+  max-height: 300px;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_layout"><a class="anchor" href="#_layout"></a>Layout</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Layout in CSS refers to the arrangement of elements on a web page. It involves understanding how to position elements, control their size, and create responsive designs that adapt to different screen sizes and resolutions.</p>
+</div>
+<div class="sect2">
+<h3 id="_floats"><a class="anchor" href="#_floats"></a>Floats</h3>
+<div class="paragraph">
+<p>Floats are a CSS property that allows elements to be taken out of the normal document flow and positioned to the left or right of their containing element. This is often used for text wrapping around images or creating multi-column layouts.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;h1&gt;Float example&lt;/h1&gt;
+
+&lt;div class="box"&gt;Float&lt;/div&gt;
+
+&lt;p&gt;Some text that wraps around the floated element.
+   This text will flow around the box that is floated to the left.&lt;/p&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.box {
+  float: left;
+  width: 200px;
+  margin: 10px;
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In the past, floats were commonly used to implement complex page layouts. Since there are newer, better layout techniques available, using floats in this way should be regarded as a legacy technique.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_static"><a class="anchor" href="#_static"></a>Static</h3>
+<div class="paragraph">
+<p>The default positioning scheme where elements are positioned according to the normal flow of the document. They are not affected by <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> properties.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;h1&gt;Static Positioning&lt;/h1&gt;
+&lt;div class="static-box"&gt;This is a static box.&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.static-box {
+  position: static;
+  background-color: lightblue;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_relative"><a class="anchor" href="#_relative"></a>Relative</h3>
+<div class="paragraph">
+<p>Elements are positioned relative to their normal position in the document flow. The top, right, bottom, and left properties can be used to adjust their position without affecting the layout of surrounding elements.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.static-box {
+  position: relative;
+  background-color: lightblue;
+  top: 20px; /* Moves the box down by 20 pixels */
+  left: 20px; /* Moves the box to the right by 20 pixels */
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>With <code>position: relative;</code>, the position of the element is modified after the element has taken its place in the normal flow. This means the element could overlap with other elements on the page.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_absolute"><a class="anchor" href="#_absolute"></a>Absolute</h3>
+<div class="paragraph">
+<p>Elements are positioned relative to the nearest positioned ancestor (an ancestor with a position other than static). If no such ancestor exists, they are positioned relative to the initial containing block (usually the viewport).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.static-box {
+  position: absolute;
+  background-color: lightblue;
+  top: 20px; /* Moves the box down by 20 pixels */
+  left: 20px; /* Moves the box to the right by 20 pixels */
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An absolutely positioned element is removed from the normal document flow and does not affect the position of other elements on the page. This can lead to overlapping elements if not managed carefully.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>THe use of <code>position: absolute;</code> is very useful for creating overlays, modals, or tooltips that need to appear on top of other content without affecting the layout of the page.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed"><a class="anchor" href="#_fixed"></a>Fixed</h3>
+<div class="paragraph">
+<p>Elements are positioned relative to the viewport and do not move when the page is scrolled. They are often used for headers, footers, or sidebars that should remain visible at all times.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.fixed-box {
+  position: fixed;
+  background-color: lightblue;
+  top: 0; /* Fixed to the top of the viewport */
+  left: 0; /* Fixed to the left of the viewport */
+  width: 100%;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sticky"><a class="anchor" href="#_sticky"></a>Sticky</h3>
+<div class="paragraph">
+<p>Elements are positioned based on the user&#8217;s scroll position. They behave like relative elements until a certain scroll position is reached, at which point they become fixed.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.sticky-box {
+  position: sticky;
+  background-color: lightblue;
+  top: 0;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When the user scrolls down, the sticky element will remain in its position until it reaches the top of the viewport, at which point it will stick there until the user scrolls back up.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_z_index"><a class="anchor" href="#_z_index"></a>Z-Index</h3>
+<div class="paragraph">
+<p>The <code>z-index</code> property controls the stacking order of positioned elements. Elements with a higher <code>z-index</code> value will appear in front of those with a lower value. This is particularly useful when you have overlapping elements and want to control which one appears on top.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.box {
+  position: absolute;
+  background-color: lightblue;
+  z-index: 10; /* Will appear above others with a lower z-index */
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_flexbox"><a class="anchor" href="#_flexbox"></a>Flexbox</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Flexbox, or the Flexible Box Layout, is a CSS layout model that allows for the design of complex layouts with ease. It provides a more efficient way to lay out, align, and distribute space among items in a container, even when their size is unknown or dynamic. Some common scenarios where Flexbox is particularly useful include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Aligning items in a row or column</p>
+</li>
+<li>
+<p>Distributing space between items</p>
+</li>
+<li>
+<p>Centering items both vertically and horizontally</p>
+</li>
+<li>
+<p>Creating responsive layouts that adapt to different screen sizes</p>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Flexbox Case-Study</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create an HTML page with a header and three articles</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;header&gt;
+  &lt;h1&gt;Sample flexbox example&lt;/h1&gt;
+&lt;/header&gt;
+&lt;section&gt;
+  &lt;article&gt;
+    &lt;h2&gt;First article&lt;/h2&gt;
+    &lt;p&gt;Content…&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Second article&lt;/h2&gt;
+    &lt;p&gt;Content…&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Third article&lt;/h2&gt;
+    &lt;p&gt;Content…&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use CSS to apply some basic styling</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">body {
+  font-family: sans-serif;
+  margin: 0;
+}
+header {
+  background: purple;
+  height: 100px;
+}
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+article {
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+}</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_flex_container"><a class="anchor" href="#_flex_container"></a>Flex Container</h3>
+<div class="paragraph">
+<p>In Flexbox, a flex container is an element that has its display property set to <code>flex</code> or <code>inline-flex</code>. This container will hold the flex items (the child elements) and control their layout.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Flex Container</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use CSS to make the section a flex container</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">section {
+  display: flex;
+}</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>By defining the section as a flex container, its child elements (the articles) became flex items. By default, this arranges the articles into a single row and the width of each article is determined by its content.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_flex_direction"><a class="anchor" href="#_flex_direction"></a>Flex Direction</h3>
+<div class="paragraph">
+<p>The <code>flex-direction</code> property specifies the direction in which the flex items are placed in the flex container. The default value is <code>row</code>, which arranges the items horizontally. Other possible values include <code>column</code>, <code>row-reverse</code>, and <code>column-reverse</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">section {
+  display: flex;
+  flex-direction: column;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wrapping"><a class="anchor" href="#_wrapping"></a>Wrapping</h3>
+<div class="paragraph">
+<p>The <code>flex-wrap</code> property controls whether the flex items should wrap onto multiple lines if they cannot fit in a single line. The default value is <code>nowrap</code>, which means all items will be on one line. Other values include <code>wrap</code> and <code>wrap-reverse</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_flexible_sizing"><a class="anchor" href="#_flexible_sizing"></a>Flexible Sizing</h3>
+<div class="paragraph">
+<p>The <code>flex</code> property allows you to specify how much a flex item should grow or shrink relative to the other items in the flex container. If all flex items have the same <code>flex</code> value, they will take up equal space in the container. If one item has a larger <code>flex</code> value, it will take up proportionally more space than the others.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Flexible Sizing</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use the <code>flex</code> property to distribute the available space equally among all the articles</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">article {
+  flex: 1;
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use a selector to cause the thrid article to take up twice as much space as the others</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">article:nth-child(3) {
+  flex: 2;
+}</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>A minimum size can be set for flex items that will be applied before the remaining space is distributed.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">article {
+  flex: 1 100px;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alignment"><a class="anchor" href="#_alignment"></a>Alignment</h3>
+<div class="paragraph">
+<p>Flexbox provides several properties for aligning items within the flex container. The <code>justify-content</code> property controls the alignment of items along the main axis (horizontal by default), while the <code>align-items</code> property controls the alignment along the cross axis (vertical by default).</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Flexbox Alignment</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create an HTML page with a collection of buttons</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div&gt;
+  &lt;button&gt;One&lt;/button&gt;
+  &lt;button&gt;Two&lt;/button&gt;
+  &lt;button&gt;Three&lt;/button&gt;
+  &lt;button&gt;Four&lt;/button&gt;
+  &lt;button&gt;Five&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Define the <code>&lt;div&gt;</code> as a flex container and add some styling to help visualize the alignment of the buttons</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">div {
+  display: flex;
+  height: 100px;
+  border: 1px solid black;
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add a <code>justify-content</code> property to align the buttons along the main axis</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">justify-content: space-around;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add a <code>align-items</code> property to align the buttons along the cross axis</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">align-items: center;</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>You can override the default alignment of individual items using the <code>align-self</code> property. This allows you to align a specific item differently from the others in the flex container.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">button:first-child {
+  align-self: flex-end;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_css_grid_layout"><a class="anchor" href="#_css_grid_layout"></a>CSS Grid Layout</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CSS Grid Layout is another modern layout system that allows developers to create complex, responsive web designs. It provides a two-dimensional grid-based layout system, enabling the arrangement of elements in rows and columns. This makes it particularly useful for creating layouts that require precise control over the placement and alignment of elements.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Grid Case-Study</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create an HTML page with <code>&lt;div&gt;</code> container and a number of child <code>&lt;div&gt;</code> elements</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="container"&gt;
+  &lt;div&gt;One&lt;/div&gt;
+  &lt;div&gt;Two&lt;/div&gt;
+  &lt;div&gt;Three&lt;/div&gt;
+  &lt;div&gt;Four&lt;/div&gt;
+  &lt;div&gt;Five&lt;/div&gt;
+  &lt;div&gt;Six&lt;/div&gt;
+  &lt;div&gt;Seven&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use CSS to apply some basic styling to the child elements</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.container &gt; div {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(207 232 220);
+  border: 2px solid rgb(79 185 227);
+}</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_grid_container"><a class="anchor" href="#_grid_container"></a>Grid Container</h3>
+<div class="paragraph">
+<p>Using grid payout is similar to using flex layout in that the parent element can be defined as a grid container causing the child elements will behave as grid items. By default, using <code>display: grid</code> will create a single column layout.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.container {
+    display: grid;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_grid_template_columns"><a class="anchor" href="#_grid_template_columns"></a>Grid Template Columns</h3>
+<div class="paragraph">
+<p>To define the number of columns in a grid layout, the <code>grid-template-columns</code> property is used. This property allows you to specify the size of each column in the grid.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.container {
+  display: grid;
+  grid-template-columns: 200px 100px 100px;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Instead of providing fixed pixel values, you can also use the <code>fr</code> unit, which stands for "fractional unit". The <code>fr</code> unit allows you to distribute available space in the grid container among the columns.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gaps"><a class="anchor" href="#_gaps"></a>Gaps</h3>
+<div class="paragraph">
+<p>The <code>gap</code> property is used to define the space between grid items. It can be applied to both rows and columns, allowing for consistent spacing in the grid layout.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_css_preprocessors"><a class="anchor" href="#_css_preprocessors"></a>CSS Preprocessors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CSS preprocessors are scripting languages that extend the capabilities of CSS, allowing developers to write more maintainable and efficient stylesheets. They introduce features like variables, nesting, mixins, and functions, which help in organizing and reusing styles across a project. Preprocessors compile down to standard CSS, making them compatible with all browsers.</p>
+</div>
+<div class="sect2">
+<h3 id="_sass"><a class="anchor" href="#_sass"></a>Sass</h3>
+<div class="paragraph">
+<p>Sass (Syntactically Awesome Style Sheets) is a popular CSS preprocessor and uses files with the <code>.scss</code> or <code>.sass</code> extension. A command-line tool ca be used to compile Sass files into standard CSS files.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">sass input.scss output.css</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_variables"><a class="anchor" href="#_variables"></a>Variables</h4>
+<div class="paragraph">
+<p>Variables in Sass allow you to store values that can be reused throughout your stylesheets. This is particularly useful for maintaining consistency in colors, fonts, and other design elements.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-scss hljs" data-lang="scss">$primary-color: #3498db;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mixins"><a class="anchor" href="#_mixins"></a>Mixins</h4>
+<div class="paragraph">
+<p>Mixins in Sass allow you to create reusable blocks of styles that can be included in multiple selectors. This helps reduce code duplication and makes it easier to maintain styles.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-scss hljs" data-lang="scss">@mixin rounded-corners($radius) {
+  border-radius: $radius;
+}
+.box {
+  @include rounded-corners(10px);
+  background-color: $primary-color;
+  padding: 20px;
+}
+.box-large {
+  @include rounded-corners(20px);
+  background-color: darken($primary-color, 10%);
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_less"><a class="anchor" href="#_less"></a>Less</h3>
+<div class="paragraph">
+<p>Less is another popular CSS preprocessor that extends CSS with features like variables, nesting, and mixins. It uses files with the <code>.less</code> extension and can be compiled into standard CSS using a command-line tool or build process.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">lessc input.less output.css</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_variables_2"><a class="anchor" href="#_variables_2"></a>Variables</h4>
+<div class="paragraph">
+<p>Variables in Less work similarly to Sass, allowing you to define reusable values for colors, fonts, and other styles.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-less hljs" data-lang="less">@primary-color: #3498db;
+@font-stack: 'Helvetica Neue', sans-serif;
+
+body {
+  font-family: @font-stack;
+  color: @primary-color;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mixins_2"><a class="anchor" href="#_mixins_2"></a>Mixins</h4>
+<div class="paragraph">
+<p>Mixins in Less allow you to create reusable styles that can be included in multiple selectors, similar to Sass.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-less hljs" data-lang="less">.rounded-corners(@radius) {
+  border-radius: @radius;
+}
+.box {
+  .rounded-corners(10px);
+  background-color: @primary-color;
+  padding: 20px;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_css_frameworks"><a class="anchor" href="#_css_frameworks"></a>CSS Frameworks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CSS frameworks are pre-prepared libraries that are meant to be used as a base for starting a project. They provide a set of CSS classes and components that can be used to quickly build responsive and visually appealing web pages. Frameworks often include styles for typography, forms, buttons, navigation, and other common UI elements.</p>
+</div>
+<div class="sect2">
+<h3 id="_bootstrap"><a class="anchor" href="#_bootstrap"></a>Bootstrap</h3>
+<div class="paragraph">
+<p>Bootstrap is one of the most popular CSS frameworks, developed by Twitter. It provides a comprehensive set of styles and components that help developers create responsive and mobile-first web applications. Bootstrap includes a grid system, pre-styled components, and JavaScript plugins for interactivity.</p>
+</div>
+<div class="paragraph">
+<p>Bootstrap&#8217;s grid system allows for flexible layouts that adapt to different screen sizes. It uses a series of containers, rows, and columns to structure content. The framework also includes utility classes for spacing, alignment, and visibility.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tailwind_css"><a class="anchor" href="#_tailwind_css"></a>Tailwind CSS</h3>
+<div class="paragraph">
+<p>Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs without leaving your HTML. Instead of providing pre-designed components, Tailwind allows developers to compose styles directly in their markup, promoting a more modular and reusable approach to styling.</p>
+</div>
+<div class="paragraph">
+<p>Tailwind&#8217;s utility classes cover a wide range of CSS properties, including layout, typography, colors, and more. This approach enables developers to create unique designs while maintaining consistency across their projects.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

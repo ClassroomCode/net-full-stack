@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TypeScript :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="client-side" data-version="202606">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">Client Side Technologies</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="html.html">HTML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="css.html">CSS</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="javascript.html">JavaScript</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="typescript.html">TypeScript</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Client Side Technologies</span>
+    <span class="version">202606</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">Client Side Technologies</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">202606</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Client Side Technologies</a></li>
+    <li><a href="typescript.html">TypeScript</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/client-side/content/modules/ROOT/pages/typescript.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">TypeScript</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>TypeScript is a typed superset of JavaScript that is converted (transpiled) into JavaScript prior to execution. What TypeScript adds on top of JavaScript is TypeScript&#8217;s type system.</p>
+</div>
+<div class="paragraph">
+<p>The main benefit of TypeScript is the ability to highlight unexpected behavior during development, reducing the chance of runtime bugs.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Since TypeScript is a superset of JavaScript, all valid JavaScript code is also valid TypeScript code.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The basic types in TypeScript include <code>boolean</code>, <code>number</code>, <code>string</code>, and <code>array</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">let msg: string = 'Hello';
+
+function getGreeting(name: string, message: string) : string {
+  return `${message}, ${name}`;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_type_inference"><a class="anchor" href="#_type_inference"></a>Type Inference</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>TypeScript can infer the type of a variable based on its assigned value and generate a compiler error in case of a type-mismatch.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">let msg = 'Hello';
+msg = 'Goodbye';
+msg = 6;  // compiler error</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>any</code> type can be used to disable TypeScript&#8217;s type enforcement (will behave like JavaScript would).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">let msg: any = 'Hello';
+msg = 'Goodbye';
+msg = 6;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_custom_types"><a class="anchor" href="#_custom_types"></a>Custom Types</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can explicitly define the shape of a custom type by using the <code>interface</code> keyword.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">interface User {
+  name: string;
+  id: number;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The custom type can then be used with a type annotation and checked by the compiler.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">const user: User = {
+  name: "Bill Gates",
+  id: 1,
+};
+
+function checkUser(user: User) : boolean { ... }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_unions"><a class="anchor" href="#_unions"></a>Unions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With a union, you can declare that a type might be one of many types.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">function wrapInArray(obj: string | string[]) : void {
+  if (typeof obj === "string") { ... }
+  ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Unions are common in front-end frameworks for functions that might not return a value.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">function getUser(id: number) : User | undefined { }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generics"><a class="anchor" href="#_generics"></a>Generics</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An array in JavaScript can contain a mix of different types.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">const arr = [1, "two", 3];</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Generics can be used to enforce the type of the elements for an array.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">const arr: Array&lt;number&gt; = [1, 2, 3];</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In the previous example with mixed types, <code>arr</code> in TypeScript would have an inferred type of <code>Array&lt;string | number&gt;</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_structural_typing"><a class="anchor" href="#_structural_typing"></a>Structural Typing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When checking types, TypeScript only requires that two objects have the same shape.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">interface Point {
+  x: number;
+  y: number;
+}
+
+function logPoint(p: Point) {
+  console.log(`${p.x}, ${p.y}`);
+}
+
+const point = { x: 12, y: 26 };
+logPoint(point);  // acceptable since point has the right "shape"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The shape-matching only requires a subset of the object&#8217;s fields to match.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">const point = { x: 12, y: 26, z: 15 };
+logPoint(point);  // acceptable since point has everything that Point defines</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

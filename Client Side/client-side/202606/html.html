@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="client-side" data-version="202606">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">Client Side Technologies</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="html.html">HTML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="css.html">CSS</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="javascript.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="typescript.html">TypeScript</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Client Side Technologies</span>
+    <span class="version">202606</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">Client Side Technologies</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">202606</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Client Side Technologies</a></li>
+    <li><a href="html.html">HTML</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/client-side/content/modules/ROOT/pages/html.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">HTML</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>HTML (HyperText Markup Language) is used to define the meaning and structure of web content.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hypertext: Content that allows for a reader to navigate to related content through embedded hyperlinks.</p>
+</li>
+<li>
+<p>Markup language: A text-encoding system which specifies the structure and formatting of a document.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Many tools exist that can validate HTML documents. These tools can check for errors in the markup and ensure that a document conforms to the HTML standards. One such tool can be found at <a href="https://validator.w3.org" class="bare">https://validator.w3.org</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web. The W3C has published several versions of HTML, including HTML 4.01 and XHTML 1.0. However, the Web Hypertext Application Technology Working Group (WHATWG) was formed in 2004 in response to the slow development of W3C standards. The WHATWG steering group includes many industry leaders such as Apple, Google, Mozilla, and Microsoft. IN 2019, the W3C announced that WHATWG would be the sole publisher of the HTML and DOM standards. The HTML "living standard" can be found at <a href="https://html.spec.whatwg.org" class="bare">https://html.spec.whatwg.org</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>XHTML is a term that was historically used to describe HTML documents written to conform to XML&#8217;s stricter syntax rules. In 2002, the World Wide Web Consortium (W3C) recommended that developers should migrate from HTML 4.01 to XHTML 1.0. However, this effort did not gain traction, and the W3C eventually abandoned XHTML in favor of HTML5.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here is an example of a simple HTML document:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!doctype html&gt;
+&lt;html lang="en-US"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    &lt;title&gt;Simple page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;This is a paragraph of text&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_doctype"><a class="anchor" href="#_doctype"></a>Doctype</h3>
+<div class="paragraph">
+<p>When an HTML page is loaded, the web browser must determine how to interpret the document. This is done by using a DOCTYPE declaration, which is the first line of an HTML document. The simplest doctype and the one recommended by current HTML standards is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!doctype html&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This doctype will ensure the web browser uses "full standards mode". Other doctypes (or a missing doctype) can cause the web browser to use "quirks mode" or "limited quirks mode". Quirks mode is a compatibility mode that allows older web pages to be displayed correctly, even if they do not conform to modern standards.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_elements_and_tags"><a class="anchor" href="#_elements_and_tags"></a>Elements and Tags</h3>
+<div class="paragraph">
+<p>HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. An element is identified by a tag, which is a keyword surrounded by angle brackets. Tags typically come in pairs, with an opening tag and a closing tag. The closing tag has a forward slash before the tag name.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;title&gt;My Web Page&lt;/title&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Element names are not case-sensitive. However, the convention and recommended practice is to write tags exclusively in lowercase.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Some elements do not contain any content and are self-closing. These elements are called "void elements" and do not require a closing tag.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;br&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The complete list of void elements in HTML5 is: <code>area</code>, <code>base</code>, <code>br</code>, <code>col</code>, <code>command</code>, <code>embed</code>, <code>hr</code>, <code>img</code>, <code>input</code>, <code>keygen</code>, <code>link</code>, <code>meta</code>, <code>param</code>, <code>source</code>, <code>track</code>, and <code>wbr</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_attributes"><a class="anchor" href="#_attributes"></a>Attributes</h3>
+<div class="paragraph">
+<p>Attributes are used to provide additional information about an element. They are always specified in the opening tag and consist of a name and a value. The name and value are separated by an equals sign, and the value is typically enclosed in quotes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;img src="pic.png" alt="My Picture"&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>HTML5 does allow for attribute values to be specified using single quotes or no quotes at all (with some limitations):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;img src='pic.png' alt='My Picture'&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;img src=pic.png alt=My Picture&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>However, it is recommended to always use double quotes for consistency and readability.</p>
+</div>
+<div class="paragraph">
+<p>Some attributes are considered to be "boolean attributes". These attributes do not require a value and are either present or absent.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;input type="checkbox" checked&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It is also acceptable to include a value that matches the attribute name but this is ignored by the parser.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;input type="checkbox" checked="checked"&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_html_element"><a class="anchor" href="#_html_element"></a>HTML Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;html&gt;</code> element acts as the root element of the document and should include a <code>lang</code> attribute to identify the primary language of the document.</p>
+</div>
+<div class="paragraph">
+<p>The <code>lang</code> attribute value made of hyphen-separated language subtags, where each subtag indicates a certain property of the language:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The first subtag is the primary language subtag, which is a two-letter code defined by ISO 639-1.</p>
+</li>
+<li>
+<p>The second subtag is the optional subtag that indicates the region or country, which is a two-letter code defined by ISO 3166-1 alpha-2.</p>
+</li>
+<li>
+<p>The third subtag is the optional variant subtag, which is a string that indicates a specific dialect or variation of the language.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_head_element"><a class="anchor" href="#_head_element"></a>Head Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;head&gt;</code> element acts as a container for elements that belong to the HTML document but don&#8217;t directly define visible content. This includes things like keywords and a page description that you want to appear in search results, CSS to style the content, and more.</p>
+</div>
+<div class="sect3">
+<h4 id="_meta_elements"><a class="anchor" href="#_meta_elements"></a>Meta Elements</h4>
+<div class="paragraph">
+<p>HTML <code>&lt;meta&gt;</code> elements are used to specify metadata about the HTML document. Metadata is data that describes other data. Two <code>&lt;meta&gt;</code> elements that are typically always used include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>charset</code> - This specifies the character encoding for the HTML document. The most common value is <code>utf-8</code>, which supports a wide range of characters from different languages.</p>
+</li>
+<li>
+<p><code>viewport</code> - This specifies how the document should be displayed on different devices. The most common value is <code>width=device-width</code>, which sets the width of the viewport to the width of the device. This is important for responsive design, where the layout of the page changes based on the size of the screen.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_title_element"><a class="anchor" href="#_title_element"></a>Title Element</h4>
+<div class="paragraph">
+<p>The <code>&lt;title&gt;</code> element is used to specify the title of the HTML document. The title is displayed in the browser&#8217;s title bar or tab and is also used by search engines to identify the page. The title should be descriptive and concise.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For a public website, a title between 55 and 65 characters long is considered ideal for SEO purposes. Titles longer than 65 characters will tend to be truncated when displayed in search results.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_body_element"><a class="anchor" href="#_body_element"></a>Body Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;body&gt;</code> element is used to define the visible content of the HTML document. This includes text, images, links, and other elements that are displayed on the page.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_whitespace"><a class="anchor" href="#_whitespace"></a>Whitespace</h3>
+<div class="paragraph">
+<p>Whitespace in HTML is used to separate elements and make the code more readable but the browser will ignore extra whitespace and treat it as a single space.</p>
+</div>
+<div class="paragraph">
+<p>The following two snippets of HTML would produce identical results when rendered in a web browser:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;This is some text.&lt;/p&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;This
+    is
+        some text.&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_comments"><a class="anchor" href="#_comments"></a>Comments</h3>
+<div class="paragraph">
+<p>HTML comments are used to insert notes or explanations in the code that will not be displayed in the browser. Comments are enclosed in <code>&lt;!--</code> and <code>-&#8594;</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;This is some text.&lt;/p&gt;
+&lt;!-- This is a comment --&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Although HTML comments are ignored by the browser, they can still be seen in the page source. Therefore, it is not recommended to use comments to hide sensitive information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_text"><a class="anchor" href="#_text"></a>Text</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most structured text consists of headings, paragraphs, and lists. This is true not just for HTML but for things like newspapers, textbooks, and magazines. These elements may be styled differently, but they are still the same elements.</p>
+</div>
+<div class="sect2">
+<h3 id="_paragraphs"><a class="anchor" href="#_paragraphs"></a>Paragraphs</h3>
+<div class="paragraph">
+<p>In HTML, each paragraph should be within a &lt;p&gt; element:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;This is some text.&lt;/p&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>How the text is displayed depends on the CSS styles applied to the &lt;p&gt; element. By default, browsers will display paragraphs with a blank line before and after them. This is not part of the HTML markup but rather a default style applied by the browser.</p>
+</div>
+<div class="paragraph">
+<p>A <code>&lt;p&gt;</code> element is a block-level element which means that it takes the full-width of its parent. A <code>&lt;p&gt;</code> element can contain inline elements such as links and images, but it cannot contain another block-level elements such as a <code>&lt;div&gt;</code>, an <code>&lt;h1&gt;</code>, or another <code>&lt;p&gt;</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_headings"><a class="anchor" href="#_headings"></a>Headings</h3>
+<div class="paragraph">
+<p>Heading help to make a web page more readable by breaking up the text into sections. They also help search engines and screen readers to understand the structure of a page and its content.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;h1&gt;My Topic&lt;/h1&gt;
+&lt;p&gt;This is some text.&lt;/p&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Six heading elements are defined in HTML: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, and <code>&lt;h6&gt;</code>. Each element represents a different level of content in the document with <code>&lt;h1&gt;</code> representing the top or main heading.</p>
+</div>
+<div class="paragraph">
+<p>Like with <code>&lt;p&gt;</code> elements, how a specific heading appears (font, size, etc.) will be affected by any applied CSS or else the browser will use its own default style.</p>
+</div>
+<div class="paragraph">
+<p>Headings are also block-level elements and therefore cannot contain other block-level elements.</p>
+</div>
+<div class="paragraph">
+<p>Some general best practices for headings include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use only one <code>&lt;h1&gt;</code> element per page.</p>
+</li>
+<li>
+<p>Use headings in the correct numerical order to create a logical hierarchy of content.</p>
+</li>
+<li>
+<p>Try to use no more than three levels of headings on a page.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_emphasis_and_importance"><a class="anchor" href="#_emphasis_and_importance"></a>Emphasis and Importance</h3>
+<div class="paragraph">
+<p>Emphasis and importance are used to indicate that a piece of text is important or should be emphasized. In HTML, this is done using the <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> inline elements.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;&lt;em&gt;This&lt;/em&gt; is some &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By default, the text inside an <code>&lt;em&gt;</code> element is displayed in italics, while the text inside a <code>&lt;strong&gt;</code> element is displayed in bold but both are <strong>semantic</strong> elements.</p>
+</div>
+<div class="paragraph">
+<p>A semantic element is used to convey meaning about the content it contains and not dictate presentation style. This is important for accessibility and search engine optimization (SEO). For example, screen readers will read the text inside an <code>&lt;em&gt;</code> element with emphasis, while search engines may use the text inside a <code>&lt;strong&gt;</code> element to determine the importance of the content.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In HTML5, elements that are not semantic, such as <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> should be avoided in favor of semantic elements.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lists"><a class="anchor" href="#_lists"></a>Lists</h3>
+<div class="paragraph">
+<p>HTML defines three different types of lists: <strong>ordered</strong> lists, <strong>unordered</strong> lists, and <strong>description</strong> lists. Each type of list has its own specific markup.</p>
+</div>
+<div class="sect3">
+<h4 id="_unordered_lists"><a class="anchor" href="#_unordered_lists"></a>Unordered Lists</h4>
+<div class="paragraph">
+<p>An unordered list is used to create a list of items where the order does not matter. In HTML, an unordered list is created using the <code>&lt;ul&gt;</code> element, and each item in the list is defined using the <code>&lt;li&gt;</code> element.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The default bullet style is a solid circle, but this can be changed using CSS.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ordered_lists"><a class="anchor" href="#_ordered_lists"></a>Ordered Lists</h4>
+<div class="paragraph">
+<p>An ordered list is used to create a list of items where the order does matter. In HTML, an ordered list is created using the <code>&lt;ol&gt;</code> element, and each item in the list is defined using the <code>&lt;li&gt;</code> element.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The default numbering style is Arabic numerals (1, 2, 3), but this can be changed using CSS.</p>
+</div>
+<div class="paragraph">
+<p>Unordered and ordered lists can be nested inside each other to create sublists. This is done by placing one list inside another list item.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;ul&gt;
+  &lt;li&gt;Item 1
+    &lt;ul&gt;
+      &lt;li&gt;Subitem 1&lt;/li&gt;
+      &lt;li&gt;Subitem 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_description_lists"><a class="anchor" href="#_description_lists"></a>Description Lists</h4>
+<div class="paragraph">
+<p>A description list is used to create a list of items with associated descriptions such as terms and definitions, or questions and answers. In HTML, a description list is created using the <code>&lt;dl&gt;</code> element, and each item in the list is defined using the <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> elements.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;dl&gt;
+  &lt;dt&gt;Term 1&lt;/dt&gt;
+  &lt;dd&gt;Description 1&lt;/dd&gt;
+  &lt;dt&gt;Term 2&lt;/dt&gt;
+  &lt;dd&gt;Description 2&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>&lt;dt&gt;</code> element is used to define the term, while the <code>&lt;dd&gt;</code> element is used to define the description. Description lists can also be nested inside each other to create sublists.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_links"><a class="anchor" href="#_links"></a>Links</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hyperlinks allow you to link documents to other documents or to link to a specific part of a document. A basic link is created using the <code>&lt;a&gt;</code> tag, with the <code>href</code> attribute specifying the URL of the page to link to. The text between the opening and closing <code>&lt;a&gt;</code> tags is what will be displayed as the clickable link.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;p&gt;
+  This is a link to the &lt;a href="https://www.w3.org"&gt;W3C homepage&lt;/a&gt;.
+&lt;/p&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The anchor element can also be used to turn a block-level element into a link.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;a href="https://www.w3.org"&gt;
+  &lt;h1&gt;W3C&lt;/h1&gt;
+&lt;/a&gt;
+&lt;p&gt;World Wide Web Consortium&lt;/p&gt;</pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_title_attribute"><a class="anchor" href="#_title_attribute"></a>Title Attribute</h3>
+<div class="paragraph">
+<p>The <code>title</code> attribute can be added to the <code>&lt;a&gt;</code> tag to provide additional information about the link. This information is displayed as a tooltip when the user hovers over the link.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;a href="https://www.w3.org" title="World Wide Web Consortium"&gt;
+  W3C homepage
+&lt;/a&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_urls_and_paths"><a class="anchor" href="#_urls_and_paths"></a>URLs and Paths</h3>
+<div class="paragraph">
+<p>The <code>href</code> attribute can contain absolute or relative URLs. An absolute URL includes the full path to the resource, while a relative URL is relative to the current document&#8217;s location.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;a href="https://www.w3.org"&gt;Absolute URL&lt;/a&gt;
+&lt;a href="docs/page.html"&gt;Relative URL&lt;/a&gt;
+&lt;a href="../info/about.html"&gt;Another relative URL&lt;/a&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If a path starts with a slash, The web browser will use the current page&#8217;s base URL to create an absolute path.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;a href="/info/about.html"&gt;About Us&lt;/a&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the above link was on a page located at <code>https://www.mysite.com/app/page.html</code>, the link would take the user to <code>https://www.mysite.com/info/about.html</code></p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Using a root-relative path (<code>/</code>) can produce unexpected results when viewing the content on a local file system. It is recommended to use relative paths instead.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_document_fragments"><a class="anchor" href="#_document_fragments"></a>Document Fragments</h3>
+<div class="paragraph">
+<p>You can link to a specific part of a document by using a fragment identifier. This is done by appending a <code>#</code> followed by the ID of the element you want to link to.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;h2 id="mailing-address"&gt;Mailing address&lt;/h2&gt;</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;p&gt;
+  Contact us via &lt;a href="contact.html#mailing-address"&gt;mail&lt;/a&gt;.
+&lt;/p&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_target_attribute"><a class="anchor" href="#_target_attribute"></a>Target Attribute</h3>
+<div class="paragraph">
+<p>By default, when a link is clicked, the browser will navigate to the linked page in the same window or tab. However, you can change this behavior using the <code>target</code> attribute of the <code>&lt;a&gt;</code> tag.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;a href="https://www.w3.org" target="_blank"&gt;W3C&lt;/a&gt;</pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When a link will open a new tab, it is a common practice to provide the user with a visual cue such as an icon next to the link text.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_images"><a class="anchor" href="#_images"></a>Images</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To include an image in an HTML document, the <code>&lt;img&gt;</code> element is used. The <code>src</code> attribute specifies the path to the image file, and the <code>alt</code> attribute provides alternative text for the image if it cannot be displayed.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;img src="path/to/image.jpg" alt="Description of image"&gt;</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>&lt;img&gt;</code> element is a void element (self-closing tag) and does not require a closing tag.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_width_and_height"><a class="anchor" href="#_width_and_height"></a>Width and Height</h3>
+<div class="paragraph">
+<p>Elements like <code>&lt;img&gt;</code> and <code>&lt;video&gt;</code> are referred to as replaced elements. This is because the element&#8217;s content and size are defined by an external resource and not by the contents of the element itself. This means that the content of the page may shift around when the image or video loads, as the browser does not know the size of the element until the resource is loaded.</p>
+</div>
+<div class="paragraph">
+<p>To prevent this, the <code>width</code> and <code>height</code> attributes can be used to specify the size of the image or video. This allows the browser to reserve space for the element before it is loaded.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;img src="path/to/image.jpg"
+     alt="Description of image"
+     width="300"
+     height="200"&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The width and height are specified in pixels, and the aspect ratio of the image will be maintained. If the image is larger than the specified size, it will be scaled down to fit. If it is smaller, it will be displayed at its original size.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>width</code> and <code>height</code> attributes should be used to specify the actual size of an image, and should not be used to resize an image for display. If you do need to alter an image&#8217;s size, you should modify the image itself or use CSS if necessary.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_image_formats"><a class="anchor" href="#_image_formats"></a>Image Formats</h3>
+<div class="paragraph">
+<p>The HTML standard does not specify which image formats are supported. Common formats such as <code>jpeg</code>, <code>png</code>, and <code>gif</code> are universally supported but support for other newer formats may vary among different web browsers.</p>
+</div>
+<div class="paragraph">
+<p>The <code>&lt;picture&gt;</code> element can be used to specify multiple image sources for different formats. This allows the browser to choose the best format for the user&#8217;s device and browser.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;picture&gt;
+  &lt;source srcset="diagram.svg" type="image/svg+xml"&gt;
+  &lt;source srcset="diagram.webp" type="image/webp"&gt;
+  &lt;source srcset="diagram.jpg" type="image/jpeg"&gt;
+  &lt;img src="diagram.jpg" alt="Description of image"&gt;
+&lt;/picture&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_image_link"><a class="anchor" href="#_image_link"></a>Image Link</h3>
+<div class="paragraph">
+<p>An <code>&lt;img&gt;</code> element can be used as a link by wrapping it in an <code>&lt;a&gt;</code> tag.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;a href="https://www.example.com"&gt;
+  &lt;img src="path/to/image.jpg" alt="Description of image"&gt;
+&lt;/a&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tables"><a class="anchor" href="#_tables"></a>Tables</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A table is a structured arrangement of data, typically organized in rows and columns. Tables are used to present information in a clear and concise manner, making it easier for users to read and understand the data. In HTML, tables are created using the <code>&lt;table&gt;</code> element, along with other related elements such as <code>&lt;tr&gt;</code> (table row), <code>&lt;th&gt;</code> (table header), and <code>&lt;td&gt;</code> (table data).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Tables should be used for tabular data only. Do not use tables for layout purposes, as this can lead to accessibility issues and make the content difficult to read on different devices.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_column_headers"><a class="anchor" href="#_column_headers"></a>Column Headers</h3>
+<div class="paragraph">
+<p>The <code>&lt;th&gt;</code> element should be used to identify column headers both visually and semantically. Column headers are bold and centered by default but this can be changed via CSS.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_spanning_rows_and_columns"><a class="anchor" href="#_spanning_rows_and_columns"></a>Spanning Rows and Columns</h3>
+<div class="paragraph">
+<p>The <code>colspan</code> and <code>rowspan</code> attributes can be used to merge multiple cells into one. The <code>colspan</code> attribute specifies the number of columns a cell should span, while the <code>rowspan</code> attribute specifies the number of rows a cell should span.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th colspan="2"&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="2"&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sections"><a class="anchor" href="#_sections"></a>Sections</h3>
+<div class="paragraph">
+<p>The <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> elements can be used to group the header, body, and footer sections of a table. This can help with styling and accessibility, as well as improve the performance of the table when rendering large datasets.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+      &lt;th&gt;Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+      &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+      &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+      &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+      &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="3"&gt;Footer&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_caption"><a class="anchor" href="#_caption"></a>Caption</h3>
+<div class="paragraph">
+<p>The <code>&lt;caption&gt;</code> element can be used to provide a title or description for the table. This is typically displayed above the table and can help users understand the purpose of the table.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;table&gt;
+  &lt;caption&gt;Table Caption&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_forms"><a class="anchor" href="#_forms"></a>Forms</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>HTML forms provide a way for users to manipulate a user interface (UI) and input data.</p>
+</div>
+<div class="sect2">
+<h3 id="_form_element"><a class="anchor" href="#_form_element"></a>Form Element</h3>
+<div class="paragraph">
+<p>Forms are created using the <code>&lt;form&gt;</code> element, which can contain various input elements such as text fields, checkboxes, radio buttons, and submit buttons.</p>
+</div>
+<div class="paragraph">
+<p>The <code>&lt;form&gt;</code> element can also include attributes such as <code>action</code> and <code>method</code>, which specify the URL to send the form data to and the HTTP method to use (GET or POST), respectively.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;form action="/login" method="POST"&gt;
+&lt;/form&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A GET action will append the form data to the URL as query parameters, while a POST action will send the data in the request body. GET should typically be used for idempotent requests (performing a search), while POST should be used for non-idempotent requests (charging a credit card).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_input_elements"><a class="anchor" href="#_input_elements"></a>Input Elements</h3>
+<div class="paragraph">
+<p>The <code>&lt;input&gt;</code> element is used to create various types of input fields, such as text fields, checkboxes, radio buttons, and file uploads.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;input type="text" name="username" placeholder="Enter your username"&gt;
+&lt;input type="password" name="password" placeholder="Enter your password"&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>type</code>: Specifies the type of input field to create. Common types include <code>text</code>, <code>password</code>, <code>email</code>, <code>number</code>, <code>checkbox</code>, <code>radio</code>, <code>file</code>, and <code>submit</code>.</p>
+</li>
+<li>
+<p><code>name</code>: Specifies the name of the input field, which is used to identify the field when the form is submitted.</p>
+</li>
+<li>
+<p><code>placeholder</code>: Provides a short hint that describes the expected value of the input field. This text is displayed inside the input field when it is empty.</p>
+</li>
+<li>
+<p><code>value</code>: Specifies the default value of the input field. This is the value that will be submitted with the form if the user does not change it.</p>
+</li>
+<li>
+<p><code>required</code>: Specifies that the input field must be filled out before the form can be submitted. This is a boolean attribute, so it does not require a value.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;input type="text" name="username" required&gt;</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_label_elements"><a class="anchor" href="#_label_elements"></a>Label Elements</h3>
+<div class="paragraph">
+<p><code>&lt;label&gt;</code> elements provide a way to associate a text label with an input field. This improves accessibility and usability.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>for</code> attribute of the <code>&lt;label&gt;</code> element should match the <code>id</code> attribute of the associated input field. This creates a relationship between the label and the input field, allowing screen readers to announce the label when the input field is focused.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_button_element"><a class="anchor" href="#_button_element"></a>Button Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;button&gt;</code> element is used to create a clickable button that can be used to submit a form or trigger a JavaScript function.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;form action="/login" method="POST"&gt;
+  ...
+  &lt;button type="submit"&gt;Login&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When included inside a form, the <code>&lt;button&gt;</code> element will submit the form by default. To prevent this behavior, you can set the <code>type</code> attribute to <code>button</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_radio_buttons"><a class="anchor" href="#_radio_buttons"></a>Radio Buttons</h3>
+<div class="paragraph">
+<p>Radio buttons are used to allow users to select one option from a group of options. They are created using the <code>&lt;input&gt;</code> element with the <code>type</code> attribute set to <code>radio</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;input type="radio" name="pet" id="dog" value="dog" checked&gt;
+&lt;label for="dog"&gt;Dog&lt;/label&gt;
+&lt;input type="radio" name="pet" id="cat" value="cat"&gt;
+&lt;label for="cat"&gt;Cat&lt;/label&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>name</code> attribute of the radio buttons should be the same for all options in the group. This allows the browser to treat them as a single group, ensuring that only one option can be selected at a time.</p>
+</div>
+<div class="paragraph">
+<p>You must include a <code>value</code> attribute for each radio button. This value will be submitted with the form when the user selects that option.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_checkboxes"><a class="anchor" href="#_checkboxes"></a>Checkboxes</h3>
+<div class="paragraph">
+<p>Checkboxes are similar to radio buttons, but they do not represent a mutually exclusive set of options. They are created using the <code>&lt;input&gt;</code> element with the <code>type</code> attribute set to <code>checkbox</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;input type="checkbox" name="reading" id="reading"&gt;
+&lt;label for="reading"&gt;Reading&lt;/label&gt;
+&lt;input type="checkbox" name="sports" id="sports"&gt;
+&lt;label for="sports"&gt;Sports&lt;/label&gt;
+&lt;input type="checkbox" name="music" id="music"&gt;
+&lt;label for="music"&gt;Music&lt;/label&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>On submission, each value is submitted with a value of on if the checkbox was checked (e.g., <code>reading=on</code>) or not submitted at all if it was unchecked.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fieldset"><a class="anchor" href="#_fieldset"></a>Fieldset</h3>
+<div class="paragraph">
+<p>A <code>&lt;fieldset&gt;</code> element can be used to group related input elements within a form. This improves accessibility and usability by visually separating different sections of the form.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;fieldset&gt;
+  &lt;legend&gt;Hobbies&lt;/legend&gt;
+  &lt;input type="checkbox" name="reading" id="reading"&gt;
+  &lt;label for="reading"&gt;Reading&lt;/label&gt;
+  &lt;input type="checkbox" name="sports" id="sports"&gt;
+  &lt;label for="sports"&gt;Sports&lt;/label&gt;
+  &lt;input type="checkbox" name="music" id="music"&gt;
+  &lt;label for="music"&gt;Music&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dropdown_menus"><a class="anchor" href="#_dropdown_menus"></a>Dropdown Menus</h3>
+<div class="paragraph">
+<p>A dropdown menu is created using the <code>&lt;select&gt;</code> element, which contains one or more <code>&lt;option&gt;</code> elements. The <code>&lt;option&gt;</code> elements represent the individual options in the dropdown menu.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;label for="pet"&gt;Choose a pet:&lt;/label&gt;
+&lt;select name="pet" id="pet"&gt;
+  &lt;option value=""&gt;--Please choose an option--&lt;/option&gt;
+  &lt;option value="dog"&gt;Dog&lt;/option&gt;
+  &lt;option value="cat"&gt;Cat&lt;/option&gt;
+  &lt;option value="fish"&gt;Fish&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_textarea"><a class="anchor" href="#_textarea"></a>Textarea</h3>
+<div class="paragraph">
+<p>A <code>&lt;textarea&gt;</code> element is used to create a multi-line text input field. It is typically used for longer text inputs, such as comments or messages.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;label for="comments"&gt;Other comments:&lt;/label&gt;
+&lt;textarea id="comments" name="comments" rows="5" cols="40"&gt;&lt;/textarea&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_form_validation"><a class="anchor" href="#_form_validation"></a>Form Validation</h3>
+<div class="paragraph">
+<p>Some basic client-side validation can be provided by the browser by using the <code>required</code> attribute on input elements. This will prevent the form from being submitted if the required fields are not filled out. Specific types of input fields, such as <code>email</code> and <code>number</code>, will also provide built-in validation for the format of the input.</p>
+</div>
+<div class="paragraph">
+<p>Oftentimes, you may want to provide more customized validation. This can be done using JavaScript to check the values of the input fields before the form is submitted. If the validation fails, you can prevent the form from being submitted and display an error message to the user.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Client-side validation can provide an improved user experience but it should only be used as a supplement to server-side validation, not as a replacement. It is critical to always validate and sanitize user input on the server side to prevent security vulnerabilities such as SQL injection and cross-site scripting (XSS).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_document_structure"><a class="anchor" href="#_document_structure"></a>Document Structure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>HTML includes a number of block level elements to define areas of a page with a specific semantic meaning. Assistive technologies like screen readers can recognize those elements and help with tasks like "find the main navigation", or "find the main content" and search engines can  index a site more effectively when they have a better understanding of the document structure.</p>
+</div>
+<div class="sect2">
+<h3 id="_main_element"><a class="anchor" href="#_main_element"></a>Main Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;main&gt;</code> element is used to identify the main content of a document. This is the content that is unique to the page and not repeated on other pages, such as the main article or blog post. The <code>&lt;main&gt;</code> element should only be used once per page and should not be nested within other elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, or <code>&lt;nav&gt;</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;body&gt;
+  &lt;main&gt;
+    &lt;h1&gt;Main Content&lt;/h1&gt;
+    &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_article_element"><a class="anchor" href="#_article_element"></a>Article Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;article&gt;</code> element is used to identify a self-contained piece of content that could be distributed and reused independently. This could be a blog post, news article, or any other type of content that can stand on its own. The <code>&lt;article&gt;</code> element can be nested within other elements like <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, or <code>&lt;aside&gt;</code>, but should not be used as a wrapper for the entire page.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;main&gt;
+  &lt;h1&gt;Main Content&lt;/h1&gt;
+  &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;This is the content of the article.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_section_element"><a class="anchor" href="#_section_element"></a>Section Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;section&gt;</code> element is used to identify a thematic grouping of content within a document. This could be a section of a blog post, a chapter in a book, or any other type of content that is related to a specific topic. The <code>&lt;section&gt;</code> element can contain headings, paragraphs, images, and other elements.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;article&gt;
+  &lt;h2&gt;Article Title&lt;/h2&gt;
+  &lt;p&gt;This is the content of the article.&lt;/p&gt;
+  &lt;section&gt;
+    &lt;h3&gt;Section Title&lt;/h3&gt;
+    &lt;p&gt;This is the content of a section.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_aside_element"><a class="anchor" href="#_aside_element"></a>Aside Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;aside&gt;</code> element is used to identify content that is related to the main content of the page but is not essential to its meaning. This could be a sidebar, a related article, or any other type of content that provides additional context or information.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;main&gt;
+  &lt;h1&gt;Main Content&lt;/h1&gt;
+  &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+  &lt;aside&gt;
+    &lt;h2&gt;Related Articles&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Related Article 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Related Article 2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/aside&gt;
+&lt;/main&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_header_element"><a class="anchor" href="#_header_element"></a>Header Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;header&gt;</code> element is used to identify the header section of a document or a section. This could include the title, logo, navigation links, and other introductory content. The <code>&lt;header&gt;</code> element can be used within other elements like <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, or <code>&lt;section&gt;</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;body&gt;
+  &lt;header&gt;
+    &lt;img src="logo.png" alt="Logo"&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;h1&gt;Main Content&lt;/h1&gt;
+    &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nav_element"><a class="anchor" href="#_nav_element"></a>Nav Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;nav&gt;</code> element is used to identify a section of navigation links within a document. This could include the main navigation menu, footer links, or any other type of navigation. The <code>&lt;nav&gt;</code> element should only be used for navigation links and should not be used for other types of content.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;header&gt;
+  &lt;img src="logo.png" alt="Logo"&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_footer_element"><a class="anchor" href="#_footer_element"></a>Footer Element</h3>
+<div class="paragraph">
+<p>The <code>&lt;footer&gt;</code> element is used to identify the footer section of a document or a section. This could include copyright information, contact details, and other related content. The <code>&lt;footer&gt;</code> element can be used within other elements like <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, or <code>&lt;section&gt;</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;body&gt;
+  &lt;header&gt;...&lt;/header&gt;
+  &lt;main&gt;...&lt;/main&gt;
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2025 My Website&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_divs_and_spans"><a class="anchor" href="#_divs_and_spans"></a>Divs and Spans</h3>
+<div class="paragraph">
+<p>The <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements are generic container elements that can be used to group content together. The <code>&lt;div&gt;</code> element is a block-level element, while the <code>&lt;span&gt;</code> element is an inline element. These elements do not have any semantic meaning on their own but can be styled with CSS or manipulated with JavaScript.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="shopping-cart"&gt;
+  &lt;h2&gt;Shopping cart&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;Total cost: $237.89&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements are often used as hooks for CSS styling or JavaScript manipulation. They should be used sparingly and only when there is no other semantic element that can be used instead.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_line_breaks"><a class="anchor" href="#_line_breaks"></a>Line Breaks</h3>
+<div class="paragraph">
+<p>A <code>&lt;br&gt;</code> element can be used to create a line break within a block of text. This is useful for formatting text or creating space between elements. The <code>&lt;br&gt;</code> element is a void element, meaning it does not require a closing tag.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;
+  This is a line of text.&lt;br&gt;
+  This is another line of text.
+&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_horizontal_rules"><a class="anchor" href="#_horizontal_rules"></a>Horizontal Rules</h3>
+<div class="paragraph">
+<p>An <code>&lt;hr&gt;</code> element can be used to create a horizontal line that separates content. This is useful for visually dividing sections of a document. The <code>&lt;hr&gt;</code> element is also a void element and does not require a closing tag.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;p&gt;This is some text.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This is some more text.&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
