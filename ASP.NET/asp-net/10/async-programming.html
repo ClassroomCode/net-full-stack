@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Asynchronous Programming :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="async-programming.html">Asynchronous Programming</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/async-programming.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Asynchronous Programming</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>With imperative code in C#, statements are executed synchronously. In other words, a statement cannot execute until the statement immediately before it has completed. This default behavior is a good thing since many statements depend on the work performed by previous statements. If every operation completed instantly, this wouldn&#8217;t present a problem. However, there are many occasions where it is desirable to perform an operation asynchronously and allow other work to be performed while a long-running operation is in progress.</p>
+</div>
+<div class="paragraph">
+<p>For an interactive user interface, performing an operation asynchronously allows the UI to remain responsive. This allows the UI to provide some feedback about the operation (e.g., progress bar) and maybe an option to cancel the operation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cpu_bound_vs_io_bound"><a class="anchor" href="#_cpu_bound_vs_io_bound"></a>CPU-Bound vs. IO-Bound</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are two types of operations that can benefit from an asynchronous approach - CPU-bound and IO-bound. The difference involves why the operation could take a long time to complete.</p>
+</div>
+<div class="paragraph">
+<p>For a CPU-bound operation, the operation could be completed faster if the operation could be broken down into smaller tasks that can be executed in parallel. The .NET Task Parallel Library (TPL) has types and APIs that can help with this type of scenario.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Task.WaitAll(task1, task2);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>On the other hand, an IO-bound operation is when time must be spent waiting for input/output operations to be completed. Examples include reading from disk, accessing a database, or communicating over a network. One option for this type of scenario is to execute the operation on a separate thread and configure a delegate to be called when the operation completes (i.e, a callback). Unfortunately, this can often lead to code that is hard to follow and difficult to maintain.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_task_asynchronous_programming_model_tap"><a class="anchor" href="#_task_asynchronous_programming_model_tap"></a>Task Asynchronous Programming Model (TAP)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Although .NET has always provided the ability to work with threads and callbacks directly, it is rarely necessary and no longer recommended. Instead, the newer task asynchronous programming model (TAP) provides an abstraction over asynchronous code.</p>
+</div>
+<div class="paragraph">
+<p>The core component of the TAP is the <code>Task</code> type that is used to model asynchronous operations. The <code>Task</code> type is supported by the <code>async</code> and <code>await</code> keywords to produce asynchronous code that is easier to read and maintain.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Using the TAP results in compiler generated code that uses threads and callbacks just like if you decided to write the code yourself using those low-level primitives.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For I/O-bound code, you <code>await</code> an operation that returns a <code>Task</code> inside of an <code>async</code> method.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public async Task&lt;IActionResult&gt; GetPeople()
+{
+    var people = await db.GetAllPeopleAsync();
+    return Json(people);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When the thread executing this method reaches the <code>await</code>, the requested operation will be performed in the background and the executing thread will be released so that it can perform other work. Once the background work completes, the code after the <code>await</code> will execute (acts as the callback code).</p>
+</div>
+<div class="paragraph">
+<p>In the case of a desktop app, the "other work" for the main thread would likely be to listen for other UI events (e.g., user clicking cancel).</p>
+</div>
+<div class="paragraph">
+<p>In an ASP.NET Core app, the "other work" is the ability to respond to additional incoming requests. An ASP.NET Core app uses a pool of threads to handle incoming requests and the server will return an HTTP 503 (service unavailable) response if there are no threads available for handling a new incoming request. By allowing the request thread to return to the pool while waiting for an I/O operation to complete, the scalability of an app can be improved.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Making server-side actions asynchronous can improve server scalability. However, doing so does NOT change the experience for the end-user. To provide a good experience for the end-user, the code on the client-side should make the network call to the server in an asynchronous way (e.g. use the asynchronous <code>fetch</code> method in JavaScript).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Refactor to use async/await</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Within the <code>GetAllCustomers</code> endpoint, modify the LINQ query so that <code>await</code> is used with the <code>ToListAsync</code> method that returns a <code>Task</code>. This will initially result in a <strong>compiler error</strong>.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var customers = await db.Customers
+  .OrderBy(c =&gt; c.CustomerID)
+  .Skip(offset).Take(limit)
+  .ToListAsync();</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is a standard convention within the framework for methods that return a <code>Task</code> to end with the suffix <code>Async</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Modify the definition of the <code>GetAllCustomers</code> action so that it is an <code>async</code> method that returns a <code>Task</code> type.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public async Task&lt;ActionResult&lt;Customer[]&gt;&gt; GetAllCustomers(int offset = 0, int limit = 10)</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the app and test the endpoint.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>As discussed, there will not be a noticeable change in behavior but this approach will allow for more efficient use of server resources to improve the scalability of the app.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>If you would like, you can modify more of the endpoints to be asynchronous.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_background_tasks"><a class="anchor" href="#_background_tasks"></a>Background Tasks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sometimes, it is desirable to have a long-running service that can periodically perform specific tasks. This can be useful for many use-cases:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Automatically perform maintenance tasks during times of low activity</p>
+</li>
+<li>
+<p>Check for specific conditions that might require additional action (e.g., e-mail notification)</p>
+</li>
+<li>
+<p>Execute tasks that have been added to a queue by other components</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In ASP.NET Core, background tasks can be implemented as hosted services. A hosted service is a class with background task logic that implements the <code>IHostedService</code> interface.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class TimedHostedService : IHostedService</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The hosted service must implement two methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>StartAsync</code>: Contains the logic to start the background task. Common to use a timer to schedule a periodic task.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public Task StartAsync(CancellationToken stoppingToken)
+{
+    _timer = new Timer(DoWork, null, TimeSpan.Zero,
+        TimeSpan.FromSeconds(60));
+
+    return Task.CompletedTask;
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><code>StopAsync</code>: Executed when performing a graceful shutdown. Any active times should be stopped.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public Task StopAsync(CancellationToken stoppingToken)
+{
+    _timer?.Change(Timeout.Infinite, 0);
+    return Task.CompletedTask;
+}</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>AddHostedService</code> method is used during app startup to register the hosted service.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">services.AddHostedService&lt;TimedHostedService&gt;();</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Refer to the <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-9.0&amp;tabs=visual-studio">documentation</a> for more information and examples.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

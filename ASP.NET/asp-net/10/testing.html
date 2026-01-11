@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Testing :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="testing.html">Testing</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/testing.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Testing</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Testing your code for accuracy and errors is at the core of good software development. Making the components of your app easier to test typically means a more loosely-coupled design and that tends to result in more flexible, maintainable software. Therefore, it is a recommended best practice to think about how to make your code more testable as you write it (even if you will never end up writing any automated tests).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Unit tests</strong>: Ensure that individual components work as expected</p>
+</li>
+<li>
+<p><strong>Integration tests</strong>: Ensure that component interactions work as expected against external artifacts like databases</p>
+</li>
+<li>
+<p><strong>Functional tests</strong>: Ensure the app works as expected from the user&#8217;s perspective</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_unit_testing"><a class="anchor" href="#_unit_testing"></a>Unit Testing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Unit testing involves testing a part of an application in isolation from its infrastructure and dependencies. When you unit test controller logic, only the content of a single action or method is tested, not the behavior of its dependencies or of the framework itself.</p>
+</div>
+<div class="paragraph">
+<p>When unit testing becoming difficult, the most common reason is poor dependency management. It is essential that a component can be tested independent of its dependencies or that a suitable replacement for a dependency can be provided during testing.</p>
+</div>
+<div class="listingblock">
+<div class="title">Implicit (or hidden) dependency</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">string GetGreeting(string name) {
+    var now = DateTime.Now;
+    if (now.Hour &lt; 12) {
+        return $"Good morning, {name}";
+    ...</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Explicit / injectable dependency</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">string GetGreeting(string name, DateTime? now = null) {
+    now = (now ?? DateTime.Now);
+    if (now.Value.Hour &lt; 12) {
+        return $"Good morning, {name}";
+    ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When testing controller actions, make sure you focus only on their behavior. A controller unit test avoids things like filters, routing, or model binding (the mapping of request data to a model or DTO). A well-written set of unit tests should be able to be run frequently without much overhead.</p>
+</div>
+<div class="sect2">
+<h3 id="_unit_testing_frameworks"><a class="anchor" href="#_unit_testing_frameworks"></a>Unit Testing Frameworks</h3>
+<div class="paragraph">
+<p>Unit tests are implemented by using a test framework. There are several different unit testing frameworks that can be used with ASP.NET Core. The most popular (and most frequency referenced in the documentation) is xUnit. The .NET SDK also includes project templates that are based on xUnit.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Unit test project</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In Visual Studio, select <span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Add</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">New Project&#8230;&#8203;</b></span>, select the "xUnit Test Project" template, and name the project <code>Todo.Tests</code></p>
+</li>
+<li>
+<p>Add a project references to <code>Todo.Tests</code> for all of the other projects (Entities, DataAccess, and API)</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Most unit testing frameworks use a collection of attributes to identify test methods. xUnit uses the <code>Fact</code> attribute to identify a test that should always be true and the <code>Theory</code> attribute is used to identify a test that should be true for a particular set of data.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[Fact]
+public void PassingTest() {
+    Assert.Equal(4, Add(2, 2));
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[Theory]
+[InlineData(3)]
+[InlineData(5)]
+[InlineData(6)]
+public void MyFirstTheory(int value) {
+    Assert.True(IsOdd(value));
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Visual Studio <strong>Test Explorer</strong> uses these attributes to populate its interface. The CLI also understands these attributes so that you can run your tests from the command-line or as part of a CI/CD pipeline.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet test</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">Test summary: total: 1, failed: 0, succeeded: 1, skipped: 0, duration: 1.8s
+Build succeeded in 5.4s</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_stubs_and_mocks"><a class="anchor" href="#_stubs_and_mocks"></a>Stubs and Mocks</h3>
+<div class="paragraph">
+<p>For an interface-based dependency, the unit test library can define an implementation that simulates the behavior of the "real" component. Depending on how it is used, this object might technically be defined as a stub or a mock.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Stub</strong>: Controllable replacement for a dependency that allows for testing of a component without having to deal with the dependency directly</p>
+</li>
+<li>
+<p><strong>Mock</strong>: Used to test how a component interacts with a dependency (a mock object will often decide whether a unit test has passed or failed)</p>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Mock ITodoDb implementation</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a new class to the <code>Todo.Tests</code> project named <code>TodoDbStub</code> that implements <code>ITodoDb</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">using Todo.Entities;
+
+namespace Todo.Tests;
+
+internal class TodoDbStub : ITodoDb
+{
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the pop-up in Visual Studio to <strong>implement</strong> the methods of the interface.</p>
+</li>
+<li>
+<p>Within the class, define a static list of test to-do items.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">private static List&lt;TodoItem&gt; _todos = new List&lt;TodoItem&gt; {
+    new TodoItem { Id = 1, Name = "One", IsComplete = false },
+    new TodoItem { Id = 2, Name = "Two", IsComplete = true }
+};</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Implement the <code>GetTodo</code> method using the static test data.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public async Task&lt;TodoItem?&gt; GetTodo(int id)
+{
+    return await Task.Run(() =&gt;
+        _todos.SingleOrDefault(t =&gt; t.Id == id));
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>We cannot query the static list asynchronously. However, we would like the method to behave in a manner as close as possible to the "real" component. Therefore, we use a task to call the synchronous LINQ method.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arrange_act_assert"><a class="anchor" href="#_arrange_act_assert"></a>Arrange, Act, Assert</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A unit test can typically be divided into three parts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Arrange</strong>: Create and configure the object under test (including any required dependencies)</p>
+</li>
+<li>
+<p><strong>Act</strong>: Perform the action being tested</p>
+</li>
+<li>
+<p><strong>Assert</strong>: Check the result of the action against a prediction</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Some developers like to explicitly identify these parts when writing tests to help with readability and maintainability.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Test retrieval of a to-do</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>We are going to use the existing <code>Test1</code> method but feel free to rename the class and method if you would like.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Since we will be calling an async controller action, modify the Test1 method to be async</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public async Task Test1()</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Within the <code>Test1</code> method, create an <strong>Arrange-Act-Assert</strong> structure</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[Fact]
+public async Task Test1()
+{
+    // Arrange
+
+    // Act
+
+    // Assert
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>For the "Arrange" code, create a <code>TodoDbStub</code> and an instance of <code>TodoController</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var db = new TodoDbStub();
+var controller = new TodoController(db);</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>For the "Act" code, call the <code>GetTodo</code> action.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var r = await controller.GetTodo(2);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For the "Assert" portion, we should check the type of result returned and then dig into the result to verify that the correct to-do item was actually returned.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Add some code for the "Assert" portion.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Assert.NotNull(r.Result);
+Assert.IsAssignableFrom&lt;OkObjectResult&gt;(r.Result);
+OkObjectResult objResult = (OkObjectResult)r.Result;
+Assert.NotNull(objResult.Value);
+Assert.IsAssignableFrom&lt;TodoItem&gt;(objResult.Value);
+TodoItem item = (TodoItem)objResult.Value;
+Assert.Equal(2, item.Id);</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>From the Visual Studio menu, select <span class="menuseq"><b class="menu">Test</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Run All Tests</b></span> and confirm that the test passes.</p>
+</li>
+<li>
+<p>Change the expected <code>Id</code> value and confirm that the test fails.</p>
+</li>
+<li>
+<p>Change the expected <code>Id</code> back to the correct value.</p>
+</li>
+<li>
+<p>Open a command prompt and run the test using the CLI (you will need to be in the same directory as the <code>Todo.Tests</code> project file).</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet test</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_integration_testing"><a class="anchor" href="#_integration_testing"></a>Integration Testing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While unit testing is useful for testing components in isolation, integration testing ensures that an app&#8217;s components function correctly when used together.</p>
+</div>
+<div class="paragraph">
+<p>The <code>Microsoft.AspNetCore.Mvc.Testing</code> NuGet package includes the <code>TestServer</code> and <code>WebApplicationFactory</code> components that will be useful when implementing automated integration tests.</p>
+</div>
+<div class="paragraph">
+<p>When using <code>TestServer</code> as a test web host, the host will need access to the implicitly defined <code>Program</code> class in the web app. This is so the test web host can run the app&#8217;s startup code that configures the app&#8217;s services and constructs the request pipeline. There are two methods that can be used to make the <code>Program</code> class visible to the test project.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use an <code>InternalsVisibleTo</code> element in the web app&#8217;s project file</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;ItemGroup&gt;
+     &lt;InternalsVisibleTo Include="Todo.Tests" /&gt;
+&lt;/ItemGroup&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use a <strong>partial class</strong> declaration to cause the Program class to be defined as <code>public</code> instead of <code>internal</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public partial class Program { }</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A third option would be to not use top-level statements. In that scenario, you can simply change the access modifier on the <code>Program</code> class from <code>internal</code> to <code>public</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Test web host</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the <code>Todo.API</code> project, add a partial class declaration to the bottom of <code>Program.cs</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public partial class Program { }</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add the <code>Microsoft.AspNetCore.Mvc.Testing</code> NuGet package to the <code>Todo.Tests</code> project.</p>
+</li>
+<li>
+<p>Add a new class to the <code>Todo.Tests</code> project named <code>IntTest1</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class IntTest1(WebApplicationFactory&lt;Program&gt; factory)
+    : IClassFixture&lt;WebApplicationFactory&lt;Program&gt;&gt; {
+
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This will provide us with a <code>WebApplicationFactory</code> object that we can use to obtain an HTTP client for making requests.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Within the class, define a new test that checks the <strong>status code</strong> and <strong>content type</strong> for the two GET endpoints.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[Theory]
+[InlineData("/todoitems")]
+[InlineData("/todoitems/1")]
+public async Task Get_SuccessAndContentType(string url)
+{
+    // Arrange
+    var client = factory.CreateClient();
+
+    // Act
+    var response = await client.GetAsync(url);
+
+    // Assert
+    response.EnsureSuccessStatusCode(); // Status Code 200-299
+    Assert.Equal("application/json; charset=utf-8",
+        response.Content.Headers.ContentType?.ToString());
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the test and confirm that is passes (if your database has a Todo with an id of 1).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are many ways that <code>WebApplicationFactory</code> and the test web host can be customized to accomodate different testing use-cases. Refer to the <a href="https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-9.0">documentation</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

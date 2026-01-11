@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pagination :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="pagination.html">Pagination</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/pagination.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Pagination</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>API pagination is a technique for managing and retrieving large datasets by breaking them into smaller, manageable subsets. This improves performance, reduces server load, and enhances the user experience by providing faster response times and preventing data overload.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Offset-Based Pagination</strong>: Client provides a value for <code>limit</code> (starting point) and <code>offset</code> (number of items to return). This approach tends to be the simplest to implement but can be inefficient for large data sets and can be susceptible to "page drift" if data is added or removed.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">GET /customers?offset=20&amp;limit=10</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Page-Based Pagination</strong>: Uses <code>page</code> and <code>size</code> where the server calculates the offset internally. Has similar performance limitations as offset-based pagination.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">GET /customers?page=2&amp;per_page=10</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Keyset-Based Pagination</strong>: Uses a value that exists within the dataset to identify the starting point for the next set of items. The client passes a value from the previous response in its next request. This is more efficient for large, real-time, or frequently changing datasets because it avoids scanning large numbers of records and handles data changes better. However, this approach does not support random-access (where a client can jump to any specific page).</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">GET /customers?start_key=greal&amp;limit=10</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ef_core_support"><a class="anchor" href="#_ef_core_support"></a>EF Core Support</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In EF Core, the <code>Skip</code> and <code>Take</code> methods get translated into <code>OFFSET</code> and <code>FETCH NEXT</code> (or LIMIT and OFFSET) clauses in SQL queries. This makes them a good fit for implementing offset-based pagination.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var customers = db.Customers
+  .OrderBy(c =&gt; c.CustomerID)
+  .Skip(20).Take(10)
+  .ToList();</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is important to sort on a unique field (or a combination of fields) to ensure consistent page breaks.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For keyset-based pagination, a <code>WHERE</code> clause is used to limit the number of rows that must be processed by the database server.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var customers = db.Customers
+  .OrderBy(c =&gt; c.CustomerID)
+  .Where(c =&gt; c.CustomerID &gt; "GREAL")
+  .Take(10)
+  .ToList();</code></pre>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Pagination for customers</div>
+<div class="paragraph">
+<p>For this exercise, we will implement offset-based pagination for the endpoint used to retrieve customers. The client will be responsible for deciding on the offset and limit to request but the should not allow a limit greater than 20.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Modify the <code>GetAllCustomers</code> endpoint to receive two optional parameters (<code>offset</code> and <code>limit</code>) with some reasonable default values.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public ActionResult&lt;Customer[]&gt; GetAllCustomers(int offset = 0, int limit = 10)</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Perform some basic input validation.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">if (offset &lt; 0) {
+  return BadRequest(new { message = "Offset must be positive" });
+}
+if (limit &lt; 1 || limit &gt; 20) {
+  return BadRequest(new { message = "Limit must be in the range 1-20" });
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Modify the query to use <code>Skip</code> and <code>Take</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var customers = db.Customers
+  .OrderBy(c =&gt; c.CustomerID)
+  .Skip(offset).Take(limit)
+  .ToList();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the app and test the endpoint.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">GET http://localhost:5000/customer?offset=20&amp;limit=10</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

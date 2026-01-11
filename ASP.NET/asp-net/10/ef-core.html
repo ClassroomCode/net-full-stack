@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Entity Framework Core :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="ef-core.html">Entity Framework Core</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/ef-core.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Entity Framework Core</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Entity Framework (EF) is an object-relational mapping framework for .NET that was originally released for .NET Framework in 2008. In 2016, a completely new ORM framework was introduced that was branded as <strong>Entity Framework Core</strong>.</p>
+</div>
+<div class="paragraph">
+<p>With EF Core, data access is performed using a model. A model is made up of entity classes and a context object that represents a session with the database. The context object allows for the querying and saving of data.</p>
+</div>
+<div class="paragraph">
+<p>EF Core identifies model types by examining the types used when defining <code>DbSet</code> properties of a <code>DbContext</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class NorthwindContext : DbContext
+{
+    public DbSet&lt;Customer&gt; Customers { get; set; }
+    public DbSet&lt;Product&gt; Products { get; set; }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conventions"><a class="anchor" href="#_conventions"></a>Conventions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are specific default conventions that EF Core will use unless configured otherwise:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Table names match the DbSet property names</p>
+</li>
+<li>
+<p>Column names match the entity property names</p>
+</li>
+<li>
+<p>A property with a name of <code>Id</code> or <code>[class]Id</code> is assumed to be a primary key</p>
+</li>
+<li>
+<p>If an entity type has a collection property of another entity type, EF Core will recognize this as a "navigation property" used to access related entities</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class Blog
+{
+    public int BlogId { get; set; }
+    public string Url { get; set; }
+    public int Rating { get; set; }
+    public List&lt;Post&gt; Posts { get; set; }  // navigation property
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>A child entity will typically include a property for the parent entity as well as the foreign key</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class Post
+{
+    public int PostId { get; set; }
+    public string Title { get; set; }
+    public string Content { get; set; }
+
+    public int BlogId { get; set; }  // foreign key
+    public Blog Blog { get; set; }   // parent entity
+}</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>We will work more with database relationships in a later section.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When something doesn&#8217;t match the conventions expected by EF Core, two different approaches can be used for model configuration:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Attributes on the model types</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[Table("Product")]
+public class Product
+{
+  [Column("UnitPrice")]
+  public Decimal Price { get; set;}
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>DbContext&#8217;s <code>OnModelCreating</code> method</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity&lt;Product&gt;().ToTable("Product");
+    modelBuilder.Entity&lt;Product&gt;().Property(p =&gt; p.Price)
+        .HasColumnName("UnitPrice");
+}</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Most things can be configured using either approach. However, there are a few items that can only be configured via <code>OnConfiguring</code> (e.g., compound primary keys).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">DbContext</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a new <strong>folder</strong> to the <code>AddressBook.API</code> project named <code>DataAccess</code>.</p>
+</li>
+<li>
+<p>Add a new <strong>class</strong> to the <code>DataAccess</code> folder named <code>NorthwindContext</code>.</p>
+</li>
+<li>
+<p>Define the <code>NorthwindContext</code> as a subclass of <code>DbContext</code> and add a <code>DbSet</code> property for the <code>Customer</code> type. You will need to add a couple of <code>using</code> directives.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class NorthwindContext : DbContext
+{
+  public DbSet&lt;Customer&gt; Customers { get; set; }
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add an override for the <code>OnConfiguring</code> method and call the <code>UseSqlServer</code> method with a database connection string. The details for the connection might need to be different depending on the instance of SQL Server that you are using.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+  optionsBuilder.UseSqlServer(@"Server=localhost;Database=Northwind;Integrated Security=True;TrustServerCertificate=True");
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The database connection string should typically not be included in the source code like this. Instead, it should be read from an external source by using the .NET configuration system. This code will be refactored in a later section.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Build the solution to check for any compiler errors.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_querying"><a class="anchor" href="#_querying"></a>Querying</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Language-Integrated Query (LINQ) can be used to query data via a DbContext. The underlying EF provider is responsible for transforming the LINQ expression into a command (e.g., SQL) that can be sent to the underlying database.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">using var db = new NorthwindContext();
+
+var allCustomers = db.Customers.ToList();
+
+var usaCustomers = db.Customers
+  .Where(c =&gt; c.Country == "USA")
+  .ToList();</code></pre>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Database-driven endpoint</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In <code>Program.cs</code>, modify the existing terminal middleware to retrieve the <strong>first customer</strong> and return the <code>CustomerID</code> as the response.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">app.Run(async context =&gt; {
+  using var db = new NorthwindContext();
+  var customer = db.Customers.First();
+
+  await context.Response.WriteAsync(customer.CustomerID);
+});</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the application and make a request to <a href="http://localhost:5000" class="bare">http://localhost:5000</a> using a web browser. You should see <code>ALFKI</code> as the response.</p>
+</li>
+<li>
+<p>Stop the application.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Error handling and asynchronous data access will both be covered in later sections.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_logging"><a class="anchor" href="#_logging"></a>Logging</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>During development, it can be useful to see the SQL that EF Core is generating and sending to the database. The easiest way to do this is by calling the <code>LogTo</code> method in <code>OnConfiguring</code>.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Viewing the SQL</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Within the <code>OnConfiguring</code> method of <code>NorthwindContext</code>, add a call to <code>LogTo</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">optionsBuilder.LogTo(Console.WriteLine);</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the application, make another request, and check the console window for the executed SQL.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">SELECT TOP(1) [c].[CustomerID], [c].[Address], [c].[City], [c].[CompanyName],
+[c].[ContactName], [c].[ContactTitle], [c].[Country], [c].[Fax], [c].[Phone],
+[c].[PostalCode], [c].[Region] FROM [Customers] AS [c]</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Logging will be covered in more depth in another section.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

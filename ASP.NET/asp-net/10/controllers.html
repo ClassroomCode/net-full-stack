@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Controllers :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="controllers.html">Controllers</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/controllers.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Controllers</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Rather than defining endpoints with function-based handlers (in the style used by minimal APIs), it is also possible to take a Model-View-Controller (MVC) approach and use controllers to handle incoming requests.</p>
+</div>
+<div class="paragraph">
+<p>A method of a controller with a route defined that can be executed via an HTTP request is referred to as a <strong>controller action</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_responsibilities"><a class="anchor" href="#_responsibilities"></a>Responsibilities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The responsibility of a controller action is to generate an appropriate response for an incoming request. To fulfill that responsibility, a controller action will often:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Perform input validation on the incoming request data</p>
+</li>
+<li>
+<p>Perform function-level access control (authorization)</p>
+</li>
+<li>
+<p>Retrieve and/or modify model object(s)</p>
+</li>
+<li>
+<p>Choose the format for the response body: JSON, HTML, XML, etc.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements"><a class="anchor" href="#_requirements"></a>Requirements</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>A collection of built-in services must be added to support the use of controllers</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.AddControllers();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Middleware must be added to create endpoints for routing attributes that are used within a controller</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">app.MapControllers();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Controller must be defined as <code>public</code></p>
+</li>
+<li>
+<p>Controller must have a name that ends with <code>Controller</code> or inherit from a class that ends with <code>Controller</code></p>
+</li>
+<li>
+<p>Routing endpoint(s) must be defined for mapping incoming requests to controller actions</p>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Controller support</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In <code>Program.cs</code>, add the required services to support the use of controllers.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.AddControllers();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Immediately before <code>app.Run()</code>, add the middleware to create endpoints for any routes defined within controllers.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">app.MapControllers();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Comment-out the two existing Minimal API endpoints.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conventions"><a class="anchor" href="#_conventions"></a>Conventions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Although not requirements, there are several common conventions used when defining controllers in an ASP.NET Core app:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Place all controllers in a subfolder (and namespace) named <code>Controllers</code></p>
+</li>
+<li>
+<p>Inherit from <code>Controller</code> or <code>ControllerBase</code> (to make available many useful properties and methods)</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><code>ControllerBase</code> includes all the basic functionality that is useful for an API controller. The <code>Controller</code> class inherits from <code>ControllerBase</code> and includes additional functionality specifically to support the use of HTML views.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Use the <code>ApiController</code> attribute to enable some API-specific behaviors</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[ApiController]
+public class CustomerController : ControllerBase</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Refer to the <a href="https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-10.0#apicontroller-attribute">documentation</a> to learn more about which specific behaviors are enabled by the <code>ApiController</code> attribute.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_return_types"><a class="anchor" href="#_return_types"></a>Return Types</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are several different options for what to use as the return type for a controller action.</p>
+</div>
+<div class="sect2">
+<h3 id="_specific_type"><a class="anchor" href="#_specific_type"></a>Specific Type</h3>
+<div class="paragraph">
+<p>It is possible to directly return a concrete type from a controller action. In this case (as we have seen previously), the system will automatically transform the type into a JSON response.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public List&lt;Customer&gt; GetAllCustomers()</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Using <code>List</code> or <code>IEnumerable</code> as the return type will cause ASP.NET Core to buffer the result before writing it to the response. Alternatively, <code>IAsyncEnumerator</code> can be used to potentially stream the results to the client. Refer to the <a href="https://learn.microsoft.com/en-us/aspnet/core/web-api/action-return-types?view=aspnetcore-9.0#return-ienumerablet-or-iasyncenumerablet">documentation</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In some cases, using a specific type may be sufficient. However, a critical limitation with this approach is the inability to return a different type when the need arises (e.g., validation error).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iactionresult"><a class="anchor" href="#_iactionresult"></a>IActionResult</h3>
+<div class="paragraph">
+<p>The <code>IActionResult</code> type can be used to return various HTTP status codes. Convenience methods provided by <code>ControllerBase</code> can be used for generating an appropriate response.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public IActionResult GetCustomer(string id) {
+    // other code
+    return customer is null ? NotFound() : Ok(customer);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>One downside of using <code>IActionResult</code> is that it&#8217;s not clear from the method signature what specific types this action might return.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_actionresultt"><a class="anchor" href="#_actionresultt"></a>ActionResult&lt;T&gt;</h3>
+<div class="paragraph">
+<p>Another alternative for web API controller actions is to use the generic <code>ActionResult&lt;T&gt;</code> type. This is now the recommended pattern to follow.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public ActionResult&lt;Customer&gt; GetCustomer(string id) {
+    // other code
+    return product is null ? NotFound() : todo;
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are some additional return types that you can use with a controller action, but they tend to be much less common than those just described. Refer to the <a href="https://learn.microsoft.com/en-us/aspnet/core/web-api/action-return-types?view=aspnetcore-9.0">documentation</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Refactor to use a controller</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a new folder to the AddressBook.API project named <code>Controllers</code></p>
+</li>
+<li>
+<p>Right-click on the <code>Controllers</code> folder, select <span class="menuseq"><b class="menu">Add</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Class&#8230;&#8203;</b></span>, and name the class <code>CustomerController</code></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Instead of <span class="menuseq"><b class="menu">Add</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Class&#8230;&#8203;</b></span>, we could have used <span class="menuseq"><b class="menu">Add</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Controller&#8230;&#8203;</b></span> but that would have added some extra things that we are going to add manually.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Modify the class to inherit from <code>ControllerBase</code> and add the <code>ApiController</code> attribute.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[ApiController]
+public class CustomerController : ControllerBase
+{
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add a controller action for each of the existing endpoints.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[HttpGet("customer")]
+public ActionResult GetAllCustomers() {
+    using var db = new NorthwindContext();
+    var customers = db.Customers.ToList();
+    return Ok(customers);
+}
+
+[HttpGet("customer/{id}")]
+public ActionResult GetCustomer(string id) {
+    using var db = new NorthwindContext();
+    var customer = db.Customers.Find(id);
+    if (customer is null) return NotFound();
+    return Ok(customer);
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The code above uses an attribute on each action to define a route but the route template string works the same as it does in Minimal APIs (constraints, etc.)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Run the app and use the .http file to confirm that all of the endpoints work the same as they did before.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

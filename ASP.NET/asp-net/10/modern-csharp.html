@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Modern C# :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="modern-csharp.html">Modern C#</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/modern-csharp.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Modern C#</h1>
+<div class="sect1">
+<h2 id="_programming_paradigms"><a class="anchor" href="#_programming_paradigms"></a>Programming Paradigms</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_imperative"><a class="anchor" href="#_imperative"></a>Imperative</h3>
+<div class="paragraph">
+<p>Imperative programming involves a sequence of explicit step-by-step commands that tell the computer how to achieve a result by manipulating program state.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var nums = new List&lt;int&gt; { 1, 2, 3, 4, 5 };
+var evens = new List&lt;int&gt;();
+foreach (var num in nums) {
+  if (num % 2 == 0) {
+    evens.Add(num);
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_procedural"><a class="anchor" href="#_procedural"></a>Procedural</h3>
+<div class="paragraph">
+<p>In procedural programming, code is organized into reusable blocks called procedures, functions, or subroutines to perform specific tasks.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var nums = new List&lt;int&gt; { 1, 2, 3, 4, 5 };
+var evens = new List&lt;int&gt;();
+foreach (var num in nums) {
+  if (IsEven(num)) {
+    evens.Add(num);
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_object_oriented"><a class="anchor" href="#_object_oriented"></a>Object-Oriented</h3>
+<div class="paragraph">
+<p>With object-oriented programming (OOP), code is organized around objects. The objects bundle data (properties) and the functions (methods) that operate on that data. Key principles include <strong>abstraction</strong>, <strong>encapsulation</strong>, <strong>inheritance</strong>, and <strong>polymorphism</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_declarative"><a class="anchor" href="#_declarative"></a>Declarative</h3>
+<div class="paragraph">
+<p>Declarative programming focuses on what you want to achieve, not how, by describing the desired result, while the system figures out the steps. This style hides often complex implementation details and control flow.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var nums = new List&lt;int&gt; { 1, 2, 3, 4, 5 };
+var evens = nums.FindAll(IsEven);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_functional"><a class="anchor" href="#_functional"></a>Functional</h3>
+<div class="paragraph">
+<p>Functional programming focuses on building applications by composing pure functions and treating functions as first-class citizens. Shared state and mutable data are avoided which leads to more declarative, predictable, and testable code.</p>
+</div>
+<div class="paragraph">
+<p>Key concepts of functional programming include <strong>immutability</strong>, <strong>pure functions</strong>, <strong>higher-order functions</strong>, and <strong>recursion</strong>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var nums = new List&lt;int&gt; { 1, 2, 3, 4, 5 };
+var evens = nums.Where(n =&gt; n % 2 == 0);</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nullability"><a class="anchor" href="#_nullability"></a>Nullability</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The value <code>null</code> is used to indicate the absence of a value for a variable or reference. In .NET, accessing a null reference at runtime results in a <code>NullReferenceException</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Person person = null;
+Console.WriteLine(person.FirstName);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Value types in .NET (int, struct, etc.) cannot be <code>null</code>. To enable nullability, a generic wrapper type of <code>Nullable&lt;T&gt;</code> must be used.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Nullable&lt;int&gt; a = 5;  // or... int? a = 5;
+a = null;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Care must be taken when accessing the value of a nullable value type.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">if (a is int val) {
+  Console.WriteLine(val);
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">int val = a ?? 0;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Reference types in .NET can always be <code>null</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Person p = null;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If <strong>nullable reference types</strong> are enabled for a project, setting a reference type to <code>null</code> or dereferencing a possibly null reference will generate a compiler <strong>warning</strong>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;Nullable&gt;enable&lt;/Nullable&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>?</code> operator can be used to tell the compiler that a reference type should be allowed to be <code>null</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Person p = null;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Like with nullable value types, similar techniques should be used when working with a nullable reference type.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">if (p is not null) {
+  Console.WriteLine(val.FirstName);
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Console.WriteLine(p?.FirstName ?? "unknown");</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Person val = p ?? new Person();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_immutability"><a class="anchor" href="#_immutability"></a>Immutability</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Thread Safety</strong>: Immutable objects are naturally thread-safe, removing the need for complex synchronization and simplifying concurrent programming.</p>
+</li>
+<li>
+<p><strong>Predictability</strong>: Data consistency is maintained throughout an object&#8217;s life, preventing unexpected side effects and making code easier to understand, test, and maintain.</p>
+</li>
+<li>
+<p><strong>Optimization</strong>: Immutable objects can be safely cached and used efficiently in data structures.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>By default, all function parameters are passed <strong>by value</strong>. This means that a function receives a copy of the <strong>value</strong> if it&#8217;s a value type or a copy of the <strong>reference</strong> if it&#8217;s a reference type.</p>
+</div>
+<div class="paragraph">
+<p>This behavior represents effective immutability for value type arguments since the function cannot modify the value in the caller (which would be considered a <strong>side effect</strong>).</p>
+</div>
+<div class="paragraph">
+<p>For a <strong>reference type</strong> argument passed by value, the function cannot modify what the caller&#8217;s reference points to but it can potentially modify the state of the <strong>underlying object</strong>. For effective immutability of a reference type argument, the caller would need to either…</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Make a <strong>deep copy</strong> of the object and pass that to the function.</p>
+</li>
+<li>
+<p>Ensure the properties of the object itself are <strong>immutable</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There are manual ways to define an <strong>immutable reference type</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a required <strong>constructor</strong> to initialize state that is only accessible via <strong>read-only properties</strong>.</p>
+</li>
+<li>
+<p>Use <strong>required init-only properties</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class Person {
+  public required string FirstName { get; init; }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_record_types"><a class="anchor" href="#_record_types"></a>Record Types</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A newer way to create an immutable reference type in C# is to define a <code>record</code> type.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public record Person(string FirstName, string LastName);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>with</code> expression can be used to achieve nondestructive mutation by creating a new instance.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Person p1 = new Person("Bill", "Gates");
+Person p2 = p1 with { LastName = "Jobs" };</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Record types also support <strong>value semantics</strong> for <strong>equality</strong>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Person p1 = new Person("Bill", "Gates");
+Person p2 = new Person("Bill", "Gates");
+
+// p1 == p2 evaluates to true even though
+// p1 and p2 refer to different objects in memory</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_designing_for_concurrency"><a class="anchor" href="#_designing_for_concurrency"></a>Designing for Concurrency</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In modern C#, it is easier to leverage <strong>concurrency</strong> to create more <strong>scalable</strong> web-based workloads.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public async Task&lt;ActionResult&lt;Product&gt;&gt; GetProduct(int id) {
+  var product = await db.GetProduct(id);
+  ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It is still important to think about things like shared state, resource contention, and race conditions. Immutability can help to avoid <strong>shared state</strong> and introducing <strong>side effects</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_deferred_execution"><a class="anchor" href="#_deferred_execution"></a>Deferred Execution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In declarative code, it is important to identify when specific work will be performed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Determines where error handling should be implemented.</p>
+</li>
+<li>
+<p>Helps to avoid unnecessary work from being performed.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var products = db.Products.Where(p.UnitPrice &gt; 10);
+
+foreach (var p in products) {  // SQL executed here
+  //
+}
+
+foreach (var p in products) {  // SQL executed again
+  //
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

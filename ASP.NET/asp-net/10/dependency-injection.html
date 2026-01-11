@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dependency Injection :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="dependency-injection.html">Dependency Injection</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/dependency-injection.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Dependency Injection</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the AddressBook project right now, each endpoint creates an instance of the NorthwindContext concrete type. This approach is not flexible and can end up becoming difficult to maintain and test.</p>
+</div>
+<div class="paragraph">
+<p>ASP.NET Core includes built-in support for dependency injection (DI) which is a technique for achieving Inversion of Control (IoC) between components and their dependencies.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_service_lifetime"><a class="anchor" href="#_service_lifetime"></a>Service Lifetime</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For a component that is registered with DI, the system will be responsible for managing the lifetime of the component. One aspect of this is that when an instance is required, the system will need to know if an existing instance of a component can be reused or if a new instance should be created. Therefore, when registering a component with DI, s specific lifetime policy must be specified:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Singleton</code>: Only one instance of the component will be created. This single instance well be reused whenever an instance of the component is required.</p>
+</li>
+<li>
+<p><code>Transient</code>: A new instance of the component will be created whenever an instance of the component is required.</p>
+</li>
+<li>
+<p><code>Scoped</code>: When a new request arrives, a new <strong>scope</strong> is created and the scope ends when a response is returned for that request. This allows for a single instance of a component to be reused if needed multiple times during the processing of a request.</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For the majority of components in an ASP.NET Core app, the <code>Scoped</code> lifetime is the correct choice. A different lifetime should only be used when there is a clear reason to do so.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_service_registration"><a class="anchor" href="#_service_registration"></a>Service Registration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Components that will be used via dependency injection are added to WebApplicationBuilder&#8217;s <code>Services</code> collection during app start up.</p>
+</div>
+<div class="paragraph">
+<p>A service can be registered as a concrete type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.AddScoped&lt;NorthwindContext&gt;();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, whenever the system needs to call a method that accepts a parameter of the <code>NorthwindContext</code> type, an instance will be passed in. The DI system will follow the rules of the <code>scoped</code> lifetime policy to decide if a new instance needs to be created or an existing instance can be reused.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Refactor to use DI</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In <code>Program.cs</code>, register the NorthwindContext type as a scoped service. Instead of using <code>AddScoped</code>, use the <code>AddDbContext</code> method that is specifically designed for a <code>DbContext</code> types and provide the connection string.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.AddDbContext&lt;NorthwindContext&gt;(options =&gt;
+  options.UseSqlServer(@"Server=localhost;Database=Northwind;Integrated Security=True;TrustServerCertificate=True"));</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Remove the <code>OnConfiguring</code> method from <code>NorthwindContext</code> and add a constructor that accepts <code>DbContextOptions</code> and calls the base class constructor.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public NorthwindContext(DbContextOptions&lt;NorthwindContext&gt; options)
+  : base(options) { }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This sets up the context to be used via dependency injection but the controller must also be modified to receive it.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_explicit_dependencies_principle"><a class="anchor" href="#_explicit_dependencies_principle"></a>Explicit Dependencies Principle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It is a recommended best practice for controllers to adhere to the <strong>Explicit Dependencies Principle</strong>. This means that every controller should include all of its required dependencies as required constructor parameters. This allows for those dependencies to be provided via dependency injection or passed in explicitly for unit testing.</p>
+</div>
+<div class="paragraph">
+<p>A traditional constructor can be used to receive the dependency and retain it for use by other controller methods:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class CustomerController : ControllerBase
+{
+    private NorthwindContext _db;
+
+    public CustomerController(NorthwindContext db) {
+        _db = db;
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Alternatively, C#'s newer <strong>primary constructor</strong> syntax can be used to accomplish the same goal.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Leverage DI</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a primary constructor for the <code>CustomerController</code> class that accepts a <code>NorthwindContext</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class CustomerController(NorthwindContext db) : ControllerBase</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Delete the <code>using</code> statement from each action (since <code>db</code> will now be a class-level variable provided via the constructor).</p>
+</li>
+<li>
+<p>Run the app and test the endpoints. Everything should work as before.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependency_inversion"><a class="anchor" href="#_dependency_inversion"></a>Dependency Inversion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Dependency Inversion Principle</strong> states that high level modules should not depend on low level modules; both should depend on abstractions. To support this principle, it is possible to define a service as an implementation of an interface and register the interface with the DI system.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.AddScoped&lt;IRepository, MyRepository&gt;();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, service consumers can be programmed to work with any implementation of <code>IRepository</code>. The DI system will pass in an implementation of the <code>MyRepository</code> concrete type at runtime. However, in other contexts (e.g., unit tests), an alternative implementation of <code>IRepository</code> (e.g., mock object) can be used instead.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+Program to interfaces, not implementations
+</blockquote>
+<div class="attribution">
+&#8212; Design Patterns: Elements of Reusable Object-Oriented Software
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>We could define an interface with methods for all of the ways we intend to work with the data and then modify <code>NorthwindContext</code> to implement that interface. This would require more effort but would enable us to completely encapsulate the fact that we are using EF Core. However, wrapping EF Core with a generic repository can hide powerful features like IQueryable for dynamic querying.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

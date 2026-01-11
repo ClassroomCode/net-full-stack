@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>.NET Runtime and SDK :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="runtime-sdk.html">.NET Runtime and SDK</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/runtime-sdk.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">.NET Runtime and SDK</h1>
+<div class="sect1">
+<h2 id="_runtime"><a class="anchor" href="#_runtime"></a>Runtime</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Applications built for the .NET platform run in a managed execution environment. This means that a compatible version of the .NET Runtime must be installed on any host where the code will execute.</p>
+</div>
+<div class="paragraph">
+<p>Every .NET language (C#, F#, etc.) is compiled into CPU-agnostic Intermediate Language (IL) code that is Just-In-Time (JIT) compiled into native machine code by the .NET runtime. This architecture is similar to how Java code is compiled into bytecode that is JIT compiled into native code at runtime by the Java Virtual Machine (JVM).</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Many tools exist that allow you to view the IL code produced by the C# compiler. One free online tool is <a href="https://sharplab.io/">sharplab.io</a>. Given a snippet of C#, SharpLab can be used to view the "lowered" C#, the IL code, and even the native x86 assembly. SharpLab will be used to explore some features of C# that are covered later in this course.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is possible to publish an app using Native AOT deployment. This produces a self-contained app that has been ahead-of-time (AOT) compiled to native code. These apps can run on machines that do not have the .NET runtime installed. Native AOT has some limitations and should only be used in specific scenarios. Refer to the <a href="https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot">documentation</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Different versions of the .NET Runtime can be <a href="https://dotnet.microsoft.com/en-us/download/dotnet/9.0">downloaded</a> and installed for running different types of .NET applications:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>.NET Runtime</strong>: Components needed to run a console app</p>
+</li>
+<li>
+<p><strong>.NET Desktop Runtime</strong>: Everything in the .NET Runtime plus additional components for running desktop Windows applications</p>
+</li>
+<li>
+<p><strong>ASP.NET Core Runtime</strong>: Everything in the .NET Runtime plus additional components for running web/server applications</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can check which versions of the runtime are currently installed on a machine via the command line.</p>
+</div>
+<div class="listingblock">
+<div class="title">Command to display the list of installed runtimes</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ dotnet --list-runtimes</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Sample output on macOS</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">Microsoft.AspNetCore.App 10.0.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 10.0.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The version of the runtime required by an application is determined by the target framework moniker (TFM) in the app&#8217;s project file.</p>
+</div>
+<div class="listingblock">
+<div class="title">TFM for an app that requires version 10.0 of the runtime</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;TargetFramework&gt;net10.0&lt;/TargetFramework&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_runtime_version_roll_forward"><a class="anchor" href="#_runtime_version_roll_forward"></a>Runtime Version Roll-Forward</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When running a framework-dependant application, the app host will use the latest patch version of the runtime with the same major/minor version number as the TFM. For example, if the TFM specifies <code>net10.0</code> and the machine has version <code>10.0.0</code> and <code>10.0.1</code> of the runtime installed, the host will use the <code>10.0.1</code> version. In this scenario, <code>10.0.1</code> will be used even if a newer minor version (e.g., <code>10.1.0</code>) is also installed.</p>
+</div>
+<div class="paragraph">
+<p>If a runtime with the same major/minor version as the TFM is <strong>not installed</strong>, the app host will use the newest minor version of the runtime with the same major version. For example, if the TFM specifies <code>net10.0</code> but <code>10.1.0</code> is the only runtime installed,  the host will use that version of the runtime. This is referred to as "minor version roll-forward".</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If an app with a TFM of <code>net10.0</code> is using the <code>10.1.0</code> version of the runtime because of minor version roll-forward, later installing a version such as <code>10.0.2</code> will cause the app host to select the older version of the runtime on subsequent runs.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The roll-forward behavior for an app can be explicitly specified in the app&#8217;s project file, in the <code>*.runtimeconfig.json</code> file, or on the command-line when the app is launched.</p>
+</div>
+<div class="listingblock">
+<div class="title">Project file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;PropertyGroup&gt;
+  &lt;RollForward&gt;LatestMinor&lt;/RollForward&gt;
+&lt;/PropertyGroup&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">*.runtimeconfig.json</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "runtimeOptions": {
+    "rollForward": "LatestMinor"
+  }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Command-line</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ dotnet myapp.dll --roll-forward LatestMinor</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Refer to the <a href="https://learn.microsoft.com/en-us/dotnet/core/versions/selection">documentation</a> for information about the other possible values for the roll-forward setting and when they should be used.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When performing a <strong>self-contained</strong> deployment, a specific version of the runtime is selected during the publishing process. The selected version of the runtime is bundled with the app and that is the version that will always be used.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_runtime_package_store"><a class="anchor" href="#_runtime_package_store"></a>Runtime Package Store</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Each version of the .NET Runtime also includes a collection of NuGet packages commonly used by the type of app supported by the runtime (console, desktop, or Web). These packages are implicitly referenced based on the <code>Sdk</code> attribute in app&#8217;s project file.</p>
+</div>
+<div class="listingblock">
+<div class="title">Project file for a Web project</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;Project Sdk="Microsoft.NET.Sdk.Web"&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For a Web app in .NET 10, this includes over 300 individual packages. These packages are not deployed with the app since the build tools know these packages are provided as part of the runtime. This approach results in faster deployments, lower disk space usage, and improved startup performance.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Any NuGet package or .NET assembly that your project references that is not part of the runtime package store must be deployed to the target environment along with your app. Fortunately, the .NET build tools copy any such dependencies into the output directory automatically whenever the app is built.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sdk"><a class="anchor" href="#_sdk"></a>SDK</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Each version of the .NET Runtime only contains the components necessary to run a specific type of .NET app (console, desktop, or Web). This helps to reduce the overall size of an app deployment. On the other hand, the .NET SDK includes all three variants of the runtime and all the additional components needed to build and debug a .NET app.</p>
+</div>
+<div class="paragraph">
+<p>The .NET SDK includes the .NET <strong>command-line interface (CLI)</strong>. The CLI includes dozens of commands including <code>build</code>, <code>run</code>, <code>test</code>, and <code>publish</code>. When combined with a text editor, the CLI provides everything needed to develop, test, debug, and deploy a .NET app.</p>
+</div>
+<div class="paragraph">
+<p>Rather than use a basic text editor and CLI commands, most .NET developers prefer to use a more full-featured IDE like Microsoft Visual Studio or JetBrains Rider. However, these different IDEs all use the same CLI commands and project templates that are provided by the .NET SDK.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_global_json"><a class="anchor" href="#_global_json"></a>global.json</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By default, the CLI will use the newest version of the SDK installed on the machine. Microsoft recommends always using the newest version of the SDK even if you need to target an older version of the .NET Runtime (supported via the TFM in the project file).</p>
+</div>
+<div class="paragraph">
+<p>If necessary, it is possible to explicitly specify the version of the SDK that should be used by having a <code>global.json</code> file.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example global.json file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "sdk": {
+    "version": "9.0.305"
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When this file is present, it will cause any SDK commands executed in this directory (or within any subdirectory) to use the specified version of the SDK.</p>
+</div>
+<div class="paragraph">
+<p>If the specified version of the SDK is not available on the machine, an error will be generated and the user will be prompted to install the version specified.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Having a <code>global.json</code> file in a project&#8217;s source control repository can help enforce consistency for all the members of a development team. Although .NET makes it easy for each team member to use their preferred development environment (VS Code, Rider, etc.), it is a best practice to have everyone working on a project using the same version of the .NET SDK.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

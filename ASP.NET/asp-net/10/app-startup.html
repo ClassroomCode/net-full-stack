@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>App Startup :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="app-startup.html">App Startup</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/app-startup.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">App Startup</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>For an ASP.NET Core web app, there are several things that must happen before the app is ready to respond to incoming HTTP requests. This includes initializing an HTTP server and configuring a request processing pipeline. Before we work on those aspects, we will learn about how .NET knows where to find our startup code.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entry_point"><a class="anchor" href="#_entry_point"></a>Entry Point</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every .NET must have a method that serves as its entry point (first code to be run). The .NET runtime requires that the entry point method be named <code>Main</code>. By convention, this method is defined as a member of a class named <code>Program</code> in a file named <code>Program.cs</code> but the use of the name "Program" is not required.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">class Program
+{
+    static void Main(string[] args) { ... }
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Although uncommon, it is possible to have an app with more than one method named Main. However, in that case, one of the methods must be identified as the entry point via a compiler option.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_top_level_statements"><a class="anchor" href="#_top_level_statements"></a>Top-Level Statements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>First introduced in .NET 6, the C# compiler supports a feature called <strong>top-level statements</strong>. When compiling a .NET project, if the compiler detects executable code outside of any type (i.e., at the "top-level"), it will automatically generate a Main method and move the top-level code into that method.</p>
+</div>
+<div class="paragraph">
+<p>The SDK project templates are now configured to use this feature by default (Program.cs file will contain top-level statements) but this can be disabled by using the <code>--use-program-main</code> CLI option.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet new web -n MyApp --use-program-main</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Visual Studio and Rider also provide this option via a checkbox when creating a new project.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Entry Point</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use your preferred text editor to create a new file.</p>
+</li>
+<li>
+<p>Add a top-level statement.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">Console.WriteLine("Hello, World!");</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Save the file to the <code>AddressBook.API</code> directory with a name of <code>Program.cs</code>.</p>
+</li>
+<li>
+<p>Open a system command prompt and change to the directory where the .csproj file is located.</p>
+</li>
+<li>
+<p>Build and run the application using the .NET CLI.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet build
+dotnet run</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The use of <code>build</code> is not strictly necessary here since the <code>run</code> command will automatically perform a build if necessary.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Two directories that are created during the build process:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>obj</code>: Temporary files and intermediate artifacts used by the build system</p>
+</li>
+<li>
+<p><code>bin</code>: Output of the build process</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If missing, both of these directories will be recreated by the build system. Therefore, it is recommended to not check these directories into source control (e.g., include them in the .gitignore file).</p>
+</div>
+<div class="paragraph">
+<p>Each of these directories will have subdirectories based on the build configuration (Debug, Release) and the TFM of the project.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The default build configuration is <code>Debug</code>. The <code>Release</code> configuration enables several runtime performance optimizations and is used during the pre-deployment publish process. However, for testing purposes, it is also possible to specify the build configuration when using the <code>build</code> and <code>run</code> CLI commands.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet build -c Release
+dotnet run -c Release</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Choosing the build configuration is possible via the menu/toolbar in IDEs such as Visual Studio and Rider.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>An output directory within <code>bin</code> will include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The compiled project assembly (.dll)</p>
+</li>
+<li>
+<p>Any additional dependencies</p>
+</li>
+<li>
+<p>Native executable file for the platform where the build was performed</p>
+</li>
+<li>
+<p>File containing debug symbols (.pdb)</p>
+</li>
+<li>
+<p>Runtime configuration file (*.runtimeconfig.json)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As seen earlier, the <code>dotnet run</code> command can be used without any parameters when executed in a directory that contains a project file. However, the path to the project file can also be provided as a parameter.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet run --project ./AddressBook.API/AddressBook.API.csproj</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In a non-development environment, the app is launched by providing the path to the compiled assembly.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet AddressBook.API.dll</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The .NET CLI is able to run the code in the assembly by using a platform-specific executable that is included with the runtime.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_host"><a class="anchor" href="#_host"></a>Host</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>One responsibility of the entry point function in an ASP.NET Core app is to create a <strong>host</strong>. The host is an object that encapsulates an app&#8217;s resources and lifetime functionality, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Configuration</p>
+</li>
+<li>
+<p>Logging</p>
+</li>
+<li>
+<p>Dependency injection (DI)</p>
+</li>
+<li>
+<p>App shutdown</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>HostApplicationBuilder</code> class can be used to build and configure a <strong>.NET Generic Host</strong> for any .NET project. However, in an ASP.NET Core web app, Microsoft recommends using <code>WebApplicationBuilder</code> to create a host with pre-configured default settings that are appropriate for a web app.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var builder = WebApplication.CreateBuilder();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>WebApplicationBuilder</code> class has some useful properties that are initialized when the <code>CreateBuilder</code> method is called:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Environment</code>: Provides information about the current web hosting environment</p>
+</li>
+<li>
+<p><code>Services</code>: Collection of application services that are available to be used via dependency injection</p>
+</li>
+<li>
+<p><code>Configuration</code>: Collection of configuration providers (used to read app settings)</p>
+</li>
+<li>
+<p><code>Logging</code>: Collection of logging providers (used to record log messages)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>We will use all of these properties (and learn more about them) as we add more functionality to the app.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_server"><a class="anchor" href="#_http_server"></a>HTTP Server</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In addition to initializing the properties listed above, the <code>WebApplicationBuilder</code> also configures ASP.NET Core&#8217;s built-in HTTP Server named <strong>Kestrel</strong>.</p>
+</div>
+<div class="paragraph">
+<p>There are many options that can be configured for Kestrel, and we will change some of them later on. Right now, it is just important to know that Kestrel (by default) will listen for incoming HTTP requests on port <code>5000</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_request_processing_pipeline"><a class="anchor" href="#_request_processing_pipeline"></a>Request Processing Pipeline</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After the <code>WebApplicationBuilder</code> has been configured, you call its <code>Build</code> method to create the <code>WebApplication</code> object.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var app = builder.Build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>WebApplication</code> is responsible for managing the request processing pipeline. To build a useful web app, we will need to add some components (referred to as <strong>middleware</strong>) to the pipeline. However, it is possible to run the app without any middleware. We just need to call the <code>Run</code> method of the <code>WebApplication</code> to complete the startup process and have Kestrel start listening for incoming requests.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">app.Run();</code></pre>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Web Application</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open <code>Program.cs</code> in your preferred text editor.</p>
+</li>
+<li>
+<p>Delete the existing code that prints out "Hello, World!".</p>
+</li>
+<li>
+<p>Add code to create a <code>WebApplicationBuilder</code>, create a <code>WebApplication</code>, and call <code>Run</code>.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var builder = WebApplication.CreateBuilder(args);
+
+var app = builder.Build();
+
+app.Run();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Save the changes to <code>Program.cs</code>.</p>
+</li>
+<li>
+<p>Use the .NET CLI to start the app.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet run</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Take note of two important lines in the console output:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Open your preferred web browser and make a request for <code>http://localhost:5000</code> (the result will be a 404).</p>
+</li>
+<li>
+<p>Return to the console and take note of this line:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">Request reached the end of the middleware pipeline without being handled by application code.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Based on what was just discussed regarding the request pipeline, this message should make sense.</p>
+</div>
+</li>
+<li>
+<p>Press <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>C</kbd></span> in the console to shut down the app.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

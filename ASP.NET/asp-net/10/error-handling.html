@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Error Handling :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="error-handling.html">Error Handling</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/error-handling.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Error Handling</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>For any app, proper error handling is essential. In a development/staging environment, having a good error handling system can help with identifying and fixing bugs. In production, solid error handling is important for system visibility, the client experience, and security.</p>
+</div>
+<div class="paragraph">
+<p>Some general best practices for error handling include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Handle</strong> errors as best you can when they occur</p>
+</li>
+<li>
+<p><strong>Record</strong> error information and/or send a <strong>notification</strong></p>
+</li>
+<li>
+<p><strong>Provide</strong> the user with an appropriate response</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When returning a response for an error, do not reveal sensitive information that a malicious actor could potentially use against you (e.g., database schema information). This is one form of a common security vulnerability known as <strong>sensitive data exposure</strong>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_developer_exception_page"><a class="anchor" href="#_developer_exception_page"></a>Developer Exception Page</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When running in a <strong>development environment</strong>, it is helpful to have as much information about the error as possible. The <code>DeveloperExceptionPage</code> middleware can be used to capture exceptions from the pipeline and generate a detailed error response that includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stack trace</p>
+</li>
+<li>
+<p>Query parameters</p>
+</li>
+<li>
+<p>Headers</p>
+</li>
+<li>
+<p>Endpoint metadata</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For a request that includes an Accept header of <code>text/html</code>, the response will be HTML. Otherwise, the request will be sent in plain text.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Detailed errors</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add the <code>DeveloperExceptionPage</code> middleware to the pipeline of the API project (this should be the first piece of middleware - immediately after the call to <code>builder.Build</code>).</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">if (app.Environment.IsDevelopment()) {
+  app.UseDeveloperExceptionPage();
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>For testing purposes, modify the database connection string in <code>Program.cs</code> so that the database name is incorrect.</p>
+</li>
+<li>
+<p>In Visual Studio, select <span class="menuseq"><b class="menu">Debug</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Start Without Debugging</b></span></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If running with debugging, the exception would get caught by the Visual Studio exception assistant.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Invoke the endpoint to retrieve all of the customers and examine the response.</p>
+</li>
+<li>
+<p>Use the console window to stop the app (leave the error in the connection string for the next exercise).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exception_handling_middleware"><a class="anchor" href="#_exception_handling_middleware"></a>Exception Handling Middleware</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In a non-development environment, you definitely do not want to return the developer exception page. Instead, you can use the <code>ExceptionHandler</code> middleware to produce an error payload and the <code>Problem</code> helper method can be used to generate an RFC 7807 compliant payload.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Exceptions in production</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Extend the code in <code>Program.cs</code> to use the exception handling middleware when the app in not running in a development environment.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">if (app.Environment.IsDevelopment()) {
+  app.UseDeveloperExceptionPage();
+}
+else {
+  app.UseExceptionHandler(app =&gt; {
+    app.Run(async context =&gt; {
+      await Results.Problem("An unexpected error occurred.").ExecuteAsync(context);
+    });
+  });
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Instead of providing a request delegate to the <code>UseExceptionHandler</code> method, you could instead provide a route (e.g., "/error") and then implement that route with a controller action.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Modify <code>launchsettings.json</code> so the app will think it is running in a <strong>production</strong> environment.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">"ASPNETCORE_ENVIRONMENT": "Production"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the app without the debugger, invoke an endpoint, and check the response.</p>
+</li>
+<li>
+<p>Use the console window to stop the app, change the environment back to "Development", and fix the database connection string.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

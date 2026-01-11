@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Entity Relationships :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="entity-relationships.html">Entity Relationships</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/entity-relationships.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Entity Relationships</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Database relationships define how data in different tables connect, primarily through primary and foreign keys. Relationships enable efficient data management, integrity, and retrieval. The three main types of relationships are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>One-to-One (1:1)</p>
+</li>
+<li>
+<p>One-to-Many (1:N)</p>
+</li>
+<li>
+<p>Many-to-Many (M:N) (requiring a junction table)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In EF Core, relationships can be identified using three different approaches:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>By Convention</strong>: EF Core can automatically identify relationships based on default naming conventions.</p>
+</li>
+<li>
+<p><strong>Data Annotations</strong>: Attributes can be used to explicitly identify the fields that should be used to define a relationship (e.g., <code>[ForeignKey]</code>)</p>
+</li>
+<li>
+<p><strong>Fluent API</strong>: Code within the <code>OnModelCreating</code> of a DbContext can be used to fully define the relationships that are present in the database.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conventions"><a class="anchor" href="#_conventions"></a>Conventions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If an entity type has a collection property of another entity type, EF Core will recognize this as a "navigation property" used to access related entities.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class Blog
+{
+    public int BlogId { get; set; }
+    public string Url { get; set; }
+    public int Rating { get; set; }
+    public ICollection&lt;Post&gt; Posts { get; set; }  // navigation property
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A child entity will typically include a properties for the parent entity type as well as for the foreign key value.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class Post
+{
+    public int PostId { get; set; }
+    public string Title { get; set; }
+    public string Content { get; set; }
+
+    public int BlogId { get; set; }  // foreign key
+    public Blog Blog { get; set; }   // parent entity
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the case of a many-to-many relationship, you can define an entity that maps to the linking table or EF Core can manage the data in the linking table transparently.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Order entity</div>
+<div class="paragraph">
+<p>In the Northwind sample database, there is a table named <code>Orders</code> and each order is associated with a customer.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a new class to the <code>Entities</code> folder named <code>Order</code> with a few properties.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class Order
+{
+  public int OrderID { get; set; }
+  public DateTime? OrderDate { get; set; }
+  public DateTime? ShippedDate { get; set; }
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Orders table has many more properties but this will be enough for now.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Add properties to the <code>Order</code> entity for the related customer.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public string CustomerID { get; set; } = string.Empty;
+public Customer? Customer { get; set; }</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Even though every order must have a related customer, the property of type <code>Customer</code> in the <code>Order</code> entity is marked as <strong>nullable</strong> because we might not want to always retrieve the related customer entity when we retrieve an order.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Add a new <code>DbSet</code> property to <code>NorthwindContext</code> for the <code>Order</code> entity.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public DbSet&lt;Order&gt; Orders { get; set; }</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add a navigation property to the <code>Customer</code> entity for the related orders.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public ICollection&lt;Order&gt; Orders { get; set; } = new List&lt;Order&gt;();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Build the solution and check for any compiler errors.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_querying_related_entities"><a class="anchor" href="#_querying_related_entities"></a>Querying Related Entities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>EF Core will not automatically load related entities. There are three different approaches that can be used to control when related entities are loaded:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Eager Loading</strong>: The <code>Include</code> method can be used to specify that related data should be included in the results. This will usually result in a single JOIN query being used.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var blogs = context.Blogs
+    .Include(blog =&gt; blog.Posts)
+    .ToList();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Explicit Loading</strong>: If an entity has already been loaded, you can use the <code>Load</code> method to explicitly load related entities.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">context.Entry(blog)
+    .Collection(b =&gt; b.Posts)
+    .Load();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Lazy Loading</strong>: When enabled, related data will be transparently loaded when a navigation property is accessed. The simplest way to use lazy loading is by installing the <code>Microsoft.EntityFrameworkCore.Proxies</code> package.</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Extra care must be taken when using lazy loading to avoid unneeded extra database roundtrips to occur. Refer to the <a href="https://learn.microsoft.com/en-us/ef/core/querying/related-data/lazy">documentation</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Eager loading</div>
+<div class="paragraph">
+<p>The goal of this exercise will be to load related order data when retrieving an individual customer (but not when retrieving all customers).</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Modify the <code>GetCustomer</code> action in <code>CustomerController</code> to load the related orders.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var customer = db.Customers
+  .Include(c =&gt; c.Orders)
+  .SingleOrDefault(c =&gt; c.CustomerID == id);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In addition to the <code>Include</code> method, <code>SingleOrDefault</code> has to be used instead of <code>Find</code> because of some context caching capabilities that are built into <code>Find</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Run the app and invoke the endpoint (the customer with an ID of "GREAL" has some orders). You should receive a 500 (Internal Server Error).</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The reason for the error is that the system is attempting to serialize all of the properties of the customer (including the navigation properties) and this results in a serialization cycle (customer &#8594; order &#8594; customer &#8594; &#8230;&#8203;)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_serialization_cycles"><a class="anchor" href="#_serialization_cycles"></a>Serialization Cycles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are a few different approaches for how to handle a cycle when attempting to serialize a graph of entities into JSON.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Data Transfer Objects (DTOs)</strong>: Instead of serializing the entities themselves, use the entity data to construct a type that is built to match you want to be sent to the client. Since the DTO will not have any navigation properties, it can be serialized without encountering a cycle.</p>
+</li>
+<li>
+<p><strong>JsonIgnore Attribute</strong>: The <code>JsonIgnore</code> attribute can be applied to a navigation property to prevent it from being serialized.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[JsonIgnore]
+public Customer? Customer { get; set; }</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Configure JSON Serializer</strong>: The JSON serializer can be configured to ignore cycles globally. This will result in the navigation properties being skipped when a cycle would be created. This is the approach that we will use.</p>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Prevent cycles</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Modify the call to <code>AddControllers</code> in <code>Program.cs</code> to configure the JSON serializer to ignore cycles.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.AddControllers().AddJsonOptions(options =&gt; {
+  options.JsonSerializerOptions.ReferenceHandler =
+    System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+});</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the app and try to execute the endpoint again.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Notice that each order includes a property for <code>customer</code> and <code>customerID</code>. One of the other approaches discussed above could be used to obtain better control over what appears in the JSON.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

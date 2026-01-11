@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Configuration :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="configuration.html">Configuration</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/configuration.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Configuration</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>It is often desirable to keep some app settings separate from the compiled source code. This makes those settings easier to maintain and allows them to be changed without the need to modify, re-compile, and re-deploy the code. Common examples include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>External service URLs</p>
+</li>
+<li>
+<p>Database connection strings</p>
+</li>
+<li>
+<p>API keys</p>
+</li>
+<li>
+<p>Logging / notification settings</p>
+</li>
+<li>
+<p>Settings that differ based on the hosting environment (development, staging, production)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sources_and_providers"><a class="anchor" href="#_sources_and_providers"></a>Sources and Providers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Fundamentally, app configuration information is just a collection of key-value pairs. A configuration source represents a location where some key-value pairs come from. ASP.NET Core includes built-in support for a wide variety of configuration sources:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Files, such as <code>appsettings.json</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "MySetting": "MyValue"
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>System environment variables</p>
+</li>
+<li>
+<p>Command-line arguments</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet EComm.API.dll MySetting=MyValue</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>In-memory .NET objects</p>
+</li>
+<li>
+<p>User secrets</p>
+</li>
+<li>
+<p>Azure Key Vault</p>
+</li>
+<li>
+<p>Azure App Configuration</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In addition to these, there is also support for custom configuration providers. AWS, for example, offers a custom provider for using the AWS Secrets Manager.</p>
+</div>
+<div class="paragraph">
+<p>When using <code>WebApplicationBuilder</code>, settings are read from the following sources by default (highest to lowest priority):</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Command-line arguments</p>
+</li>
+<li>
+<p>System environment variables</p>
+</li>
+<li>
+<p>User secrets</p>
+</li>
+<li>
+<p>appsettings.{Environment}.json (e.g., appsettings.Development.json)</p>
+</li>
+<li>
+<p>appsettings.json</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If a value with the same key is read from multiple configuration sources, the one with the highest priority will take precedence.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Because of the behavior described above, it can be helpful to think of appsettings.json as defining the "default" or "fallback" settings for an app.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Setting can be nested:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "Inventory": {
+    "ApiKey" : "1234"
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For the example above&#8230;&#8203;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Refer to the value for <code>ApiKey</code> in code and at the command line by using the entire path with a colon as the separator: <code>Inventory:ApiKey</code></p>
+</li>
+<li>
+<p>To override the value of <code>ApiKey</code> with an environment variable, use the entire path with two underscores as the separator: <code>Inventory__ApiKey</code></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is possible to specify a custom prefix for environment variables.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Configuration.AddEnvironmentVariables(prefix: "MyApp_");</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This allows you to use a more descriptive name for the environment variable (<code>MyApp_MySetting</code>) while still referring to the value in code the same way (<code>MySetting</code>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependency_injection"><a class="anchor" href="#_dependency_injection"></a>Dependency Injection</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The recommended way for controllers (and other services) to access configuration settings at runtime is via dependency injection and the <code>IConfiguration</code> service. This service is configured automatically by <code>WebApplicationBuilder</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class ProductController(IConfiguration configuration)
+    : ControllerBase
+{
+    public ActionResult GetProducts()
+    {
+      var apiKey = configuration["MySetting"];
+      ...
+    }
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In this example, we are injecting the entire <code>IConfiguration</code> object and accessing values based on a string key. An alternative approach would be to inject a strongly-typed object that only includes settings that are relevant for the receiver. Doing so would require more effort, but it might be attractive for a more complex app that has a large collection of configuration settings. For more information, refer to the <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-10.0">documentation</a> for information about the <strong>options pattern</strong>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Refactor app settings</div>
+<div class="paragraph">
+<p>There are several items in the AddressBook.API project that should not be hard-coded into the C#. These items include the database connection string and the JWT configuration.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Right-click on the <code>AddressBook.API</code> project, select <span class="menuseq"><b class="menu">Add</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">New Item&#8230;&#8203;</b></span>, and use a file name of <code>appsettings.json</code></p>
+</li>
+<li>
+<p>Add a setting for the database connection string and copy-paste the value from <code>Program.cs</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ConnectionStrings": {
+    "Northwind": "connection string here"
+  }
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>In <code>Program.cs</code>, retrieve the connection string from the configuration systems and use it when calling <code>UseSqlServer</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var connStr = builder.Configuration.GetConnectionString("Northwind");
+builder.Services.AddDbContext&lt;NorthwindContext&gt;(options =&gt;
+    options.UseSqlServer(connStr));</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the app and test and endpoint to confirm that everything still functions as before.</p>
+</li>
+<li>
+<p>Stop the app and add another section to <code>appsettings.json</code> for the JWT-related settings.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">"Jwt": {
+  "ClientSecret": "",
+  "Issuer": "",
+  "Audience": "",
+  "ExpirationInMinutes": ""
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Copy the settings from <code>TokenProvider</code> and paste them into <code>appsettings.json</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">"Jwt": {
+  "ClientSecret": "randomly-generated-client-secret",
+  "Issuer": "localhost:5000",
+  "Audience": "localhost:5000",
+  "ExpirationInMinutes": "60"
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Modify <code>TokenProvider</code> to that it accepts an <code>IConfiguration</code> via a primary constructor.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class TokenProvider(IConfiguration config)</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This object will automatically be provided by the DI system when it creates an instance of <code>TokenProvider</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Modify the <code>Create</code> method of <code>TokenProvider</code> so that it reads the information it needs from the configuration system.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var clientSecret = config["Jwt:ClientSecret"]!;
+...
+Expires = DateTime.UtcNow.AddMinutes(int.Parse(config["Jwt:ExpirationInMinutes"]!)),
+...
+Issuer = config["Jwt:Issuer"]!,
+Audience = config["Jwt:Audience"]!</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The null forgiving operator (<code>!</code>) is used in each case since the configuration system returns a nullable string (<code>string?</code>) for each setting. As an alternative, you could write code to check for the presence of each setting before using them.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Modify the configuration of the authentication service in <code>Program.cs</code> in a similar way.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">IssuerSigningKey = new SymmetricSecurityKey(
+  Encoding.UTF8.GetBytes(builder.Configuration["Jwt:ClientSecret"]!)),
+ValidIssuer = builder.Configuration["Jwt:Issuer"]!,
+ValidAudience = builder.Configuration["Jwt:Audience"]!</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the app and test the <code>login</code> endpoint.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_secrets"><a class="anchor" href="#_user_secrets"></a>User Secrets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When using appsettings.json and appsettings.{Environment}.json, those files are stored within the project directory structure. This means they will naturally end up the source control repository. This can be an issue if those file contain sensitive information such as database account passwords and API keys.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Secret Manager</strong> is used during development for storing app secrets in a separate file (<code>secrets.json</code>) that is located outside of the project tree. The secrets file is in the same format as a standard appsettings.json file.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Secret Manager tool is provided as part of the SDK for use during development. It is not intended to be used in a production environment. For non-development environments, a different configuration source should be used (e.g., system environment variables, key vault, etc.)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To enable user secrets for a project, the project file must contain a <code>UserSecretsId</code> property that is set to a UUID. The UUID is used by the Secret Manager as the name of the directory where the secrets.json file will be located. The <code>init</code> CLI command can be used generate the <code>UserSecretsId</code> property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet user-secrets init</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;UserSecretsId&gt;79a3edd0-2092-40a2-a04d-dcb46d5ca9ed&lt;/UserSecretsId&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You can also use the Secret Manager tool from within Visual Studio by right-clicking on the project and selecting <strong>Manage User Secrets</strong>. This will invoke the <code>init</code> command (if needed) and open the secrets.json file for editing.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The secrets file is located in the local machine&#8217;s user profile folder. You can edit this file directly, but Microsoft considers the location of the file to be an internal implementation detail that might change in the future.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Windows: <code>%APPDATA%\Microsoft\UserSecrets\&lt;user_secrets_id&gt;\secrets.json</code>.</p>
+</li>
+<li>
+<p>macOS and Linux: <code>~/.microsoft/usersecrets/&lt;user_secrets_id&gt;/secrets.json</code></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To set a secret, you can edit the secrets.json file, or you can use the <code>set</code> and <code>remove</code> CLI commands.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet user-secrets set "Inventory:ApiKey" "1234"</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet user-secrets remove "Inventory:ApiKey"</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A batch of secrets can be set by piping JSON to the <code>set</code> command.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Windows: <code>type .\input.json | dotnet user-secrets set</code></p>
+</li>
+<li>
+<p>macOS and Linux: <code>cat ./input.json | dotnet user-secrets set</code></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

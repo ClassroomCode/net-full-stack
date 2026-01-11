@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Middleware :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="middleware.html">Middleware</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/middleware.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Middleware</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>During app start up, the <code>WebApplication</code> is used to configure individual <strong>middleware</strong> components that form a modular request processing pipeline.</p>
+</div>
+<div class="paragraph">
+<p>Middleware is useful for defining functionality that should execute for every request and/or response. Some common examples include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Serving static files</p>
+</li>
+<li>
+<p>Output caching</p>
+</li>
+<li>
+<p>Redirecting HTTP requests to HTTPS</p>
+</li>
+<li>
+<p>Authentication</p>
+</li>
+<li>
+<p>Routing a request to another component for processing</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each piece of middleware is responsible for passing the request on to the next piece of middleware in the pipeline. Middleware components are also given a chance to execute for every <strong>outgoing</strong> response. As an example, the caching middleware needs to check the cache for an incoming request but also needs to have the ability to insert a response into the cache before it is returned to the client.</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="_images/request-delegate-pipeline.png" alt="request delegate pipeline">
+</div>
+</div>
+<div class="paragraph">
+<p><sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implicit_middleware"><a class="anchor" href="#_implicit_middleware"></a>Implicit Middleware</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are two pieces of middleware that the <code>WebApplication</code> implicitly adds to the pipeline: <code>HostFiltering</code> and <code>ForwardedHeaders</code>.</p>
+</div>
+<div class="sect2">
+<h3 id="_hostfiltering"><a class="anchor" href="#_hostfiltering"></a>HostFiltering</h3>
+<div class="paragraph">
+<p>Kestrel binds to one or more ports on the host OS. You can configure Kestrel to bind to a port with a specific IP address, or you can have Kestrel bind to a port for every IP address on the machine.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet run --urls "http://192.168.1.105:5100"</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet run --urls "http://*:5100"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Kestrel itself does not care about the DNS hostname used to make the request. However, restricting the hostnames that an app responds to is recommended whenever you&#8217;re running in production for security reasons.</p>
+</div>
+<div class="paragraph">
+<p>To filter out inappropriate hostnames, the HostFiltering middleware can be configured via the <code>AllowedHosts</code> app setting.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "AllowedHosts": "mysite.com;localhost"
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>App settings are covered in another section.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_forwardedheaders"><a class="anchor" href="#_forwardedheaders"></a>ForwardedHeaders</h3>
+<div class="paragraph">
+<p>The <code>ForwardedHeaders</code> middleware is useful when running an ASP.NET Core app behind a proxy server or load balancer.
+This middleware is able to read the <code>X-Forwarded-</code> HTTP headers and set the associated fields on the HttpContext.</p>
+</div>
+<div class="paragraph">
+<p>Without the <code>ForwardedHeaders</code> middleware in place, a request property like <code>RemoteIpAddress</code> would provide the IP address of the load balancer rather than the IP address of the client that made the original request.</p>
+</div>
+<div class="paragraph">
+<p>When using ASP.NET Core with IIS, the <code>ForwaredHeaders</code> middleware is enabled automatically. For other scenarios, the middleware must be explicitly configured and enabled.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.Configure&lt;ForwardedHeadersOptions&gt;(options =&gt;
+{
+    options.ForwardedHeaders =
+        ForwardedHeaders.XForwardedFor |
+        ForwardedHeaders.XForwardedProto;
+});</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">app.UseForwardedHeaders();</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Refer to the <a href="https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/proxy-load-balancer?view=aspnetcore-10.0">documentation</a> for more information about how to configure ASP.NET Core to work with proxy servers and load balancers.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terminal_middleware"><a class="anchor" href="#_terminal_middleware"></a>Terminal Middleware</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sometimes, a piece of middleware may decide to "short-circuit" the pipeline. For example, if the HttpsRedirection middleware sees that an incoming request was sent via HTTP, there is no need to go any further - execution of the pipeline should stop and a redirection response should be sent to the client. When middleware behaves in this way, it is referred to as <strong>terminal middleware</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The simplest type of terminal middleware is a request delegate that handles all requests. This can be configured by using an overload of the WebApplication&#8217;s <code>Run</code> method.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Add terminal middleware</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In <code>Program.cs</code>, immediately before the existing call to <code>app.Run()</code>, add a terminal middleware delegate to the app&#8217;s request pipeline.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">app.Run(async context =&gt; {
+    await context.Response.WriteAsync("Hello world!");
+});</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>Run</code> method expects a function that accepts an <code>HttpContext</code> parameter. We are using a lambda expression here to provide that function. The function is using async/await since the method for writing to the response is asynchronous.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Save the file and use the CLI to re-launch the app.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">dotnet run</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use a web browser to send some requests to the app and notice that the "Hello, World!" is returned for every request regardless of the URL path.</p>
+</li>
+<li>
+<p>Press <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>C</kbd></span> in the console to shut down the app.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are many more features that we will add to the app through the use of middleware.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-9.0" class="bare">https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-9.0</a>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

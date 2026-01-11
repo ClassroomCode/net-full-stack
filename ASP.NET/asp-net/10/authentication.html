@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Authentication :: Ascendient Learning</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--
+      <a class="navbar-item" href="../..">Ascendient Learning</a>
+      -->
+      <a class="navbar-item" href="#">Ascendient Learning</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    -->
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="asp-net" data-version="10">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">ASP.NET API Development</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="net-platform.html">.NET Platform</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="runtime-sdk.html">.NET Runtime and SDK</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dev-env.html">Development Environments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-types.html">Project Types</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modern-csharp.html">Modern C#</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="project-file.html">Project File</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="app-startup.html">App Startup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="middleware.html">Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nuget.html">NuGet</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="visual-studio.html">Visual Studio</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entities.html">Entities</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ef-core.html">Entity Framework Core</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="minimal-apis.html">Minimal APIs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="controllers.html">Controllers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="dependency-injection.html">Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="data-updates.html">Data Updates</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="input-validation.html">Input Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="error-handling.html">Error Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="logging.html">Logging</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="authentication.html">Authentication</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="authorization.html">Authorization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="entity-relationships.html">Entity Relationships</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pagination.html">Pagination</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="open-api.html">OpenAPI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="async-programming.html">Asynchronous Programming</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">ASP.NET API Development</span>
+    <span class="version">10</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">ASP.NET API Development</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">10</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">ASP.NET API Development</a></li>
+    <li><a href="authentication.html">Authentication</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/bellj/desktop/courseware/navair/asp-net/content/modules/ROOT/pages/authentication.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Authentication</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In any authentication scheme (web UI, REST API, airport security checkpoint, etc.), there are two fundamental aspects:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Discover the <strong>identity</strong> of an entity through an identifier</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Who are you claiming to be?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Verify the identity by validating <strong>credentials</strong> provided by the entity</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Why should I believe you?</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>An <strong>identifier</strong> can be a username, e-mail address, access key id, or something else that can be used to uniquely identify the entity. The identifier is not considered to be sensitive data.</p>
+</div>
+<div class="paragraph">
+<p><strong>Credentials</strong> come in many different forms. In every case though, the credentials provided by an entity must be able to provide a level of confidence regarding the identity of the entity. The simplest form of credential is a password since it&#8217;s something that only the entity should be able to provide. A password is sensitive data that must be protected when stored or transmitted.</p>
+</div>
+<div class="paragraph">
+<p>For a Web app, the incoming request must contain something that can be used to serve as the <strong>identifier</strong> and the <strong>credentials</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_authentication"><a class="anchor" href="#_http_authentication"></a>HTTP Authentication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://datatracker.ietf.org/doc/html/rfc7235">RFC 7235</a> defines a general HTTP authentication framework. This framework describes how a server can challenge a client  (HTTP 401) and how a client can provide authentication information via the <code>Authorization</code> header. This general framework forms the foundation for several specific authentication schemes. Some popular schemes include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Basic</p>
+</li>
+<li>
+<p>Digest</p>
+</li>
+<li>
+<p>API Key</p>
+</li>
+<li>
+<p>Bearer Token</p>
+</li>
+<li>
+<p>AWS4-HMAC-SHA256 (scheme used by AWS)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_basic_authentication"><a class="anchor" href="#_http_basic_authentication"></a>HTTP Basic Authentication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The "Basic" HTTP authentication scheme is defined in <a href="https://datatracker.ietf.org/doc/html/rfc7617">RFC 7617</a>. With this scheme, an identifier (user ID) and credential (password) are sent with every request. The two values are concatenated together to form a single value (using the ":" character as a delimiter), Base64 encoded, and sent as the value of the <code>Authorization</code> header.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Since the credential is sent in clear text (encoded but not encrypted), it is critical that the <code>Authorization</code> header only be sent over a connection that is secured with transport level security (HTTPS/TLS).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>An advantage of this scheme is the simplicity of its implementation. Any type of client app should be able to send the required <code>Authorization</code> header.</p>
+</div>
+<div class="paragraph">
+<p>One disadvantage of this scheme is the need to re-validate the client credential for every request. In the case of a web UI, a cookie is often used to send a temporary authentication "ticket" that is sent with subsequent requests and used to match the client up with a user session object that is maintained in server memory.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_digest_authentication"><a class="anchor" href="#_http_digest_authentication"></a>HTTP Digest Authentication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Digest authentication scheme was originally developed as an alternative to the Basic authentication scheme that could be used over an insecure connection (HTTP). To achieve this, the Digest scheme uses the same <code>Authorization</code> header as the Basic scheme but applies a hash function to the header value before sending it over the network.</p>
+</div>
+<div class="paragraph">
+<p>Although some enhancements have been made to the Digest scheme over the years, it is rarely used today. The main reason for this is the more prevalent use of HTTPS. The additional complexity of the Digest scheme (when compared to the Basic scheme) is not beneficial when using HTTPS.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api_key_authentication"><a class="anchor" href="#_api_key_authentication"></a>API Key Authentication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Used by many modern APIs, an "API Key" authentication scheme is similar to the Basic authentication scheme. A large randomly generated string is provided to the client in advance and that string serves as both the <strong>identifier</strong> and the <strong>credential</strong>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Since the API key serves as the credential, it is sensitive and needs to be protected in the same way that a password would be. Like passwords, API keys should be rotated on a regular basis.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Using an API key works well for securing back-end APIs and for APIs that do not utilize function-level access control. However, like with the Basic scheme, the API key will likely have to be validated against a back-end data source as part of the processing of each request.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Some developers implement their API so that the API key is sent as part of the URL or via a custom header. However, it is a recommended best practice to use the standard HTTP <code>Authorization</code> header.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bearer_token_authentication"><a class="anchor" href="#_bearer_token_authentication"></a>Bearer Token Authentication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://datatracker.ietf.org/doc/html/rfc6750">RFC 6750</a> describes a scheme that uses bearer tokens to access OAuth 2.0 protected resources. This scheme is similar to the previous schemes in that a string is still sent in the <code>Authorization</code> header that serves as the <strong>identifier</strong> and the <strong>credential</strong>. What makes the Bearer scheme unique is the format of that string.</p>
+</div>
+<div class="paragraph">
+<p>With this scheme, the value of the <code>Authorization</code> header is a security token that was issued by an authorization server. Much like a physical passport, a token contains a collection of claims (name, birthdate, etc.) and a way to verify that the token is genuine. By saying that a token is "genuine", it means we have a way to verify that the token:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Was issued by a known authority that we trust</p>
+</li>
+<li>
+<p>Has not been altered since it was issued</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If both of these things can be confirmed then the claims contained within the token can be trusted without the need to communicate with the issuing authority.</p>
+</div>
+<div class="paragraph">
+<p>The most common way to format a bearer token is as a JSON Web Token (JWT). A JWT consists of three parts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Header</strong>: Specifies the type of the token and the signing algorithm being used</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "alg": "HS256",
+  "typ": "JWT"
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Payload</strong>: Contains the claims. Claims are key-value pairs and can be anything. However, there are some predefined claims that should be included to promote interoperability.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>iss</strong>: Issuer (identifies the principal that issued the JWT)</p>
+</li>
+<li>
+<p><strong>exp</strong>: Expiration time (numeric unix timestamp value)</p>
+</li>
+<li>
+<p><strong>sub</strong>: Subject (claims are statements about the subject)</p>
+</li>
+<li>
+<p><strong>aud</strong>: Audience (principal intended to process the JWT)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Signature</strong>: Generated using the header, payload, and a client secret. The integrity of the token can be verified on the server by regenerating the signature with data from the incoming token and the same client secret.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In the case of a 3rd-party authentication provider like Google or Facebook, the secret is provided when registering your app with the provider.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jwt_generation"><a class="anchor" href="#_jwt_generation"></a>JWT Generation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In many scenarios, your API will not responsible for generating a JWT. Instead, the API will only need to verify a JWT that was issued by a separate authentication server. In the case of our AddressBook app, the API will act as both the authentication server and the client app.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Authentication controller</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add the NuGet package named <code>Microsoft.AspNetCore.Authentication.JwtBearer</code> to the AddressBook.API project.</p>
+</li>
+<li>
+<p>Add a new folder to the project named <code>Auth</code></p>
+</li>
+<li>
+<p>Add a C# class to the <code>Auth</code> folder named <code>TokenProvider</code> with a method named <code>Create</code> that takes a user e-mail and returns a token as a string.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class TokenProvider
+{
+  public string Create(string userEmail) {
+    //
+  }
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Within the <code>Create</code> method, define a variable for the client secret that will be used when generating the JWT.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var clientSecret = "randomly-generated-client-secret";</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The client secret should be randomly generated (minimum of 32 bytes for SHA-256) and should be considered sensitive. Therefore, this secret should not be stored in the source code. We will move this secret to a better location when we discuss the configuration system in a future section.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Add code to create a symmetric security key from the secret string and then use the key to create a signing credentials object.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(clientSecret));
+var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Finally, add the necessary code to generate and return a JWT.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">var tokenDescriptor = new SecurityTokenDescriptor {
+  Subject = new ClaimsIdentity([
+    new Claim(JwtRegisteredClaimNames.Sub, userEmail),
+  ]),
+  Expires = DateTime.UtcNow.AddMinutes(60),
+  SigningCredentials = credentials,
+  Issuer = "localhost:5000",
+  Audience = "localhost:5000"
+};
+var handler = new JsonWebTokenHandler();
+string token = handler.CreateToken(tokenDescriptor);
+return token;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>So that the TokenProvider type can be used via dependency injection, register it as a service in <code>Program.cs</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.AddSingleton&lt;TokenProvider&gt;();</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>TokenProvider</code> type is registered as a singleton service since it is a stateless helper class. This is the best fit but a different service lifetime would also work.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Add a new controller to the <code>Auth</code> folder named <code>AuthController</code> that accepts a <code>TokenProvider</code> via a primary constructor.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[ApiController]
+public class AuthController(TokenProvider tokenProvider) : ControllerBase
+{
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Instead of the <code>Auth</code> folder, it would be okay to add the controller to the <code>Controllers</code> folder if desired.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Within the <code>AuthController</code> class, define a type that represents the data we will be expecting to receive in the login action.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">public class LoginPayload {
+  public string? Email { get; set; }
+  public string? Password { get; set; }
+}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add an endpoint to <code>AuthController</code> that exchanges a username and password for a JWT.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">[HttpPost("auth/login")]
+public ActionResult&lt;string&gt; Login(LoginPayload user) {
+  // TODO: validate the user information against a back-end datastore
+  if (user.Email is null || user.Password != "abc123") return Unauthorized();
+  var token = tokenProvider.Create(user.Email);
+  return Ok(token);
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is a security best practice to use POST as the HTTP method for an endpoint like this since data sent in a request body will not be cached, bookmarked, or stored in browser history.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Test this endpoint. If successful, the endpoint should return a Base64URL encoded JWT.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">POST http://localhost:5000/auth/login
+Content-Type: application/json
+{
+  "email": "bill@example.com",
+  "password": "abc123"
+}</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_authentication_service_and_middleware"><a class="anchor" href="#_authentication_service_and_middleware"></a>Authentication Service and Middleware</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ASP.NET Core includes an authentication service (<code>IAuthenticationService</code>) and authentication middleware. The middleware obtains the authentication data from the incoming request and passes it to the authentication service that uses registered authentication <strong>handlers</strong> to set the authenticated user.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">JWT authentication handler</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure the authentication service and the JWT handler.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+  .AddJwtBearer(options =&gt; {
+    options.RequireHttpsMetadata = false;
+    options.TokenValidationParameters = new TokenValidationParameters {
+      IssuerSigningKey = new SymmetricSecurityKey(
+        Encoding.UTF8.GetBytes("randomly-generated-client-secret")),
+      ValidIssuer = "localhost:5000",
+      ValidAudience = "localhost:5000"
+    };
+  });</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For a complete list of the available options for the <code>AddJwtBearer</code> method, refer to the <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.jwtbearer.jwtbeareroptions?view=aspnetcore-10.0">documentation</a>. The client secret appears again here. As mentioned earlier, this will be moved into a better location later on.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Add the authentication middleware to the request pipeline. This must appear before any middleware that may need information about the authenticated user (e.g. <code>MapControllers</code>).</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csharp hljs" data-lang="csharp">app.UseAuthentication();</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Build the solution and check for any compiler errors.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Although all the pieces are now in place to support JWT-based authentication, authorization must still be configured to secure access to the API&#8217;s endpoints.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>&copy;2025 Treeloop, Inc. - Materials in this course are only for the use of students enrolled in this course, for purposes associated with this course. Unauthorized duplication, distribution, or modification of copyrighted materials is prohibited.</p>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
