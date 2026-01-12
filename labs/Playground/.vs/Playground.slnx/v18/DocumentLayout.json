@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\labadmin\\Desktop\\labs\\Playground\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46305384-7096-480A-A883-62F409E9F294}|Playground\\Playground.csproj|c:\\users\\labadmin\\desktop\\labs\\playground\\playground\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46305384-7096-480A-A883-62F409E9F294}|Playground\\Playground.csproj|solutionrelative:playground\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46305384-7096-480A-A883-62F409E9F294}|Playground\\Playground.csproj|c:\\users\\labadmin\\desktop\\labs\\playground\\playground\\playground.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{46305384-7096-480A-A883-62F409E9F294}|Playground\\Playground.csproj|solutionrelative:playground\\playground.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Playground",
+              "DocumentMoniker": "C:\\Users\\labadmin\\Desktop\\labs\\Playground\\Playground\\Playground.csproj",
+              "RelativeDocumentMoniker": "Playground\\Playground.csproj",
+              "ToolTip": "C:\\Users\\labadmin\\Desktop\\labs\\Playground\\Playground\\Playground.csproj",
+              "RelativeToolTip": "Playground\\Playground.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-12T18:21:05.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\labadmin\\Desktop\\labs\\Playground\\Playground\\Program.cs",
+              "RelativeDocumentMoniker": "Playground\\Program.cs",
+              "ToolTip": "C:\\Users\\labadmin\\Desktop\\labs\\Playground\\Playground\\Program.cs*",
+              "RelativeToolTip": "Playground\\Program.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwPQ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T15:43:01.516Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
