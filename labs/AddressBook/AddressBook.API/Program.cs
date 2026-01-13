@@ -4,12 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
-app.Run(async context => {
+app.MapGet("/customer", () => {
     using var db = new NorthwindContext();
-     
-    var customer = db.Customers.First();
-
-    await context.Response.WriteAsync(customer.CustomerID);
+    var customers = db.Customers.ToList();
+    return customers;
 });
 
 app.Run();
