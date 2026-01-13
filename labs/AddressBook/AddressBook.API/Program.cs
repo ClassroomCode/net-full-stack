@@ -1,4 +1,5 @@
 using AddressBook.API.DataAccess;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,8 @@ app.MapGet("/customer", () => {
 app.MapGet("/customer/{id}", (string id) => {
     using var db = new NorthwindContext();
     var customer = db.Customers.Find(id);
-    return customer;
+    if (customer is null) return Results.NotFound();
+    return Results.Ok(customer);
 });
 
 app.Run();
