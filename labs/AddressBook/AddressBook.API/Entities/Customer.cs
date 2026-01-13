@@ -1,4 +1,6 @@
-﻿namespace AddressBook.API.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AddressBook.API.Entities;
 
 public class Customer
 {
