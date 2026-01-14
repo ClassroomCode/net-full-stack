@@ -26,6 +26,13 @@ public class CustomerController(NorthwindContext db) : ControllerBase
     [HttpPost("customer")]
     public ActionResult CreateCustomer(Customer customer)  
     {
+        var existingCustomer = db.Customers.Find(customer.CustomerID);
+        if (existingCustomer is not null)
+        {
+            ModelState.AddModelError("CustomerID", "A customer with this ID already exists");
+        }
+        if (!ModelState.IsValid) return ValidationProblem();
+
         db.Customers.Add(customer);
         db.SaveChanges();
 
