@@ -1,5 +1,9 @@
+using AddressBook.API.Auth;
 using AddressBook.API.DataAccess;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +11,20 @@ builder.Services.AddControllers();
 
 builder.Services.AddDbContext<NorthwindContext>(options =>
   options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Northwind;Integrated Security=True;TrustServerCertificate=True"));
+
+builder.Services.AddSingleton<TokenProvider>();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+  .AddJwtBearer(options => {
+      options.RequireHttpsMetadata = false;
+      options.TokenValidationParameters = new TokenValidationParameters
+      {
+          IssuerSigningKey = new SymmetricSecurityKey(
+          Encoding.UTF8.GetBytes("randomly-generated-client-secret")),
+          ValidIssuer = "localhost:5000",
+          ValidAudience = "localhost:5000"
+      };
+  });
 
 var app = builder.Build();
 
@@ -22,6 +40,8 @@ else
         });
     });
 }
+
+app.UseAuthentication();
 
 app.MapControllers();
 

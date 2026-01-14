@@ -32,3 +32,12 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:5000/customer/blgts
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+{
+  "email": "bill@example.com",
+  "password": "abc123"
+}

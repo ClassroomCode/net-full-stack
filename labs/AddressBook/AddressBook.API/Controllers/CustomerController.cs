@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace AddressBook.API.Controllers;
 
 [ApiController]
-public class CustomerController(NorthwindContext db) : ControllerBase
+public class CustomerController(NorthwindContext db, ILogger<CustomerController> logger) : ControllerBase
 {
     [HttpGet("customer")]
     public ActionResult GetAllCustomers()
@@ -71,6 +71,7 @@ public class CustomerController(NorthwindContext db) : ControllerBase
         {
             db.Customers.Remove(existingCustomer);
             db.SaveChanges();
+            logger.LogCritical($"Customer DELETED! ({id})");
             return NoContent();
         }
     }
