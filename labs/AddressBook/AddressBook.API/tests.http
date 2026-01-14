@@ -28,3 +28,7 @@ Content-Type: application/json
   "companyName": "Microsoft",
   "contactName": "William Gates"
 }
+
+###
+
+DELETE http://localhost:5000/customer/blgts

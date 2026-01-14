@@ -36,11 +36,6 @@ public class CustomerController(NorthwindContext db) : ControllerBase
     [HttpPut("customer/{id}")]
     public ActionResult PutCustomer(string id, Customer customer)
     {
-        if (id != customer.CustomerID)
-        {
-            return BadRequest("BAD!!!");
-        }
-
         var existingCustomer = db.Customers.Find(id);
         if (existingCustomer is null)
         {
@@ -52,6 +47,22 @@ public class CustomerController(NorthwindContext db) : ControllerBase
         else
         {
             db.Entry(existingCustomer).CurrentValues.SetValues(customer);
+            db.SaveChanges();
+            return NoContent();
+        }
+    }
+
+    [HttpDelete("customer/{id}")]
+    public ActionResult DeleteCustomer(string id)
+    {
+        var existingCustomer = db.Customers.Find(id);
+        if (existingCustomer is null)
+        {
+            return NotFound();
+        }
+        else
+        {
+            db.Customers.Remove(existingCustomer);
             db.SaveChanges();
             return NoContent();
         }
