@@ -10,6 +10,11 @@ builder.Services.AddDbContext<NorthwindContext>(options =>
 
 var app = builder.Build();
 
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
 app.MapControllers();
 
 /*
