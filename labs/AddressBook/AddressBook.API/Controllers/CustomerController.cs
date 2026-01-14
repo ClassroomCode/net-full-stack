@@ -1,6 +1,7 @@
 ﻿using AddressBook.API.DataAccess;
 using AddressBook.API.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AddressBook.API.Controllers;
 
@@ -30,5 +31,29 @@ public class CustomerController(NorthwindContext db) : ControllerBase
 
         return CreatedAtAction("GetCustomer",
             new { id = customer.CustomerID }, customer);
+    }
+
+    [HttpPut("customer/{id}")]
+    public ActionResult PutCustomer(string id, Customer customer)
+    {
+        if (id != customer.CustomerID)
+        {
+            return BadRequest("BAD!!!");
+        }
+
+        var existingCustomer = db.Customers.Find(id);
+        if (existingCustomer is null)
+        {
+            db.Customers.Add(customer);
+            db.SaveChanges();
+            return CreatedAtAction("GetCustomer",
+              new { id = customer.CustomerID }, customer);
+        }
+        else
+        {
+            db.Entry(existingCustomer).CurrentValues.SetValues(customer);
+            db.SaveChanges();
+            return NoContent();
+        }
     }
 }

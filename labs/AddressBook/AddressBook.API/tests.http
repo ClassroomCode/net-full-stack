@@ -18,3 +18,13 @@ Content-Type: application/json
   "companyName": "Microsoft",
   "contactName": "Bill Gates"
 }
+
+###
+
+PUT http://localhost:5000/customer/blgts
+Content-Type: application/json
+{
+  "customerID": "BLGTX",
+  "companyName": "Microsoft",
+  "contactName": "William Gates"
+}
