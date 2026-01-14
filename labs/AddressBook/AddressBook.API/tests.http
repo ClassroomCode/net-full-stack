@@ -24,7 +24,7 @@ Content-Type: application/json
 PUT http://localhost:5000/customer/blgts
 Content-Type: application/json
 {
-  "customerID": "BLGTX",
+  "customerID": "BLGTS",
   "companyName": "Microsoft",
   "contactName": "William Gates"
 }

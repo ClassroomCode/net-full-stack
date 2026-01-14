@@ -14,6 +14,14 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
+else
+{
+    app.UseExceptionHandler(app => {
+        app.Run(async context => {
+            await Results.Problem("An unexpected error occurred.").ExecuteAsync(context);
+        });
+    });
+}
 
 app.MapControllers();
 
