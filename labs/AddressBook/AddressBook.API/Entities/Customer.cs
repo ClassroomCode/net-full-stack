@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AddressBook.API.Entities;
 
 public class Customer
 {
+    [Length(5, 5, ErrorMessage = "ID must be 5 characters")]
     public string CustomerID { get; set; } = string.Empty;
     public string CompanyName { get; set; } = string.Empty;
     public string? ContactName { get; set; }
