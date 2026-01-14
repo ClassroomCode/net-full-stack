@@ -1,8 +1,12 @@
 using AddressBook.API.DataAccess;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
+builder.Services.AddDbContext<NorthwindContext>(options =>
+  options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Northwind;Integrated Security=True;TrustServerCertificate=True"));
 
 var app = builder.Build();
 
