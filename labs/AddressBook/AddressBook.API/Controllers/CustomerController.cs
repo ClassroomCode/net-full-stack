@@ -1,4 +1,5 @@
 ﻿using AddressBook.API.DataAccess;
+using AddressBook.API.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AddressBook.API.Controllers;
@@ -19,5 +20,15 @@ public class CustomerController(NorthwindContext db) : ControllerBase
         var customer = db.Customers.Find(id);
         if (customer is null) return NotFound();
         return Ok(customer);
+    }
+
+    [HttpPost("customer")]
+    public ActionResult CreateCustomer(Customer customer)  
+    {
+        db.Customers.Add(customer);
+        db.SaveChanges();
+
+        return CreatedAtAction("GetCustomer",
+            new { id = customer.CustomerID }, customer);
     }
 }
