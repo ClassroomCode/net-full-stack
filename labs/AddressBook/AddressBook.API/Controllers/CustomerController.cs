@@ -11,9 +11,17 @@ namespace AddressBook.API.Controllers;
 public class CustomerController(NorthwindContext db, ILogger<CustomerController> logger) : ControllerBase
 {
     [HttpGet("customer")]
-    public ActionResult GetAllCustomers()
+    public ActionResult GetAllCustomers(int offset = 0, int limit = 10)
     {
-        var customers = db.Customers.ToList();
+        if (offset < 0) {
+            return BadRequest(new { message = "Offset must be positive" });
+        }
+        if (limit < 1 || limit > 20) {
+            return BadRequest(new { message = "Limit must be in the range 1-20" });
+        }
+
+        var customers = db.Customers.Skip(offset).Take(limit).ToList();
+
         return Ok(customers);
     }
 
