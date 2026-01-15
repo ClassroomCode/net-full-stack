@@ -1,0 +1,225 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <div class="mb-6">
+      <h1 class="text-3xl font-bold text-gray-800">
+        {{ isEditMode ? 'Edit Customer' : 'New Customer' }}
+      </h1>
+      <p class="text-gray-600 mt-2">
+        {{ isEditMode ? 'Update customer information' : 'Create a new customer record' }}
+      </p>
+    </div>
+
+    <!-- Error Message -->
+    @if (error) {
+      <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-4">
+        {{ error }}
+      </div>
+    }
+
+    <!-- Loading State -->
+    @if (loading) {
+      <div class="flex justify-center items-center py-12">
+        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
+    }
+
+    <!-- Form -->
+    @if (!loading) {
+      <form [formGroup]="customerForm" (ngSubmit)="onSubmit()" class="bg-white rounded-lg shadow-md p-6">
+        <!-- Customer ID and Company Name -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label for="customerID" class="block text-sm font-medium text-gray-700 mb-2">
+              Customer ID <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="customerID"
+              formControlName="customerID"
+              maxlength="5"
+              [class.border-red-500]="isFieldInvalid('customerID')"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="5-character ID"
+              [readonly]="isEditMode">
+            @if (isFieldInvalid('customerID')) {
+              <p class="mt-1 text-sm text-red-500">
+                {{ getFieldError('customerID') }}
+              </p>
+            }
+            @if (isEditMode) {
+              <p class="mt-1 text-sm text-gray-500">
+                Customer ID cannot be changed
+              </p>
+            }
+          </div>
+
+          <div>
+            <label for="companyName" class="block text-sm font-medium text-gray-700 mb-2">
+              Company Name <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="companyName"
+              formControlName="companyName"
+              [class.border-red-500]="isFieldInvalid('companyName')"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Company name">
+            @if (isFieldInvalid('companyName')) {
+              <p class="mt-1 text-sm text-red-500">
+                {{ getFieldError('companyName') }}
+              </p>
+            }
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="mb-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Contact Information</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="contactName" class="block text-sm font-medium text-gray-700 mb-2">
+                Contact Name
+              </label>
+              <input
+                type="text"
+                id="contactName"
+                formControlName="contactName"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Contact person name">
+            </div>
+
+            <div>
+              <label for="contactTitle" class="block text-sm font-medium text-gray-700 mb-2">
+                Contact Title
+              </label>
+              <input
+                type="text"
+                id="contactTitle"
+                formControlName="contactTitle"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Job title">
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                Phone
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                formControlName="phone"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Phone number">
+            </div>
+
+            <div>
+              <label for="fax" class="block text-sm font-medium text-gray-700 mb-2">
+                Fax
+              </label>
+              <input
+                type="tel"
+                id="fax"
+                formControlName="fax"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Fax number">
+            </div>
+          </div>
+        </div>
+
+        <!-- Address Information -->
+        <div class="mb-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Address</h3>
+          <div class="grid grid-cols-1 gap-6">
+            <div>
+              <label for="address" class="block text-sm font-medium text-gray-700 mb-2">
+                Street Address
+              </label>
+              <input
+                type="text"
+                id="address"
+                formControlName="address"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Street address">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="city" class="block text-sm font-medium text-gray-700 mb-2">
+                  City
+                </label>
+                <input
+                  type="text"
+                  id="city"
+                  formControlName="city"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="City">
+              </div>
+
+              <div>
+                <label for="region" class="block text-sm font-medium text-gray-700 mb-2">
+                  Region/State
+                </label>
+                <input
+                  type="text"
+                  id="region"
+                  formControlName="region"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="State or region">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="postalCode" class="block text-sm font-medium text-gray-700 mb-2">
+                  Postal Code
+                </label>
+                <input
+                  type="text"
+                  id="postalCode"
+                  formControlName="postalCode"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Postal/ZIP code">
+              </div>
+
+              <div>
+                <label for="country" class="block text-sm font-medium text-gray-700 mb-2">
+                  Country
+                </label>
+                <input
+                  type="text"
+                  id="country"
+                  formControlName="country"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Country">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="flex justify-end space-x-4 pt-6 border-t">
+          <button
+            type="button"
+            (click)="cancel()"
+            [disabled]="submitting"
+            class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+            Cancel
+          </button>
+          <button
+            type="submit"
+            [disabled]="submitting"
+            class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center">
+            @if (submitting) {
+              <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            }
+            {{ submitting ? 'Saving...' : (isEditMode ? 'Update Customer' : 'Create Customer') }}
+          </button>
+        </div>
+      </form>
+    }
+  </div>
+</div>
