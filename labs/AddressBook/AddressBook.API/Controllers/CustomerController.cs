@@ -1,11 +1,13 @@
 ﻿using AddressBook.API.DataAccess;
 using AddressBook.API.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace AddressBook.API.Controllers;
 
 [ApiController]
+//[Authorize]
 public class CustomerController(NorthwindContext db, ILogger<CustomerController> logger) : ControllerBase
 {
     [HttpGet("customer")]
