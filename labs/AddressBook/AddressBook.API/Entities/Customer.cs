@@ -17,4 +17,6 @@ public class Customer
     public string? Country { get; set; }
     public string? Phone { get; set; }
     public string? Fax { get; set; }
+
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 }

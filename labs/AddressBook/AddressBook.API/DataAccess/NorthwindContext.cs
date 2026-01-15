@@ -1,7 +1,5 @@
 ﻿using AddressBook.API.Entities;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using System.Runtime.InteropServices.Swift;
 
 namespace AddressBook.API.DataAccess;
 
@@ -11,4 +9,5 @@ public class NorthwindContext : DbContext
         : base(options) { }
 
     public DbSet<Customer> Customers { get; set; }
+    public DbSet<Order> Orders { get; set; }
 }
