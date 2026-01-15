@@ -28,9 +28,9 @@ public class CustomerController(NorthwindContext db, ILogger<CustomerController>
     [HttpGet("customer/{id}")]
     public async Task<ActionResult> GetCustomer(string id)
     {
-        var customer =  db.Customers
+        var customer = await db.Customers
             .Include(c => c.Orders)
-            .SingleOrDefault(c => c.CustomerID == id);
+            .SingleOrDefaultAsync(c => c.CustomerID == id);
 
         if (customer is null) return NotFound();
         return Ok(customer);
