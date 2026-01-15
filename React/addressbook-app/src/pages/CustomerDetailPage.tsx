@@ -2,39 +2,44 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { ArrowLeft, Edit2, Trash2, Package, Calendar, Truck, Loader } from 'lucide-react'
 import api from '../services/api'
+import { Customer } from '../types'
 
 export default function CustomerDetailPage() {
-  const { id } = useParams()
+  const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
-  const [customer, setCustomer] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const [customer, setCustomer] = useState<Customer | null>(null)
+  const [loading, setLoading] = useState<boolean>(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetchCustomer()
+    if (id) {
+      fetchCustomer()
+    }
   }, [id])
 
   const fetchCustomer = async () => {
+    if (!id) return
+    
     setLoading(true)
     setError(null)
     try {
       const data = await api.fetchCustomer(id)
       setCustomer(data)
     } catch (err) {
-      setError(err.message)
+      setError(err instanceof Error ? err.message : 'An error occurred')
     } finally {
       setLoading(false)
     }
   }
 
   const handleDelete = async () => {
-    if (!confirm('Are you sure you want to delete this customer?')) return
+    if (!id || !confirm('Are you sure you want to delete this customer?')) return
     
     try {
       await api.deleteCustomer(id)
       navigate('/customers')
     } catch (err) {
-      setError(err.message)
+      setError(err instanceof Error ? err.message : 'An error occurred')
     }
   }
 

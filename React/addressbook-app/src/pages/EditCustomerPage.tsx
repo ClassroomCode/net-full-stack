@@ -1,15 +1,16 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, FormEvent, ChangeEvent } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { ArrowLeft, Save, Loader } from 'lucide-react'
 import api from '../services/api'
+import { CustomerFormData } from '../types'
 
 export default function EditCustomerPage() {
-  const { id } = useParams()
+  const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
-  const [loading, setLoading] = useState(true)
-  const [saving, setSaving] = useState(false)
-  const [error, setError] = useState(null)
-  const [formData, setFormData] = useState({
+  const [loading, setLoading] = useState<boolean>(true)
+  const [saving, setSaving] = useState<boolean>(false)
+  const [error, setError] = useState<string | null>(null)
+  const [formData, setFormData] = useState<CustomerFormData>({
     customerID: '',
     companyName: '',
     contactName: '',
@@ -25,29 +26,48 @@ export default function EditCustomerPage() {
   })
 
   useEffect(() => {
-    fetchCustomer()
+    if (id) {
+      fetchCustomer()
+    }
   }, [id])
 
   const fetchCustomer = async () => {
+    if (!id) return
+    
     setLoading(true)
     setError(null)
     try {
       const data = await api.fetchCustomer(id)
-      setFormData(data)
+      setFormData({
+        customerID: data.customerID,
+        companyName: data.companyName,
+        contactName: data.contactName || '',
+        contactTitle: data.contactTitle || '',
+        address: data.address || '',
+        city: data.city || '',
+        region: data.region || '',
+        postalCode: data.postalCode || '',
+        country: data.country || '',
+        phone: data.phone || '',
+        fax: data.fax || '',
+        orders: data.orders || []
+      })
     } catch (err) {
-      setError(err.message)
+      setError(err instanceof Error ? err.message : 'An error occurred')
     } finally {
       setLoading(false)
     }
   }
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    if (!id) return
+    
     setSaving(true)
     setError(null)
     
@@ -55,7 +75,7 @@ export default function EditCustomerPage() {
       await api.updateCustomer(id, formData)
       navigate(`/customers/${id}`)
     } catch (err) {
-      setError(err.message)
+      setError(err instanceof Error ? err.message : 'An error occurred')
     } finally {
       setSaving(false)
     }
@@ -162,7 +182,7 @@ export default function EditCustomerPage() {
                 <input
                   type="text"
                   name="contactName"
-                  value={formData.contactName || ''}
+                  value={formData.contactName}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter contact name"
@@ -175,7 +195,7 @@ export default function EditCustomerPage() {
                 <input
                   type="text"
                   name="contactTitle"
-                  value={formData.contactTitle || ''}
+                  value={formData.contactTitle}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="e.g., Sales Manager"
@@ -188,7 +208,7 @@ export default function EditCustomerPage() {
                 <input
                   type="tel"
                   name="phone"
-                  value={formData.phone || ''}
+                  value={formData.phone}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter phone number"
@@ -201,7 +221,7 @@ export default function EditCustomerPage() {
                 <input
                   type="tel"
                   name="fax"
-                  value={formData.fax || ''}
+                  value={formData.fax}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter fax number"
@@ -221,7 +241,7 @@ export default function EditCustomerPage() {
                 <input
                   type="text"
                   name="address"
-                  value={formData.address || ''}
+                  value={formData.address}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter street address"
@@ -234,7 +254,7 @@ export default function EditCustomerPage() {
                 <input
                   type="text"
                   name="city"
-                  value={formData.city || ''}
+                  value={formData.city}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter city"
@@ -247,7 +267,7 @@ export default function EditCustomerPage() {
                 <input
                   type="text"
                   name="region"
-                  value={formData.region || ''}
+                  value={formData.region}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter region/state"
@@ -260,7 +280,7 @@ export default function EditCustomerPage() {
                 <input
                   type="text"
                   name="postalCode"
-                  value={formData.postalCode || ''}
+                  value={formData.postalCode}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter postal code"
@@ -273,7 +293,7 @@ export default function EditCustomerPage() {
                 <input
                   type="text"
                   name="country"
-                  value={formData.country || ''}
+                  value={formData.country}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter country"

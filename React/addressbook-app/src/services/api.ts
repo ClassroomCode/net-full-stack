@@ -1,19 +1,21 @@
+import { Customer, CustomerFormData } from '../types'
+
 const API_BASE_URL = 'http://localhost:5000'
 
 class ApiService {
-  async fetchCustomers(offset = 0, limit = 10) {
+  async fetchCustomers(offset: number = 0, limit: number = 10): Promise<Customer[]> {
     const response = await fetch(`${API_BASE_URL}/customer?offset=${offset}&limit=${limit}`)
     if (!response.ok) throw new Error('Failed to fetch customers')
     return response.json()
   }
 
-  async fetchCustomer(id) {
+  async fetchCustomer(id: string): Promise<Customer> {
     const response = await fetch(`${API_BASE_URL}/customer/${id}`)
     if (!response.ok) throw new Error('Failed to fetch customer')
     return response.json()
   }
 
-  async createCustomer(customerData) {
+  async createCustomer(customerData: CustomerFormData): Promise<Response> {
     const response = await fetch(`${API_BASE_URL}/customer`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -23,7 +25,7 @@ class ApiService {
     return response
   }
 
-  async updateCustomer(id, customerData) {
+  async updateCustomer(id: string, customerData: CustomerFormData): Promise<Response> {
     const response = await fetch(`${API_BASE_URL}/customer/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
@@ -33,7 +35,7 @@ class ApiService {
     return response
   }
 
-  async deleteCustomer(id) {
+  async deleteCustomer(id: string): Promise<Response> {
     const response = await fetch(`${API_BASE_URL}/customer/${id}`, {
       method: 'DELETE'
     })

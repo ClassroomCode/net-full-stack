@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Search, Edit2, Trash2, Eye, Package, ChevronLeft, ChevronRight, Loader } from 'lucide-react'
 import api from '../services/api'
+import { Customer } from '../types'
 
 export default function CustomersPage() {
-  const [customers, setCustomers] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-  const [searchTerm, setSearchTerm] = useState('')
-  const [offset, setOffset] = useState(0)
+  const [customers, setCustomers] = useState<Customer[]>([])
+  const [loading, setLoading] = useState<boolean>(true)
+  const [error, setError] = useState<string | null>(null)
+  const [searchTerm, setSearchTerm] = useState<string>('')
+  const [offset, setOffset] = useState<number>(0)
   const limit = 12
 
   useEffect(() => {
@@ -22,20 +23,20 @@ export default function CustomersPage() {
       const data = await api.fetchCustomers(offset, limit)
       setCustomers(data)
     } catch (err) {
-      setError(err.message)
+      setError(err instanceof Error ? err.message : 'An error occurred')
     } finally {
       setLoading(false)
     }
   }
 
-  const handleDelete = async (id) => {
+  const handleDelete = async (id: string) => {
     if (!confirm('Are you sure you want to delete this customer?')) return
     
     try {
       await api.deleteCustomer(id)
       await fetchCustomers()
     } catch (err) {
-      setError(err.message)
+      setError(err instanceof Error ? err.message : 'An error occurred')
     }
   }
 

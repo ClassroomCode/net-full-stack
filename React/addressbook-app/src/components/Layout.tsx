@@ -4,7 +4,7 @@ import { Home, Users, Plus } from 'lucide-react'
 export default function Layout() {
   const location = useLocation()
   
-  const isActive = (path) => {
+  const isActive = (path: string): boolean => {
     if (path === '/' && location.pathname === '/') return true
     if (path !== '/' && location.pathname.startsWith(path)) return true
     return false

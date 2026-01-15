@@ -1,13 +1,14 @@
-import { useState } from 'react'
+import { useState, FormEvent, ChangeEvent } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { ArrowLeft, Save, Loader } from 'lucide-react'
 import api from '../services/api'
+import { CustomerFormData } from '../types'
 
 export default function CreateCustomerPage() {
   const navigate = useNavigate()
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
-  const [formData, setFormData] = useState({
+  const [loading, setLoading] = useState<boolean>(false)
+  const [error, setError] = useState<string | null>(null)
+  const [formData, setFormData] = useState<CustomerFormData>({
     customerID: '',
     companyName: '',
     contactName: '',
@@ -22,12 +23,12 @@ export default function CreateCustomerPage() {
     orders: []
   })
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
     setError(null)
@@ -36,7 +37,7 @@ export default function CreateCustomerPage() {
       await api.createCustomer(formData)
       navigate('/customers')
     } catch (err) {
-      setError(err.message)
+      setError(err instanceof Error ? err.message : 'An error occurred')
     } finally {
       setLoading(false)
     }
