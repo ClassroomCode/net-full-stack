@@ -7,6 +7,8 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddOpenApi();
+
 builder.Services.AddControllers().AddJsonOptions(options => {
     options.JsonSerializerOptions.ReferenceHandler =
       System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
@@ -44,6 +46,11 @@ else
             await Results.Problem("An unexpected error occurred.").ExecuteAsync(context);
         });
     });
+}
+
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
 }
 
 app.UseAuthentication();
