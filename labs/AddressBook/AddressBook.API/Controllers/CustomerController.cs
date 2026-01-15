@@ -20,7 +20,10 @@ public class CustomerController(NorthwindContext db, ILogger<CustomerController>
     [HttpGet("customer/{id}")]
     public ActionResult GetCustomer(string id)
     {
-        var customer = db.Customers.Find(id);
+        var customer = db.Customers
+            .Include(c => c.Orders)
+            .SingleOrDefault(c => c.CustomerID == id);
+
         if (customer is null) return NotFound();
         return Ok(customer);
     }

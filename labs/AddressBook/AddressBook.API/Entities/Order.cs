@@ -1,4 +1,6 @@
-﻿namespace AddressBook.API.Entities;
+﻿using System.Text.Json.Serialization;
+
+namespace AddressBook.API.Entities;
 
 public class Order
 {
