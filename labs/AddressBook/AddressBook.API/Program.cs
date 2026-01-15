@@ -14,8 +14,9 @@ builder.Services.AddControllers().AddJsonOptions(options => {
       System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
 });
 
+var connStr = builder.Configuration.GetConnectionString("Northwind");
 builder.Services.AddDbContext<NorthwindContext>(options =>
-  options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Northwind;Integrated Security=True;TrustServerCertificate=True"));
+  options.UseSqlServer(connStr));
 
 builder.Services.AddSingleton<TokenProvider>();
 
@@ -51,6 +52,9 @@ else
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.UseSwaggerUI(options => {
+        options.SwaggerEndpoint("/openapi/v1.json", "v1");
+    });
 }
 
 app.UseAuthentication();

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace AddressBook.API.Auth;
 
-public class TokenProvider
+public class TokenProvider(IConfiguration config)
 {
     public string Create(string userEmail)
     {
-        var clientSecret = "randomly-generated-client-secret";
+        var clientSecret = config["Jwt:ClientSecret"]!;
 
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(clientSecret));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
@@ -19,10 +19,10 @@ public class TokenProvider
             Subject = new ClaimsIdentity([
                 new Claim(JwtRegisteredClaimNames.Sub, userEmail),
               ]),
-            Expires = DateTime.UtcNow.AddMinutes(60),
+            Expires = DateTime.UtcNow.AddMinutes(int.Parse(config["Jwt:ExpirationInMinutes"]!)),
             SigningCredentials = credentials,
-            Issuer = "localhost:5000",
-            Audience = "localhost:5000"
+            Issuer = config["Jwt:Issuer"]!,
+            Audience = config["Jwt:Audience"]!
         };
         var handler = new JsonWebTokenHandler();
         string token = handler.CreateToken(tokenDescriptor);
