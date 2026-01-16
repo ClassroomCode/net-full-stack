@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 
-builder.Services.AddControllers().AddJsonOptions(options => {
+builder.Services.AddControllersWithViews().AddJsonOptions(options => {
     options.JsonSerializerOptions.ReferenceHandler =
       System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
 });
@@ -34,6 +34,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -48,6 +59,8 @@ else
         });
     });
 }
+
+app.UseCors("AllowAll");
 
 if (app.Environment.IsDevelopment())
 {

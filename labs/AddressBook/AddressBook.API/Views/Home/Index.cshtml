@@ -1,0 +1,21 @@
+﻿@model List<AddressBook.API.Entities.Customer>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <ul>
+        @foreach(var c in Model)
+        {
+            <li>@c.CompanyName</li>
+        }
+    </ul>
+</body>
+</html>
